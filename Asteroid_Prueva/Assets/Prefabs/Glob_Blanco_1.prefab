@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6644296030436586626}
   - component: {fileID: 1757275133148800491}
   - component: {fileID: 575950858407551651}
+  - component: {fileID: 5348763226470557153}
   - component: {fileID: 1074854070060691759}
   m_Layer: 0
   m_Name: Glob_Blanco_1
@@ -165,6 +166,20 @@ MonoBehaviour:
   speed: 1
   smallerAsteroidPrefab: {fileID: 7627931479434953752, guid: 71251f438949b5e4bb17730102f66aba, type: 3}
   size: 2
+--- !u!114 &5348763226470557153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275976457173627277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b0e57f7c5997a4984dffded331b210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2.5
+  turnSpeed: 1.5
 --- !u!58 &1074854070060691759
 CircleCollider2D:
   m_ObjectHideFlags: 0
