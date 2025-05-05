@@ -10,6 +10,11 @@ public class Asteroid : MonoBehaviour
 
     void Start()
     {
+        MoveBlood();
+    }
+
+    void MoveBlood()
+    {
         GetComponent<Rigidbody2D>().velocity = Random.insideUnitCircle.normalized * speed;
     }
 

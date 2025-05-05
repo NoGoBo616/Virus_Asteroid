@@ -8,4 +8,14 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject, 2f); // Destruye después de 2 segundos
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        // Verifica si el objeto golpeado es un clon (hijo del asteroide)
+        if (other.CompareTag("AsteroidClone"))
+        {
+            Destroy(other.gameObject); 
+            Destroy(this.gameObject);  
+        }
+    }
 }
