@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4188304512751657157, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}
       propertyPath: m_Name
-      value: Asteroid Variant Variant
+      value: Glob_Rojo_4
       objectReference: {fileID: 0}
     - target: {fileID: 5709372731604644843, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}
       propertyPath: smallerAsteroidPrefab
