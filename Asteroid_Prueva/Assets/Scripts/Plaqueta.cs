@@ -48,7 +48,7 @@ public class Plaqueta : MonoBehaviour
             GameObject clone = Instantiate(asteroidClonePrefab, spawnPosition, Quaternion.identity);
             clone.transform.parent = this.transform;
 
-            offsetDistance = offsetDistance + 0.7f;
+            offsetDistance = offsetDistance + 0.65f;
             number = number + 1;
         }
     }

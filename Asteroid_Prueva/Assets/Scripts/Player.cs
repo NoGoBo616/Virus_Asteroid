@@ -12,9 +12,10 @@ public class Player_ : MonoBehaviour
     private Rigidbody2D rb;
     private bool cooldownS;
     private bool cooldownI;
+    private bool special;
 
     [Header("Live")]
-    public int live;
+    public float live;
 
     [Header("Objects")]
     public GameObject bulletPrefab;
@@ -26,6 +27,8 @@ public class Player_ : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cooldownS = true;
         cooldownI = true;
+        special = true;
+        live = 1;
     }
 
     //Controles
@@ -48,7 +51,7 @@ public class Player_ : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            if (cooldownS)
+            if (cooldownS && special)
             {
                 StartCoroutine(Shield());
             }
@@ -56,19 +59,10 @@ public class Player_ : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.C))
         {
-            if (cooldownI)
+            if (cooldownI && special)
             {
                 StartCoroutine(Invisible());
             }
-        }
-    }
-
-    //Sistema de vida
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Asteroid"))
-        {
-            live = live - 1;
         }
     }
 
@@ -77,8 +71,10 @@ public class Player_ : MonoBehaviour
     private IEnumerator Shield()
     {
         shield.SetActive(true);
+        special = false;
         yield return new WaitForSeconds(2);
         shield.SetActive(false);
+        special = true;
         StartCoroutine(CooldownShield());
         yield return null;
     }
@@ -86,9 +82,19 @@ public class Player_ : MonoBehaviour
     private IEnumerator Invisible()
     {
         body.gameObject.SetActive(false);
+        special = false;
         yield return new WaitForSeconds(2);
         body.gameObject.SetActive(true);
+        special = true;
         StartCoroutine(CooldownInvisible());
+        yield return null;
+    }
+
+    private IEnumerator Daño()
+    {
+        body.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        body.gameObject.SetActive(true);
         yield return null;
     }
 
