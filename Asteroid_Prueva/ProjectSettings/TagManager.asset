@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Bullet
   - AsteroidClone
+  - Asteroid
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Limit
   - Water
   - UI
   - 

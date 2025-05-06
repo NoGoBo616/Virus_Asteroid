@@ -18,22 +18,15 @@ public class Asteroid : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = Random.insideUnitCircle.normalized * speed;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnDisable()
     {
-        if (other.CompareTag("Bullet"))
+        if (size > 1)
         {
-            Destroy(other.gameObject);
-
-            if (size > 1)
+            for (int i = 0; i < 2; i++)
             {
-                for (int i = 0; i < 2; i++)
-                {
-                    GameObject newAsteroid = Instantiate(smallerAsteroidPrefab, transform.position, Quaternion.identity);
-                    newAsteroid.GetComponent<Asteroid>().size = size - 1;
-                }
+                GameObject newAsteroid = Instantiate(smallerAsteroidPrefab, transform.position, Quaternion.identity);
+                newAsteroid.GetComponent<Asteroid>().size = size - 1;
             }
-
-            Destroy(gameObject);
         }
     }
 }
