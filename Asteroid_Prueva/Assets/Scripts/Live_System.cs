@@ -11,6 +11,14 @@ public class Live_System : MonoBehaviour
         vida = 1;
     }
 
+    private void Update()
+    {
+        if (vida <= 0)
+        {
+            vida = 0;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Asteroid"))
