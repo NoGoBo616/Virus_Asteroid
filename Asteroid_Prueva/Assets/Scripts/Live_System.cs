@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Live_System : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class Live_System : MonoBehaviour
     [SerializeField] Image player_Live;
     public int points;
     public Live_System manager;
+    public event EventHandler MuerteJugador;
 
     private void Start()
     {
+       
         vida = 1;
     }
 
@@ -22,7 +25,11 @@ public class Live_System : MonoBehaviour
 
         if (vida <= 0)
         {
+
             vida = 0;
+            MuerteJugador?.Invoke(this, EventArgs.Empty);
+            Destroy(gameObject);
+
         }
     }
 
@@ -31,6 +38,8 @@ public class Live_System : MonoBehaviour
         if (collision.gameObject.CompareTag("Asteroid"))
         {
             vida = vida - 0.05f;
+
+          
         }
     }
 
