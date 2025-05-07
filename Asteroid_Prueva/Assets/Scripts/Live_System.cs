@@ -27,8 +27,9 @@ public class Live_System : MonoBehaviour
         {
 
             vida = 0;
-            MuerteJugador?.Invoke(this, EventArgs.Empty);
-            Destroy(gameObject);
+            Debug.Log("Game Over");
+            FindAnyObjectByType<GameOver>().MostrarGameOver();
+
 
         }
     }
@@ -38,6 +39,8 @@ public class Live_System : MonoBehaviour
         if (collision.gameObject.CompareTag("Asteroid"))
         {
             vida = vida - 0.05f;
+
+            
 
           
         }
