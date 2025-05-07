@@ -7,6 +7,8 @@ public class Asteroid : MonoBehaviour
     public float speed = 1.0f;
     public GameObject smallerAsteroidPrefab;
     public int size = 3;
+    public GameManager manager;
+
 
     void Start()
     {
@@ -28,5 +30,7 @@ public class Asteroid : MonoBehaviour
                 newAsteroid.GetComponent<Asteroid>().size = size - 1;
             }
         }
+
+        manager.Puntuar();
     }
 }

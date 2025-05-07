@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Live_System : MonoBehaviour
 {
     public float vida;
+    [SerializeField] Image player_Live;
+    public int points;
+    public Live_System manager;
 
     private void Start()
     {
@@ -13,6 +18,8 @@ public class Live_System : MonoBehaviour
 
     private void Update()
     {
+        player_Live.fillAmount = vida;
+
         if (vida <= 0)
         {
             vida = 0;
@@ -24,7 +31,12 @@ public class Live_System : MonoBehaviour
         if (collision.gameObject.CompareTag("Asteroid"))
         {
             vida = vida - 0.05f;
-            Debug.Log(vida);
         }
+    }
+
+    public void MorePoints()
+    {
+        points = points + 100;
+        Debug.Log(points);
     }
 }

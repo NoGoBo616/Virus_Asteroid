@@ -165,6 +165,7 @@ MonoBehaviour:
   speed: 1
   smallerAsteroidPrefab: {fileID: 4188304512751657157, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}
   size: 3
+  manager: {fileID: 6210024920145482995, guid: 912f5637ef3b2264aa324a3357480a62, type: 3}
 --- !u!1 &4089065698284866726
 GameObject:
   m_ObjectHideFlags: 0

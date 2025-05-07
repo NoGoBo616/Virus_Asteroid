@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public Live_System manager;
+
     void Start()
     {
         Destroy(gameObject, 2f); // Destruye después de 2 segundos
@@ -15,7 +17,8 @@ public class Bullet : MonoBehaviour
         if (other.CompareTag("AsteroidClone"))
         {
             Destroy(other.gameObject); 
-            Destroy(this.gameObject);  
+            Destroy(this.gameObject);
+            manager.MorePoints();
         }
     }
 }
