@@ -11,6 +11,7 @@ public class Live_System : MonoBehaviour
     [SerializeField] Image player_Live;
     public int points;
     public Live_System manager;
+    [SerializeField] public int damageSfxIndex;
 
     private void Start()
     {
@@ -35,8 +36,13 @@ public class Live_System : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Live_System");
         if (collision.gameObject.CompareTag("Asteroid"))
         {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX(damageSfxIndex);
+            }
             vida = vida - 0.05f;
         }
     }

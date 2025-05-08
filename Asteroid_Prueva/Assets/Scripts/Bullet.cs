@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
         {
             Destroy(other.gameObject); 
             Destroy(this.gameObject);
-            manager.MorePoints();
+            //manager.MorePoints();
         }
     }
 }

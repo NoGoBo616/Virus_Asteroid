@@ -8,6 +8,7 @@ public class Asteroid : MonoBehaviour
     public GameObject smallerAsteroidPrefab;
     public int size = 3;
     public GameManager manager;
+    [SerializeField] public int bulletSfxIndex;
 
 
     private Rigidbody2D rb;
@@ -37,6 +38,10 @@ public class Asteroid : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX(bulletSfxIndex);
+            }
             if (size > 1)
             {
                 for (int i = 0; i < 2; i++)

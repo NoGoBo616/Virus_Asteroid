@@ -13,6 +13,9 @@ public class Player_ : MonoBehaviour
     private bool cooldownS;
     private bool cooldownI;
     private bool special;
+    [SerializeField] public int shieldSfxIndex;
+    [SerializeField] public int invisibleSfxIndex;
+    
 
     [Header("Live")]
     public float live;
@@ -80,6 +83,11 @@ public class Player_ : MonoBehaviour
 
     private IEnumerator Shield()
     {
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(shieldSfxIndex);
+        }
         shield.SetActive(true);
         special = false;
         yield return new WaitForSeconds(2);
@@ -91,6 +99,10 @@ public class Player_ : MonoBehaviour
 
     private IEnumerator Invisible()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(invisibleSfxIndex);
+        }
         body.gameObject.SetActive(false);
         special = false;
         yield return new WaitForSeconds(2);
@@ -101,7 +113,9 @@ public class Player_ : MonoBehaviour
     }
 
     private IEnumerator Daño()
+
     {
+        
         body.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         body.gameObject.SetActive(true);
