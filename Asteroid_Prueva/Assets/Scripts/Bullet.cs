@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public Live_System manager;
+    public GameObject VFX;
 
     void Start()
     {

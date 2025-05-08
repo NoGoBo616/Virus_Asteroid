@@ -7,12 +7,13 @@ public class Player_ : MonoBehaviour
 {
     public float thrust = 1.0f;
     public float rotationSpeed = 200.0f;
-    public float bulletSpeed = 5f;
+    public float bulletSpeed = 100f;
 
     private Rigidbody2D rb;
     private bool cooldownS;
     private bool cooldownI;
     private bool special;
+    public float maxSpeed = 25f;
 
     [Header("Live")]
     public float live;
@@ -29,6 +30,14 @@ public class Player_ : MonoBehaviour
         cooldownI = true;
         special = true;
         live = 1;
+    }
+
+    void FixedUpdate()
+    {
+        if (rb.velocity.magnitude > maxSpeed)
+        {
+            rb.velocity = rb.velocity.normalized * maxSpeed;
+        }
     }
 
     //Controles

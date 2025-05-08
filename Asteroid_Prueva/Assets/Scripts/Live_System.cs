@@ -15,7 +15,11 @@ public class Live_System : MonoBehaviour
 
     private void Start()
     {
-       
+        vida = 1;
+    }
+
+    private void OnEnable()
+    {
         vida = 1;
     }
 
@@ -25,12 +29,8 @@ public class Live_System : MonoBehaviour
 
         if (vida <= 0)
         {
-
             vida = 0;
-            Debug.Log("Game Over");
-            FindAnyObjectByType<GameOver>().MostrarGameOver();
-
-
+            SceneManager.LoadScene(2);
         }
     }
 
@@ -39,10 +39,6 @@ public class Live_System : MonoBehaviour
         if (collision.gameObject.CompareTag("Asteroid"))
         {
             vida = vida - 0.05f;
-
-            
-
-          
         }
     }
 

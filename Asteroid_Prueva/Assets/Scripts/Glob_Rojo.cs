@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed = 3f;
     public GameObject smallerAsteroidPrefab;
     public int size = 3;
     public GameManager manager;
+    public float maxSpeed = 10f;
+
+    private Rigidbody2D rb;
+
 
 
     void Start()
     {
         MoveBlood();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void FixedUpdate()
+    {
+        if (rb.velocity.magnitude > maxSpeed)
+        {
+            rb.velocity = rb.velocity.normalized * maxSpeed;
+        }
     }
 
     void MoveBlood()
@@ -20,17 +33,23 @@ public class Asteroid : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = Random.insideUnitCircle.normalized * speed;
     }
 
-    private void OnDisable()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (size > 1)
+        if (collision.gameObject.CompareTag("Bullet"))
         {
-            for (int i = 0; i < 2; i++)
+            if (size > 1)
             {
-                GameObject newAsteroid = Instantiate(smallerAsteroidPrefab, transform.position, Quaternion.identity);
-                newAsteroid.GetComponent<Asteroid>().size = size - 1;
+                for (int i = 0; i < 2; i++)
+                {
+                    GameObject newAsteroid = Instantiate(smallerAsteroidPrefab, transform.position, Quaternion.identity);
+                    newAsteroid.GetComponent<Asteroid>().size = size - 1;
+                }
             }
         }
+    }
 
+    private void OnDisable()
+    {
         manager.Puntuar();
     }
 }

@@ -216,6 +216,7 @@ MonoBehaviour:
   thrust: 1
   rotationSpeed: 200
   bulletSpeed: 5
+  maxSpeed: 75
   live: 0
   bulletPrefab: {fileID: 7688516131324827704, guid: 5f04603920d57144cb8b6003004fe15b, type: 3}
   shield: {fileID: 8478005913413974316}
@@ -390,6 +391,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 1
+  player_Live: {fileID: 0}
+  points: 0
+  manager: {fileID: 0}
 --- !u!1 &7260781677636854951
 GameObject:
   m_ObjectHideFlags: 0
