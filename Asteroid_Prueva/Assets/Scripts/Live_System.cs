@@ -11,7 +11,6 @@ public class Live_System : MonoBehaviour
     [SerializeField] Image player_Live;
     public int points;
     public Live_System manager;
-    public event EventHandler MuerteJugador;
 
     private void Start()
     {

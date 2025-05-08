@@ -77,7 +77,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2554688114831885058}
   - component: {fileID: 2603220954897819198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (1)
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 7595919691773366464}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 34591624f50f2414a8d4d0f4ee38ddfd, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -302,7 +302,6 @@ MonoBehaviour:
   smallerAsteroidPrefab: {fileID: 7627931479434953752, guid: 71251f438949b5e4bb17730102f66aba, type: 3}
   size: 2
   manager: {fileID: 6210024920145482995, guid: 912f5637ef3b2264aa324a3357480a62, type: 3}
-  maxSpeed: 3
 --- !u!114 &5348763226470557153
 MonoBehaviour:
   m_ObjectHideFlags: 0

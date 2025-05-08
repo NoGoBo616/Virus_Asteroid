@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    public float speed = 3f;
+    public float speed = 5;
     public GameObject smallerAsteroidPrefab;
     public int size = 3;
     public GameManager manager;
-    public float maxSpeed = 10f;
+
 
     private Rigidbody2D rb;
 
@@ -20,11 +20,11 @@ public class Asteroid : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (rb.velocity.magnitude > maxSpeed)
+        if (rb.velocity.magnitude > 10)
         {
-            rb.velocity = rb.velocity.normalized * maxSpeed;
+            rb.velocity = rb.velocity.normalized * 10;
         }
     }
 

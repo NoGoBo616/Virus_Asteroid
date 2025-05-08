@@ -5,15 +5,14 @@ using UnityEngine.Video;
 
 public class Player_ : MonoBehaviour
 {
-    public float thrust = 1.0f;
-    public float rotationSpeed = 200.0f;
-    public float bulletSpeed = 100f;
+    public float thrust = 1;
+    public float rotationSpeed = 200;
+    public float bulletSpeed = 100;
 
     private Rigidbody2D rb;
     private bool cooldownS;
     private bool cooldownI;
     private bool special;
-    public float maxSpeed = 25f;
 
     [Header("Live")]
     public float live;
@@ -32,15 +31,8 @@ public class Player_ : MonoBehaviour
         live = 1;
     }
 
-    void FixedUpdate()
-    {
-        if (rb.velocity.magnitude > maxSpeed)
-        {
-            rb.velocity = rb.velocity.normalized * maxSpeed;
-        }
-    }
-
     //Controles
+
     void Update()
     {
         float rotation = -Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
@@ -72,6 +64,15 @@ public class Player_ : MonoBehaviour
             {
                 StartCoroutine(Invisible());
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (rb.velocity.magnitude > 5)
+        {
+            rb.velocity = rb.velocity.normalized * 5;
+            Debug.Log(rb.velocity.magnitude);
         }
     }
 
