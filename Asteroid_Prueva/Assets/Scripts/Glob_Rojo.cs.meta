@@ -3,7 +3,11 @@ guid: 2fe5b3c50f291614d896633732b14664
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - smallerAsteroidPrefab: {instanceID: 0}
+  - manager: {instanceID: 0}
+  - vfxApear: {fileID: 5374981251632339549, guid: e96c88bd1f14c874c9563b4603cf36f4, type: 3}
+  - vfxDispear: {fileID: 370854684469117506, guid: 00b7f70f8f97ba042ac9055e30fd9583, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

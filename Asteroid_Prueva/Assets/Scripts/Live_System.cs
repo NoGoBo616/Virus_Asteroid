@@ -41,8 +41,9 @@ public class Live_System : MonoBehaviour
         {
             if (AudioManager.Instance != null)
             {
-                AudioManager.Instance.PlaySFX(damageSfxIndex);
+                AudioManager.Instance.PlaySFX(damageSfxIndex); 
             }
+
             vida = vida - 0.05f;
         }
     }

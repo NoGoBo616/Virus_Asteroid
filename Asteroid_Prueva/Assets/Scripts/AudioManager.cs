@@ -15,10 +15,10 @@ public class AudioManager : MonoBehaviour
     }
 
     [Header("Audio Manager Configuration")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource sfxSource;
-    [SerializeField] AudioClip[] musicList;
-    [SerializeField] AudioClip[] sfxList;
+    public AudioSource musicSource;
+    public AudioSource sfxSource;
+    public AudioClip[] musicList;
+    public AudioClip[] sfxList;
 
     public AudioSource MusicSource => musicSource;
 

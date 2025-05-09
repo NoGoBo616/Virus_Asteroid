@@ -10,10 +10,15 @@ public class Asteroid : MonoBehaviour
     public GameManager manager;
     [SerializeField] public int bulletSfxIndex;
 
+    public GameObject vfxApear;
+    public GameObject vfxDispear;
 
     private Rigidbody2D rb;
 
-
+    private void OnEnable()
+    {
+        Instantiate(vfxApear, transform.position, Quaternion.identity);
+    }
 
     void Start()
     {
@@ -38,10 +43,7 @@ public class Asteroid : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            if (AudioManager.Instance != null)
-            {
-                AudioManager.Instance.PlaySFX(bulletSfxIndex);
-            }
+
             if (size > 1)
             {
                 for (int i = 0; i < 2; i++)
@@ -55,6 +57,16 @@ public class Asteroid : MonoBehaviour
 
     private void OnDisable()
     {
+        if (AudioManager.Instance != null)
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+                AudioManager.Instance.PlaySFX(0);
+            }
+        }
+
         manager.Puntuar();
+        Instantiate(vfxDispear, transform.position, Quaternion.identity);
     }
 }

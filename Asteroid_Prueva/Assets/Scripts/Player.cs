@@ -48,6 +48,12 @@ public class Player_ : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX(7);
+            }
+
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.velocity = transform.up * bulletSpeed;
@@ -86,7 +92,8 @@ public class Player_ : MonoBehaviour
 
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.PlaySFX(shieldSfxIndex);
+            AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            AudioManager.Instance.PlaySFX(5);
         }
         shield.SetActive(true);
         special = false;
@@ -101,7 +108,8 @@ public class Player_ : MonoBehaviour
     {
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.PlaySFX(invisibleSfxIndex);
+            AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            AudioManager.Instance.PlaySFX(4);
         }
         body.gameObject.SetActive(false);
         special = false;
@@ -113,7 +121,6 @@ public class Player_ : MonoBehaviour
     }
 
     private IEnumerator Daño()
-
     {
         
         body.gameObject.SetActive(false);

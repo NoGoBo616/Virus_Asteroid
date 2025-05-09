@@ -46,7 +46,10 @@ public class Glob_Blanco : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Impacto");
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX(3);
+            }
         }
     }
 }
