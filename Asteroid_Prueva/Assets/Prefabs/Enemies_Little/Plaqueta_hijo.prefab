@@ -72,6 +72,18 @@ PrefabInstance:
       propertyPath: asteroidClonePrefab
       value: 
       objectReference: {fileID: 8908493592961605226}
+    - target: {fileID: 8993773449769491017, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5313278
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993773449769491017, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5313278
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993773449769491017, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7509433
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3259263566400286342, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
     - {fileID: 9050287009521076884, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
@@ -80,7 +92,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5845364292275545251, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 3919093290246766521}
   m_SourcePrefab: {fileID: 100100000, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
 --- !u!1 &8908493592961605226 stripped

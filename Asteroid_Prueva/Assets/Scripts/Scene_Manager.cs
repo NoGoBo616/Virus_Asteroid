@@ -19,6 +19,11 @@ public class Scene_Manager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void ChangeMap_GameInfiniteMode()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void ChangeMap_GameOver()
     {
         SceneManager.LoadScene(2);
