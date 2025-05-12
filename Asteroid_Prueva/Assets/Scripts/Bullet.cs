@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public Live_System manager;
+    public GameObject VFX;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class Bullet : MonoBehaviour
         {
             Destroy(other.gameObject); 
             Destroy(this.gameObject);
-            manager.MorePoints();
+            //manager.MorePoints();
         }
     }
 }

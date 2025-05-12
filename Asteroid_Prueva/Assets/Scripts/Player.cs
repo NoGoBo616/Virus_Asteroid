@@ -5,14 +5,17 @@ using UnityEngine.Video;
 
 public class Player_ : MonoBehaviour
 {
-    public float thrust = 1.0f;
-    public float rotationSpeed = 200.0f;
-    public float bulletSpeed = 5f;
+    public float thrust = 1;
+    public float rotationSpeed = 200;
+    public float bulletSpeed = 100;
 
     private Rigidbody2D rb;
     private bool cooldownS;
     private bool cooldownI;
     private bool special;
+    [SerializeField] public int shieldSfxIndex;
+    [SerializeField] public int invisibleSfxIndex;
+    
 
     [Header("Live")]
     public float live;
@@ -32,6 +35,7 @@ public class Player_ : MonoBehaviour
     }
 
     //Controles
+
     void Update()
     {
         float rotation = -Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
@@ -44,6 +48,12 @@ public class Player_ : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX(7);
+            }
+
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.velocity = transform.up * bulletSpeed;
@@ -66,10 +76,25 @@ public class Player_ : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (rb.velocity.magnitude > 5)
+        {
+            rb.velocity = rb.velocity.normalized * 5;
+            Debug.Log(rb.velocity.magnitude);
+        }
+    }
+
     //Corrutinas
 
     private IEnumerator Shield()
     {
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            AudioManager.Instance.PlaySFX(5);
+        }
         shield.SetActive(true);
         special = false;
         yield return new WaitForSeconds(2);
@@ -81,6 +106,11 @@ public class Player_ : MonoBehaviour
 
     private IEnumerator Invisible()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            AudioManager.Instance.PlaySFX(4);
+        }
         body.gameObject.SetActive(false);
         special = false;
         yield return new WaitForSeconds(2);
@@ -92,6 +122,7 @@ public class Player_ : MonoBehaviour
 
     private IEnumerator Daño()
     {
+        
         body.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         body.gameObject.SetActive(true);

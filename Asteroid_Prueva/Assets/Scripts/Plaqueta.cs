@@ -43,6 +43,12 @@ public class Plaqueta : MonoBehaviour
     {
         if (number < limit)
         {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+                AudioManager.Instance.PlaySFX(1);
+            }
+
             Vector2 spawnPosition = (Vector2)transform.position + randomDirection * offsetDistance;
 
             GameObject clone = Instantiate(asteroidClonePrefab, spawnPosition, Quaternion.identity);
