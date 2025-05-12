@@ -30,7 +30,7 @@ public class Crono : MonoBehaviour
             segundos = 0.0f;
         }
 
-        if (minutos >= 5)
+        if (minutos > 5)
         {
             SceneManager.LoadScene(2);
         }
