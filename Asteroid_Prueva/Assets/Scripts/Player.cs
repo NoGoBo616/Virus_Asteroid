@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.UI;
 
 public class Player_ : MonoBehaviour
 {
@@ -13,9 +14,6 @@ public class Player_ : MonoBehaviour
     private bool cooldownS;
     private bool cooldownI;
     private bool special;
-    [SerializeField] public int shieldSfxIndex;
-    [SerializeField] public int invisibleSfxIndex;
-    
 
     [Header("Live")]
     public float live;
@@ -24,6 +22,10 @@ public class Player_ : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject shield;
     public GameObject body;
+
+    [Header("UI")]
+    public Image escudoUI;
+    public Image pinchoUI;
 
     void Start()
     {
@@ -95,6 +97,7 @@ public class Player_ : MonoBehaviour
             AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
             AudioManager.Instance.PlaySFX(5);
         }
+
         shield.SetActive(true);
         special = false;
         yield return new WaitForSeconds(2);
@@ -122,7 +125,6 @@ public class Player_ : MonoBehaviour
 
     private IEnumerator Daño()
     {
-        
         body.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         body.gameObject.SetActive(true);
@@ -132,16 +134,20 @@ public class Player_ : MonoBehaviour
     private IEnumerator CooldownShield()
     {
         cooldownS = false;
+        escudoUI.gameObject.SetActive(false);
         yield return new WaitForSeconds(2);
         cooldownS = true;
+        escudoUI.gameObject.SetActive(true);
         yield return null;
     }
 
     private IEnumerator CooldownInvisible()
     {
         cooldownI = false;
+        pinchoUI.gameObject.SetActive(false);
         yield return new WaitForSeconds(2);
         cooldownI = true;
+        pinchoUI.gameObject.SetActive(true);
         yield return null;
     }
 }
