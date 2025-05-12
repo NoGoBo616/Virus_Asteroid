@@ -16,8 +16,7 @@ public class Hijos_Plaquetas : MonoBehaviour
     {
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.PlaySFX(0);
-
+            AudioManager.Instance.PlaySFX(1);
         }
 
         Instantiate(vfxDispear, transform.position, Quaternion.identity);
