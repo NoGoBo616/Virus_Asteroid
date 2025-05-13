@@ -45,7 +45,16 @@ public class Glob_Blanco : MonoBehaviour
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlaySFX(3);
+                StartCoroutine(Agrandar());
             }
         }
+    }
+
+    private IEnumerator Agrandar()
+    {
+        gameObject.transform.localScale = new Vector3(3.2f, 3.2f, 3);
+        yield return new WaitForSeconds(0.5f);
+        gameObject.transform.localScale = new Vector3(3, 3, 3);
+        yield return null;
     }
 }

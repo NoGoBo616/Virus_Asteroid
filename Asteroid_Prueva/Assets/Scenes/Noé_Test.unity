@@ -2102,6 +2102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 4118064679733923858, guid: 54ae135744125e843ab192e972db8f1c, type: 3}
+      propertyPath: player_Live
+      value: 
+      objectReference: {fileID: 1269014203}
     - target: {fileID: 7035148833213746514, guid: 54ae135744125e843ab192e972db8f1c, type: 3}
       propertyPath: player_Live
       value: 

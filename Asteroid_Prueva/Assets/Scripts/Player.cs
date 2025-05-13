@@ -22,6 +22,7 @@ public class Player_ : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject shield;
     public GameObject body;
+    public GameObject disparador;
 
     [Header("UI")]
     public Image escudoUI;
@@ -50,13 +51,12 @@ public class Player_ : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlaySFX(7);
             }
 
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+            GameObject bullet = Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.velocity = transform.up * bulletSpeed;
         }
