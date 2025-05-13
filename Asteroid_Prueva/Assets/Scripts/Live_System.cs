@@ -9,7 +9,7 @@ public class Live_System : MonoBehaviour
 {
     public float vida;
     [SerializeField] Image player_Live;
-    public int points;
+    
     public Live_System manager;
     [SerializeField] public int damageSfxIndex;
 
@@ -47,9 +47,5 @@ public class Live_System : MonoBehaviour
         }
     }
 
-    public void MorePoints()
-    {
-        points = points + 100;
-        Debug.Log(points);
-    }
+   
 }

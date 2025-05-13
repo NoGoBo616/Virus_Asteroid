@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: smallerAsteroidPrefab
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3413260435408878339, guid: 5e1b26c1ec32f7a409986f247f8bc917, type: 3}
+      propertyPath: points
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4697721592872533395, guid: 5e1b26c1ec32f7a409986f247f8bc917, type: 3}
       propertyPath: m_LocalScale.x
       value: 3

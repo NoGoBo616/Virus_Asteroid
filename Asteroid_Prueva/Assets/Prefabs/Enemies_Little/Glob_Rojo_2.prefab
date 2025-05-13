@@ -88,6 +88,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.023866922
       objectReference: {fileID: 0}
+    - target: {fileID: 5181593754635920520, guid: aad6fd3104b460840934872219486ea3, type: 3}
+      propertyPath: points
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182663647453364840, guid: aad6fd3104b460840934872219486ea3, type: 3}
+      propertyPath: points
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7182663647453364840, guid: aad6fd3104b460840934872219486ea3, type: 3}
       propertyPath: smallerAsteroidPrefab
       value: 

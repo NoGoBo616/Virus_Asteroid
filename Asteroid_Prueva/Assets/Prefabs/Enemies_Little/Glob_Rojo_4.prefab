@@ -85,9 +85,17 @@ PrefabInstance:
       value: Glob_Rojo_4
       objectReference: {fileID: 0}
     - target: {fileID: 5709372731604644843, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}
+      propertyPath: points
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709372731604644843, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}
       propertyPath: smallerAsteroidPrefab
       value: 
       objectReference: {fileID: 3439458534821992510}
+    - target: {fileID: 7745785256254215435, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}
+      propertyPath: points
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2962077408015173426, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}

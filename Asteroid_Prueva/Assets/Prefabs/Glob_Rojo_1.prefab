@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4064088272468612169}
   - component: {fileID: 8948892863653037344}
   - component: {fileID: 7182663647453364840}
+  - component: {fileID: 5181593754635920520}
   m_Layer: 0
   m_Name: Glob_Rojo_1
   m_TagString: AsteroidClone
@@ -117,6 +118,19 @@ MonoBehaviour:
   bulletSfxIndex: 0
   vfxApear: {fileID: 8655563992015001106, guid: 4c7546b0c99b23d4fbfc6f3ad52a87ba, type: 3}
   vfxDispear: {fileID: 370854684469117506, guid: 00b7f70f8f97ba042ac9055e30fd9583, type: 3}
+--- !u!114 &5181593754635920520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624091324232962374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8caa389bbd568d945b6a1380bb2de4e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 10
 --- !u!1 &4089065698284866726
 GameObject:
   m_ObjectHideFlags: 0

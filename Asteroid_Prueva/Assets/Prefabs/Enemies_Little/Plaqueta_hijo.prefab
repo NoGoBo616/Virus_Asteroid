@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8633725403028749414, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
+      propertyPath: points
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4406691453555338940, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
       propertyPath: m_Color.b
       value: 0.12549023
@@ -92,12 +96,16 @@ PrefabInstance:
     - {fileID: 3259263566400286342, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
     - {fileID: 9050287009521076884, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
     - {fileID: 8096594814206311853, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
+    - {fileID: -8633725403028749414, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5845364292275545251, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3919093290246766521}
+    - targetCorrespondingSourceObject: {fileID: 5845364292275545251, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5953283335593467318}
   m_SourcePrefab: {fileID: 100100000, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
 --- !u!1 &8908493592961605226 stripped
 GameObject:
@@ -118,3 +126,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vfxApear: {fileID: 5374981251632339549, guid: e96c88bd1f14c874c9563b4603cf36f4, type: 3}
   vfxDispear: {fileID: 5374981251632339549, guid: e96c88bd1f14c874c9563b4603cf36f4, type: 3}
+--- !u!114 &-5953283335593467318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908493592961605226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8caa389bbd568d945b6a1380bb2de4e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 5

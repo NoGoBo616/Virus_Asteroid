@@ -1,16 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class GameManager : MonoBehaviour
 {
+
+    public static GameManager Instance;
     public int points;
+    [SerializeField]
+    private TMP_Text title;
+
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-
     private void Start()
     {
         Reiniciar();
@@ -22,8 +36,12 @@ public class GameManager : MonoBehaviour
         points = 0;
     }
 
-    public void Puntuar()
+    public void Puntuar(int pointsToSum)
     {
-        points = points + 100;
+        points = points + pointsToSum;
+        Debug.Log("Puntuación acumulada "+points);
+        title.text = points.ToString();
+        StaticPoints.points= points;
     }
 }
+

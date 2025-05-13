@@ -7,6 +7,7 @@ public class Asteroid : MonoBehaviour
     public float speed = 5;
     public GameObject smallerAsteroidPrefab;
     public int size = 3;
+    
     public GameManager manager;
     [SerializeField] public int bulletSfxIndex;
 
@@ -66,7 +67,7 @@ public class Asteroid : MonoBehaviour
             }
         }
 
-        manager.Puntuar();
+        //manager.Puntuar();
         Instantiate(vfxDispear, transform.position, Quaternion.identity);
     }
 }

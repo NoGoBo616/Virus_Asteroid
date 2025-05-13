@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public Live_System manager;
+  
     public GameObject VFX;
 
     void Start()
@@ -17,9 +17,18 @@ public class Bullet : MonoBehaviour
         // Verifica si el objeto golpeado es un clon (hijo del asteroide)
         if (other.CompareTag("AsteroidClone"))
         {
+            PointSystem pointSystem=other.gameObject.GetComponent<PointSystem>();
+            if (pointSystem != null)
+            { 
+               int points=pointSystem.points;
+                Debug.Log("puntos "+points);
+                GameManager.Instance.Puntuar(points);
+
+
+            }
             Destroy(other.gameObject); 
             Destroy(this.gameObject);
-            //manager.MorePoints();
+            
         }
     }
 }
