@@ -36,7 +36,6 @@ public class Live_System : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Live_System");
         if (collision.gameObject.CompareTag("Asteroid"))
         {
             if (AudioManager.Instance != null)
