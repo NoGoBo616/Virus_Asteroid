@@ -32,7 +32,7 @@ public class Crono : MonoBehaviour
 
         if (minutos >= 5)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 }

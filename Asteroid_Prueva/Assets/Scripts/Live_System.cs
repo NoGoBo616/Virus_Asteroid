@@ -30,7 +30,7 @@ public class Live_System : MonoBehaviour
         if (vida <= 0)
         {
             vida = 0;
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 

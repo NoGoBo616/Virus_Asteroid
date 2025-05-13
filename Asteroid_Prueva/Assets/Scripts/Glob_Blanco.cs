@@ -36,10 +36,6 @@ public class Glob_Blanco : MonoBehaviour
         Vector2 newDirection = Vector2.Lerp(currentDirection, directionToPlayer, turnSpeed * Time.fixedDeltaTime).normalized;
 
         rb.velocity = newDirection * speed;
-
-        // (Opcional) Rotar el sprite hacia la dirección de movimiento
-        float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
-        rb.rotation = angle - 90f; // Ajusta según tu sprite
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

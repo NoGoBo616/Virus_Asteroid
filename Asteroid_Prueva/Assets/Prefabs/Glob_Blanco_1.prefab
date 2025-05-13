@@ -136,9 +136,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0040432215, y: -0.008253455}
+  m_Offset: {x: 0.0034810703, y: -0.008253455}
   serializedVersion: 2
-  m_Radius: 0.41745254
+  m_Radius: 0.382339
 --- !u!50 &1757275133148800491
 Rigidbody2D:
   serializedVersion: 4
@@ -225,7 +225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6879389228454172549, guid: 6e7601412c01ffb43ab14e68b0fc91f7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6879389228454172549, guid: 6e7601412c01ffb43ab14e68b0fc91f7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6879389228454172549, guid: 6e7601412c01ffb43ab14e68b0fc91f7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6879389228454172549, guid: 6e7601412c01ffb43ab14e68b0fc91f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -249,7 +249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6879389228454172549, guid: 6e7601412c01ffb43ab14e68b0fc91f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8366413274629137750, guid: 6e7601412c01ffb43ab14e68b0fc91f7, type: 3}
       propertyPath: m_SortingOrder

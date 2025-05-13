@@ -216,12 +216,12 @@ MonoBehaviour:
   thrust: 1
   rotationSpeed: 200
   bulletSpeed: 5
-  shieldSfxIndex: 4
-  invisibleSfxIndex: 5
   live: 0
   bulletPrefab: {fileID: 7688516131324827704, guid: 5f04603920d57144cb8b6003004fe15b, type: 3}
   shield: {fileID: 8478005913413974316}
   body: {fileID: 5965462386161494572}
+  escudoUI: {fileID: 0}
+  pinchoUI: {fileID: 0}
 --- !u!1 &5965462386161494572
 GameObject:
   m_ObjectHideFlags: 0
