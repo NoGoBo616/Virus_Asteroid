@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Scene_Manager : MonoBehaviour
 {
-    public TMP_Text textPuntos;
-    public int specificMap;
+    public GameObject crono;
 
     private void Awake()
     {
@@ -16,26 +15,31 @@ public class Scene_Manager : MonoBehaviour
 
     public void ChangeMap_Game()
     {
+        crono.gameObject.SetActive(true);
         SceneManager.LoadScene(2);
     }
 
     public void ChangeMap_GameInfiniteMode()
     {
+        crono.gameObject.SetActive(false);
         SceneManager.LoadScene(2);
     }
 
     public void ChangeMap_GameOver()
     {
+        crono.gameObject.SetActive(false);
         SceneManager.LoadScene(3);
     }
 
     public void ChangeMap_Menu()
     {
+        crono.gameObject.SetActive(false);
         SceneManager.LoadScene(1);
     }
 
     public void ChangeMap_Options()
     {
+        crono.gameObject.SetActive(false);
         SceneManager.LoadScene(4);
     }
 
