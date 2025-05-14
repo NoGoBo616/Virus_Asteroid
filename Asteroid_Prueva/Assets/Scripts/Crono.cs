@@ -7,6 +7,7 @@ public class Crono : MonoBehaviour
 {
     public float segundos;
     public int minutos;
+    public PointSystem puntos;
 
     private void OnEnable()
     {
@@ -32,7 +33,14 @@ public class Crono : MonoBehaviour
 
         if (minutos > 5)
         {
-            SceneManager.LoadScene(5);
+            if (puntos.points < 5000)
+            {
+                SceneManager.LoadScene(5);
+            }
+            else
+            {
+                SceneManager.LoadScene(6);
+            }
         }
     }
 }

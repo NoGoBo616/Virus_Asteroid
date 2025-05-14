@@ -8,11 +8,6 @@ public class Scene_Manager : MonoBehaviour
 {
     public GameObject crono;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
     public void ChangeMap_Game()
     {
         crono.gameObject.SetActive(true);
