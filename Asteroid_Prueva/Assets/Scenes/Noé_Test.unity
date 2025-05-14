@@ -1372,6 +1372,10 @@ PrefabInstance:
       propertyPath: posY
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8700914704337125749, guid: f692191fc9e8f504aa6ef99ab838b6db, type: 3}
+      propertyPath: timeToSpawn
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

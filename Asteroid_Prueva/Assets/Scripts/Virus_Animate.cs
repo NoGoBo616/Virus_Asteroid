@@ -11,6 +11,10 @@ public class Virus_ : MonoBehaviour
     void Start()
     {
         playerAnim = GetComponent<Animator>();
+    }
+
+    private void OnEnable()
+    {
         cooldown = true;
     }
 
@@ -30,12 +34,25 @@ public class Virus_ : MonoBehaviour
                 StartCoroutine(CooldownShield());
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(CooldownI());
+        }
     }
 
     private IEnumerator CooldownShield()
     {
         cooldown = false;
         yield return new WaitForSeconds(4);
+        cooldown = true;
+        yield return null;
+    }
+
+    private IEnumerator CooldownI()
+    {
+        cooldown = false;
+        yield return new WaitForSeconds(2);
         cooldown = true;
         yield return null;
     }
