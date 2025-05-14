@@ -6,6 +6,7 @@ public class Hijos_Plaquetas : MonoBehaviour
 {
     public GameObject vfxApear;
     public GameObject vfxDispear;
+    bool flip;
 
     private void OnEnable()
     {

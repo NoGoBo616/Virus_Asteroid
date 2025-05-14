@@ -5,12 +5,13 @@ using UnityEngine;
 public class Virus_ : MonoBehaviour
 {
     private Animator playerAnim;
-    public Player_ comprobador;
+    public bool cooldown;
 
     // Start is called before the first frame update
     void Start()
     {
         playerAnim = GetComponent<Animator>();
+        cooldown = true;
     }
 
     // Update is called once per frame
@@ -23,7 +24,19 @@ public class Virus_ : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            playerAnim.SetTrigger("special");
+            if (cooldown)
+            {
+                playerAnim.SetTrigger("special");
+                StartCoroutine(CooldownShield());
+            }
         }
+    }
+
+    private IEnumerator CooldownShield()
+    {
+        cooldown = false;
+        yield return new WaitForSeconds(4);
+        cooldown = true;
+        yield return null;
     }
 }
