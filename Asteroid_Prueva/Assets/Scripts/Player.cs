@@ -11,9 +11,9 @@ public class Player_ : MonoBehaviour
     public float bulletSpeed = 100;
 
     private Rigidbody2D rb;
-    private bool cooldownS;
+    public bool cooldownS;
     private bool cooldownI;
-    private bool special;
+    public bool special;
 
     [Header("Live")]
     public float live;
@@ -83,7 +83,6 @@ public class Player_ : MonoBehaviour
         if (rb.velocity.magnitude > 5)
         {
             rb.velocity = rb.velocity.normalized * 5;
-            Debug.Log(rb.velocity.magnitude);
         }
     }
 

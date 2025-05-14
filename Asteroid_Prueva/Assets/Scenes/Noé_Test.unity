@@ -2275,6 +2275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 60775472994251386, guid: cddd99baeeeb4d642a772c452a1987d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6397478434771495899, guid: cddd99baeeeb4d642a772c452a1987d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.085098356
