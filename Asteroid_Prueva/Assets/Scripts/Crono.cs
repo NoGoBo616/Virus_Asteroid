@@ -31,15 +31,17 @@ public class Crono : MonoBehaviour
             segundos = 0.0f;
         }
 
-        if (minutos > 5)
+        if (minutos > 1)
         {
             if (puntos.points < 5000)
             {
                 SceneManager.LoadScene(5);
+                gameObject.SetActive(false);
             }
             else
             {
                 SceneManager.LoadScene(6);
+                gameObject.SetActive(false);
             }
         }
     }
