@@ -49,6 +49,11 @@ public class Player_ : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             rb.AddForce(transform.up * thrust);
+            if (AudioManager.Instance != null)
+            {
+                
+                AudioManager.Instance.PlaySFX(10);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Space))

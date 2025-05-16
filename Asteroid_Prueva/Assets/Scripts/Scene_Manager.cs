@@ -15,8 +15,9 @@ public class Scene_Manager : MonoBehaviour
     public void ChangeMap_Game()
     {
         map = Random.Range(1, 4);
-        crono.gameObject.SetActive(true);
         SceneManager.LoadScene(2);
+        crono.gameObject.SetActive(true);
+        
     }
 
     public void ChangeMap_GameInfiniteMode()

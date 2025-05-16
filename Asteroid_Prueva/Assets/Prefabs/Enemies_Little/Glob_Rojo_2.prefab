@@ -97,6 +97,10 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7182663647453364840, guid: aad6fd3104b460840934872219486ea3, type: 3}
+      propertyPath: bulletSfxIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182663647453364840, guid: aad6fd3104b460840934872219486ea3, type: 3}
       propertyPath: smallerAsteroidPrefab
       value: 
       objectReference: {fileID: 3439458534821992510, guid: d2c0e229e01d88e46845b74377d20adc, type: 3}

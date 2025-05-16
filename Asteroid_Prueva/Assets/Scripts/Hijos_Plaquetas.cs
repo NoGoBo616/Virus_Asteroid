@@ -29,7 +29,7 @@ public class Hijos_Plaquetas : MonoBehaviour
         {
             AudioManager.Instance.PlaySFX(1);
         }
-
+        if (!this.gameObject.scene.isLoaded) return;
         Instantiate(vfxDispear, transform.position, Quaternion.identity);
     }
 }

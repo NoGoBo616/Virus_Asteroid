@@ -63,10 +63,10 @@ public class Asteroid : MonoBehaviour
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
-                AudioManager.Instance.PlaySFX(0);
+                AudioManager.Instance.PlaySFX(bulletSfxIndex);
             }
         }
-
+        if (!this.gameObject.scene.isLoaded) return;
         //manager.Puntuar();
         Instantiate(vfxDispear, transform.position, Quaternion.identity);
     }
