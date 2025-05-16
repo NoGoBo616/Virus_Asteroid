@@ -21,14 +21,10 @@ public class Bullet : MonoBehaviour
             if (pointSystem != null)
             { 
                int points=pointSystem.points;
-                Debug.Log("puntos "+points);
                 GameManager.Instance.Puntuar(points);
-
-
             }
             Destroy(other.gameObject); 
             Destroy(this.gameObject);
-            
         }
     }
 }
