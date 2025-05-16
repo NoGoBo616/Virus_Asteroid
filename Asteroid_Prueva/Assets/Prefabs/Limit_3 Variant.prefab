@@ -512,6 +512,14 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].y
       value: 20.640549
       objectReference: {fileID: 0}
+    - target: {fileID: 5242856621130054657, guid: 68846b65e8173ef41bba127a038981d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242856621130054657, guid: 68846b65e8173ef41bba127a038981d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.7
+      objectReference: {fileID: 0}
     - target: {fileID: 5775383215544794353, guid: 68846b65e8173ef41bba127a038981d0, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 15

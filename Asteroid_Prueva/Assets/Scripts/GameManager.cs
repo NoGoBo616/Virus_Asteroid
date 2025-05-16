@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
     public void Puntuar(int pointsToSum)
     {
         points = points + pointsToSum;
-        Debug.Log("Puntuación acumulada "+points);
         title.text = points.ToString();
         StaticPoints.points= points;
     }

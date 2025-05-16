@@ -11,6 +11,16 @@ public class Hijos_Plaquetas : MonoBehaviour
     private void OnEnable()
     {
         Instantiate(vfxApear, transform.position, Quaternion.identity);
+        flip = Random.Range(0, 2) == 0;
+
+        if (flip)
+        {
+            gameObject.transform.localScale = new Vector3(-2, 2, 2);
+        }
+        else
+        {
+            gameObject.transform.localScale = new Vector3(2, 2, 2);
+        }
     }
 
     private void OnDisable()

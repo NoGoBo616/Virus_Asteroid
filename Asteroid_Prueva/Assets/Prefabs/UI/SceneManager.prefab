@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crono: {fileID: 1690899837412176688}
+  map: 0
   map1: {fileID: 477454415754420266}
   map2: {fileID: 3609915247673583718}
   map3: {fileID: 1360924457563708470}
@@ -134,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 1881040440513741071, guid: 67c83b917d4986646a912b53f161cfbf, type: 3}
       propertyPath: m_Name
       value: Limit_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881040440513741071, guid: 67c83b917d4986646a912b53f161cfbf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159592619990221910, guid: 67c83b917d4986646a912b53f161cfbf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,6 +274,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9089575787107762718}
     m_Modifications:
+    - target: {fileID: 2038608929137580513, guid: 77a61f962cbf35546a83e61de3365317, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038608929137580513, guid: 77a61f962cbf35546a83e61de3365317, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038608929137580513, guid: 77a61f962cbf35546a83e61de3365317, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4335525856080777602, guid: 77a61f962cbf35546a83e61de3365317, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.72
@@ -315,7 +332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7037617402330125531, guid: 77a61f962cbf35546a83e61de3365317, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

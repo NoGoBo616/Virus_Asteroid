@@ -10,6 +10,7 @@ public class Virus_ : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cooldown = true;
         playerAnim = GetComponent<Animator>();
     }
 
