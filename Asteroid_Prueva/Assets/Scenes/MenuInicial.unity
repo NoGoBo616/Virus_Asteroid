@@ -814,7 +814,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 60
   m_Sprite: {fileID: 21300000, guid: a4185b699f6dcc941979f70da4316110, type: 3}
   m_Color: {r: 0.454902, g: 0.08627451, b: 0.21960786, a: 1}
   m_FlipX: 0
@@ -901,7 +901,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 50
   m_Sprite: {fileID: 21300000, guid: 4eeec36e3dd77144a8f62c6f48833f68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1000,7 +1000,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 60
   m_Sprite: {fileID: 21300000, guid: a4185b699f6dcc941979f70da4316110, type: 3}
   m_Color: {r: 0.454902, g: 0.08627451, b: 0.21960786, a: 1}
   m_FlipX: 0
@@ -1409,7 +1409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 60
   m_Sprite: {fileID: 21300000, guid: a4185b699f6dcc941979f70da4316110, type: 3}
   m_Color: {r: 0.454902, g: 0.08627451, b: 0.21960786, a: 1}
   m_FlipX: 0
@@ -1478,7 +1478,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 45
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.4566037, g: 0.07839799, b: 0.21676598, a: 1}
   m_FlipX: 0
@@ -1577,7 +1577,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 60
   m_Sprite: {fileID: 21300000, guid: a4185b699f6dcc941979f70da4316110, type: 3}
   m_Color: {r: 0.454902, g: 0.08627451, b: 0.21960786, a: 1}
   m_FlipX: 0
@@ -2231,6 +2231,14 @@ PrefabInstance:
     - target: {fileID: 4808843986883806380, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: m_Name
       value: SceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566248483730367859, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566248483730367859, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 9089575787107762718, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: m_LocalPosition.x

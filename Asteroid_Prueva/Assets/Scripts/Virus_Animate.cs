@@ -39,7 +39,7 @@ public class Virus_ : MonoBehaviour
         {
             StartCoroutine(CooldownI());
         }
-    }
+    } 
 
     private IEnumerator CooldownShield()
     {

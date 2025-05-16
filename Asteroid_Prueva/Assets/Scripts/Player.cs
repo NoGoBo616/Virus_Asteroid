@@ -11,9 +11,10 @@ public class Player_ : MonoBehaviour
     public float bulletSpeed = 100;
 
     private Rigidbody2D rb;
-    public bool cooldownS;
+    private bool cooldownS;
     private bool cooldownI;
-    public bool special;
+    private bool cooldown;
+    private bool special;
 
     [Header("Live")]
     public float live;
@@ -33,6 +34,7 @@ public class Player_ : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cooldownS = true;
         cooldownI = true;
+        cooldown = true;
         special = true;
         live = 1;
     }
@@ -51,14 +53,19 @@ public class Player_ : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (AudioManager.Instance != null)
+            if (cooldown)
             {
-                AudioManager.Instance.PlaySFX(7);
-            }
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlaySFX(7);
+                }
 
-            GameObject bullet = Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
-            Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-            bulletRb.velocity = transform.up * bulletSpeed;
+                GameObject bullet = Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
+                Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
+                bulletRb.velocity = transform.up * bulletSpeed;
+
+                StartCoroutine(BalaCD());
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.X))
@@ -147,6 +154,14 @@ public class Player_ : MonoBehaviour
         yield return new WaitForSeconds(2);
         cooldownI = true;
         pinchoUI.gameObject.SetActive(true);
+        yield return null;
+    }
+
+    private IEnumerator BalaCD()
+    {
+        cooldown = false;
+        yield return new WaitForSeconds(0.6f);
+        cooldown = true;
         yield return null;
     }
 }
