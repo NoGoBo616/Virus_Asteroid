@@ -35,7 +35,7 @@ AnimatorController:
   m_Name: cursor spritesheet_0
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Retroces
+  - m_Name: attack
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -63,7 +63,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Retroces
+    m_ConditionEvent: attack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7687995502270488750}
@@ -72,7 +72,7 @@ AnimatorStateTransition:
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0
-  m_TransitionOffset: 0.03231794
+  m_TransitionOffset: 0.007243083
   m_ExitTime: 0.9935933
   m_HasExitTime: 0
   m_HasFixedDuration: 1
