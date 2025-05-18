@@ -17,14 +17,14 @@ public class Bullet : MonoBehaviour
         // Verifica si el objeto golpeado es un clon (hijo del asteroide)
         if (other.CompareTag("AsteroidClone"))
         {
-            PointSystem pointSystem=other.gameObject.GetComponent<PointSystem>();
-            if (pointSystem != null)
-            { 
-               int points=pointSystem.points;
-                GameManager.Instance.Puntuar(points);
-            }
             Destroy(other.gameObject); 
             Destroy(this.gameObject);
+            PointSystem pointSystem = other.gameObject.GetComponent<PointSystem>();
+            if (pointSystem != null)
+            {
+                int points = pointSystem.points;
+                GameManager.Instance.Puntuar(points);
+            }
         }
     }
 }
