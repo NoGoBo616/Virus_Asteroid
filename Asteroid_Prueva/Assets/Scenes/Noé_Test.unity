@@ -2206,6 +2206,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 559494253363408055, guid: 54ae135744125e843ab192e972db8f1c, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 559494253363408055, guid: 54ae135744125e843ab192e972db8f1c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559494253363408055, guid: 54ae135744125e843ab192e972db8f1c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.65172565
+      objectReference: {fileID: 0}
     - target: {fileID: 2409241367470466669, guid: 54ae135744125e843ab192e972db8f1c, type: 3}
       propertyPath: escudoUI
       value: 
