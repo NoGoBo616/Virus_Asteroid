@@ -139,6 +139,11 @@ public class Player_ : MonoBehaviour
 
     private IEnumerator CooldownShield()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            AudioManager.Instance.PlaySFX(4);
+        }
         cooldownS = false;
         escudoUI.gameObject.SetActive(false);
         yield return new WaitForSeconds(2);
@@ -149,6 +154,11 @@ public class Player_ : MonoBehaviour
 
     private IEnumerator CooldownInvisible()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            AudioManager.Instance.PlaySFX(4);
+        }
         cooldownI = false;
         pinchoUI.gameObject.SetActive(false);
         yield return new WaitForSeconds(2);
