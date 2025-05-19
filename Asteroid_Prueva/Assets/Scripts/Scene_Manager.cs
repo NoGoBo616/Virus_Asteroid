@@ -31,6 +31,7 @@ public class Scene_Manager : MonoBehaviour
     {
         crono.gameObject.SetActive(false);
         SceneManager.LoadScene(3);
+        Destroy(gameObject);
     }
 
     public void ChangeMap_Menu()

@@ -5,18 +5,21 @@ using UnityEngine;
 public class Virus_ : MonoBehaviour
 {
     private Animator playerAnim;
-    public bool cooldown;
+    public bool cooldownS;
+    public bool cooldownI;
 
     // Start is called before the first frame update
     void Start()
     {
-        cooldown = true;
+        cooldownS = true;
+        cooldownI = true;
         playerAnim = GetComponent<Animator>();
     }
 
     private void OnEnable()
     {
-        cooldown = true;
+        cooldownS = true;
+        cooldownI = true;
     }
 
     // Update is called once per frame
@@ -29,32 +32,43 @@ public class Virus_ : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            if (cooldown)
+            if (cooldownS)
             {
                 playerAnim.SetTrigger("special");
                 StartCoroutine(CooldownShield());
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            StartCoroutine(CooldownI());
+            if (cooldownI)
+            {
+                playerAnim.SetTrigger("Invisible");
+                StartCoroutine(CooldownI());
+            }
+            
         }
     } 
 
     private IEnumerator CooldownShield()
     {
-        cooldown = false;
-        yield return new WaitForSeconds(4);
-        cooldown = true;
+        cooldownS = false;
+        cooldownI = false;
+        yield return new WaitForSeconds(2);
+        cooldownI = true;
+        yield return new WaitForSeconds(2);
+        cooldownS = true;
         yield return null;
     }
 
     private IEnumerator CooldownI()
     {
-        cooldown = false;
+        cooldownS = false;
+        cooldownI = false;
         yield return new WaitForSeconds(2);
-        cooldown = true;
+        cooldownS = true;
+        yield return new WaitForSeconds(2);
+        cooldownI = true;
         yield return null;
     }
 }

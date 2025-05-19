@@ -9,6 +9,7 @@ public class Live_System : MonoBehaviour
 {
     public float vida;
     [SerializeField] Image player_Live;
+    public Scene_Manager scene_Manager;
     
     public Live_System manager;
     [SerializeField] public int damageSfxIndex;
@@ -21,6 +22,7 @@ public class Live_System : MonoBehaviour
     private void OnEnable()
     {
         vida = 1;
+        scene_Manager = FindObjectOfType<Scene_Manager>();
     }
 
     private void Update()
@@ -30,7 +32,7 @@ public class Live_System : MonoBehaviour
         if (vida <= 0)
         {
             vida = 0;
-            SceneManager.LoadScene(3);
+            scene_Manager.ChangeMap_GameOver();
         }
     }
 
