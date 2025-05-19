@@ -57,7 +57,7 @@ public class Player_ : MonoBehaviour
             {
                 if (AudioManager.Instance != null)
                 {
-                    AudioManager.Instance.PlaySFX(7);
+                    AudioManager.Instance.PlaySFX(11);
                 }
 
                 GameObject bullet = Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
