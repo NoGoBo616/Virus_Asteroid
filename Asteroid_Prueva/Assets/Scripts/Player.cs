@@ -148,7 +148,7 @@ public class Player_ : MonoBehaviour
         escudoUI.gameObject.SetActive(true);
         escudoUI.fillAmount = 0;
 
-        float duration = 2;
+        float duration = 4;
         float elapsed = 0;
 
         while (elapsed < duration)
@@ -172,7 +172,7 @@ public class Player_ : MonoBehaviour
         pinchoUI.gameObject.SetActive(true);
         pinchoUI.fillAmount = 0;
 
-        float duration = 2;
+        float duration = 4;
         float elapsed = 0;
 
         while (elapsed < duration)

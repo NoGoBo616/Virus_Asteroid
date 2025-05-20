@@ -54,7 +54,7 @@ public class Virus_ : MonoBehaviour
         cooldownI = false;
         yield return new WaitForSeconds(2);
         cooldownI = true;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
         cooldownS = true;
         yield return null;
     }
@@ -65,7 +65,7 @@ public class Virus_ : MonoBehaviour
         cooldownI = false;
         yield return new WaitForSeconds(2);
         cooldownS = true;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
         cooldownI = true;
         yield return null;
     }
