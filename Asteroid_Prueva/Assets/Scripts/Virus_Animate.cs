@@ -12,6 +12,12 @@ public class Virus_ : MonoBehaviour
     void Start()
     {
         playerAnim = GetComponent<Animator>();
+        cooldownS = true;
+    }
+
+    private void OnEnable()
+    {
+        cooldownS = true;
     }
 
     // Update is called once per frame
