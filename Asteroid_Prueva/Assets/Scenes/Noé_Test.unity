@@ -1291,7 +1291,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 364847060e716aa4e972192789fd392f, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1431,7 +1431,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 364847060e716aa4e972192789fd392f, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1975,19 +1975,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 887b7b89f3361a54a8a67ba3e08a2ec3, type: 3}
   - {fileID: 8300000, guid: e23f90243a64e2d43b1cfea7a57f25bb, type: 3}
   - {fileID: 8300000, guid: 53064f0134fe4684d86f9b1941bcfd7e, type: 3}
-  - {fileID: 8300000, guid: dca17ee2d67db4b48a884416907d8fe7, type: 3}
+  - {fileID: 8300000, guid: 27dd78bde4907ea4fb6eebf6829246d7, type: 3}
   - {fileID: 8300000, guid: 3bd394df96c97cf4982ca7cd60395857, type: 3}
   - {fileID: 8300000, guid: 327cca3eaca9c554faeaa7e1f5b07219, type: 3}
   - {fileID: 8300000, guid: afaf89228f9fe38459c7a5d7f6683efc, type: 3}
-  - {fileID: 8300000, guid: c55c10722154d2344b8f79147ae91414, type: 3}
+  - {fileID: 8300000, guid: e4bc2fb3840c823478a87bc7cf80443c, type: 3}
   - {fileID: 8300000, guid: eee1f69919ca1be4fa61a91d0783ba8e, type: 3}
-  - {fileID: 8300000, guid: a820881c63a44d7419201672df0b7dbf, type: 3}
-  - {fileID: 8300000, guid: 6789d0e1cc56a0b49997414d5c607301, type: 3}
+  - {fileID: 8300000, guid: 588a6676eb4533c47b4ace95c339ed51, type: 3}
+  - {fileID: 8300000, guid: ec9d1162484e018429cb7241911d0617, type: 3}
   - {fileID: 8300000, guid: c704f416598fe9648bf5edeb0e57ebb5, type: 3}
-  - {fileID: 8300000, guid: 02327003952b829459ad1d7bd8fbebc8, type: 3}
+  - {fileID: 8300000, guid: 721cea80b4cc41e41ac097b24beff693, type: 3}
   - {fileID: 8300000, guid: 430874d81f226314ca6b7327e935bf29, type: 3}
-  - {fileID: 8300000, guid: 2fd92e32ea8b04044a9c33e268ef673d, type: 3}
-  - {fileID: 8300000, guid: 2fd92e32ea8b04044a9c33e268ef673d, type: 3}
+  - {fileID: 8300000, guid: 721cea80b4cc41e41ac097b24beff693, type: 3}
+  - {fileID: 8300000, guid: 721cea80b4cc41e41ac097b24beff693, type: 3}
 --- !u!4 &1980081449
 Transform:
   m_ObjectHideFlags: 0

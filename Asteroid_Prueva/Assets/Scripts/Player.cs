@@ -145,11 +145,20 @@ public class Player_ : MonoBehaviour
             AudioManager.Instance.PlaySFX(4);
         }
         cooldownS = false;
-        escudoUI.gameObject.SetActive(false);
-        yield return new WaitForSeconds(2);
-        cooldownS = true;
         escudoUI.gameObject.SetActive(true);
-        yield return null;
+        escudoUI.fillAmount = 0;
+
+        float duration = 15;
+        float elapsed = 0;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            escudoUI.fillAmount = Mathf.Clamp01(elapsed / duration);
+            yield return null;
+        }
+
+        cooldownS = true;
     }
 
     private IEnumerator CooldownInvisible()
@@ -160,17 +169,26 @@ public class Player_ : MonoBehaviour
             AudioManager.Instance.PlaySFX(4);
         }
         cooldownI = false;
-        pinchoUI.gameObject.SetActive(false);
-        yield return new WaitForSeconds(2);
-        cooldownI = true;
         pinchoUI.gameObject.SetActive(true);
-        yield return null;
+        pinchoUI.fillAmount = 0;
+
+        float duration = 15;
+        float elapsed = 0;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            pinchoUI.fillAmount = Mathf.Clamp01(elapsed / duration);
+            yield return null;
+        }
+
+        cooldownI = true;
     }
 
     private IEnumerator BalaCD()
     {
         cooldown = false;
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.5f);
         cooldown = true;
         yield return null;
     }
