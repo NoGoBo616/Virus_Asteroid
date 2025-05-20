@@ -896,7 +896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a440a4257579476419091c8ae2257ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 3
+  points: 1500
   timerText: {fileID: 625987475}
   isCountdown: 1
   timeCountdown: 120
@@ -2566,7 +2566,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1690899837412176688, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 9089575787107762718, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       insertIndex: -1
