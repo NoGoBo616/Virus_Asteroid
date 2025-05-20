@@ -11,15 +11,7 @@ public class Virus_ : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cooldownS = true;
-        cooldownI = true;
         playerAnim = GetComponent<Animator>();
-    }
-
-    private void OnEnable()
-    {
-        cooldownS = true;
-        cooldownI = true;
     }
 
     // Update is called once per frame
@@ -56,7 +48,7 @@ public class Virus_ : MonoBehaviour
         cooldownI = false;
         yield return new WaitForSeconds(2);
         cooldownI = true;
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(2);
         cooldownS = true;
         yield return null;
     }
@@ -67,7 +59,7 @@ public class Virus_ : MonoBehaviour
         cooldownI = false;
         yield return new WaitForSeconds(2);
         cooldownS = true;
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(2);
         cooldownI = true;
         yield return null;
     }

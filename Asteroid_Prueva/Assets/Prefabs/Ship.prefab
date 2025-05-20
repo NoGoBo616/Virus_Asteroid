@@ -113,7 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499c010f5aa017b40bb6356d3d411033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0
+  cooldownS: 1
+  cooldownI: 0
 --- !u!95 &7853509442559703836
 Animator:
   serializedVersion: 5
@@ -303,9 +304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d80cd573949884e8f3cd2462c5a43a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   cooldown: 0
-  flecha: {fileID: 2470864140611009403}
-  flechaAction: {fileID: 6916576597401827482}
 --- !u!95 &3373306055086736818
 Animator:
   serializedVersion: 5
@@ -422,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 1
   player_Live: {fileID: 0}
+  scene_Manager: {fileID: 0}
   manager: {fileID: 0}
   damageSfxIndex: 6
 --- !u!114 &2409241367470466669
@@ -557,7 +558,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499c010f5aa017b40bb6356d3d411033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0
+  cooldownS: 1
+  cooldownI: 1
 --- !u!95 &1852838414104272472
 Animator:
   serializedVersion: 5
