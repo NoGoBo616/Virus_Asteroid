@@ -11,6 +11,7 @@ public class Scene_Manager : MonoBehaviour
     public GameObject map1;
     public GameObject map2;
     public GameObject map3;
+    public Show_Animation anim;
 
     public void ChangeMap_Game()
     {
@@ -46,6 +47,11 @@ public class Scene_Manager : MonoBehaviour
         crono.gameObject.SetActive(false);
         SceneManager.LoadScene(3);
         Destroy(gameObject);
+    }
+
+    public void Show_HowToPlay()
+    {
+        anim.Show();
     }
 
     public void ChangeMap_Menu()
