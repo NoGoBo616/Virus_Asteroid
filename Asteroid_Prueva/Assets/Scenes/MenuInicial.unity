@@ -2436,7 +2436,7 @@ MonoBehaviour:
   sfxSource: {fileID: 768259721}
   musicList: []
   sfxList:
-  - {fileID: 8300000, guid: aee03f1d1fcb7fe42acffb30620c7c93, type: 3}
+  - {fileID: 8300000, guid: d94d05caa4c83c247ba09e03fe34c0c6, type: 3}
 --- !u!4 &2039982075
 Transform:
   m_ObjectHideFlags: 0
