@@ -11,15 +11,12 @@ public class Scene_Manager : MonoBehaviour
     public GameObject map1;
     public GameObject map2;
     public GameObject map3;
-    public Show_Animation anim;
 
     public void ChangeMap_Game()
     {
         if (GlobalAudioManager.Instance != null)
         {
             GlobalAudioManager.Instance.PlaySFX(0);
-
-
         }
         map = Random.Range(1, 4);
         SceneManager.LoadScene(2);
@@ -32,8 +29,6 @@ public class Scene_Manager : MonoBehaviour
         if (GlobalAudioManager.Instance != null)
         {
             GlobalAudioManager.Instance.PlaySFX(0);
-
-
         }
         map = Random.Range(1, 4);
         crono.gameObject.SetActive(false);
@@ -47,11 +42,6 @@ public class Scene_Manager : MonoBehaviour
         crono.gameObject.SetActive(false);
         SceneManager.LoadScene(3);
         Destroy(gameObject);
-    }
-
-    public void Show_HowToPlay()
-    {
-        anim.Show();
     }
 
     public void ChangeMap_Menu()

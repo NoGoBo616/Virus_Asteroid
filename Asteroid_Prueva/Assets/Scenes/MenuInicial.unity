@@ -164,7 +164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.45000002, y: 0.5314813}
   m_AnchorMax: {x: 0.67, y: 0.6355556}
-  m_AnchoredPosition: {x: 0.036132812, y: -0.040000916}
+  m_AnchoredPosition: {x: 0.036132812, y: -0.040008545}
   m_SizeDelta: {x: 209.617, y: 55.552002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &164150137
@@ -393,7 +393,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 70
-  m_Sprite: {fileID: 21300000, guid: 759474208e5ef3a4db3726c36efa335f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d178f6439556a14ba67dee9a6dddc10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1724,7 +1724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.45000002, y: 0.40351853}
   m_AnchorMax: {x: 0.67, y: 0.5074445}
-  m_AnchoredPosition: {x: 0.036132812, y: -0.12799835}
+  m_AnchoredPosition: {x: 0.036132812, y: -0.12799072}
   m_SizeDelta: {x: 209.617, y: 55.552002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1597074233
@@ -2696,7 +2696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2174084874986948256, guid: ecde8054b1654f94baa276bfcbb33155, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.12301636
+      value: 0.123046875
       objectReference: {fileID: 0}
     - target: {fileID: 2698606882566452237, guid: ecde8054b1654f94baa276bfcbb33155, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
