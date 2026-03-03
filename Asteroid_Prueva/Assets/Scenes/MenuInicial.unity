@@ -923,7 +923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: How to play
+  m_text: options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_sharedMaterial: {fileID: 3228166008063365095, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
@@ -950,8 +950,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 112.9
+  m_fontSizeBase: 112.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
