@@ -62,7 +62,7 @@ public class Player_ : MonoBehaviour
 
                 GameObject bullet = Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
                 Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-                bulletRb.velocity = transform.up * bulletSpeed;
+                bulletRb.linearVelocity = transform.up * bulletSpeed;
 
                 StartCoroutine(BalaCD());
             }
@@ -87,9 +87,9 @@ public class Player_ : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (rb.velocity.magnitude > 5)
+        if (rb.linearVelocity.magnitude > 5)
         {
-            rb.velocity = rb.velocity.normalized * 5;
+            rb.linearVelocity = rb.linearVelocity.normalized * 5;
         }
     }
 
@@ -129,7 +129,7 @@ public class Player_ : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator Daño()
+    private IEnumerator DaÃ±o()
     {
         body.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Glob_Blanco : MonoBehaviour
 {
     public float speed = 2.5f;
-    public float turnSpeed = 1.5f; // Qué tan rápido gira hacia el jugador
+    public float turnSpeed = 1.5f; // Quï¿½ tan rï¿½pido gira hacia el jugador
 
     private Rigidbody2D rb;
     private Transform player;
@@ -13,7 +13,7 @@ public class Glob_Blanco : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = Random.insideUnitCircle.normalized * speed;
+        rb.linearVelocity = Random.insideUnitCircle.normalized * speed;
 
         GameObject playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
@@ -26,16 +26,16 @@ public class Glob_Blanco : MonoBehaviour
     {
         if (player == null) return;
 
-        // Dirección actual del asteroide
-        Vector2 currentDirection = rb.velocity.normalized;
+        // Direcciï¿½n actual del asteroide
+        Vector2 currentDirection = rb.linearVelocity.normalized;
 
-        // Dirección deseada hacia el jugador
+        // Direcciï¿½n deseada hacia el jugador
         Vector2 directionToPlayer = ((Vector2)(player.position - transform.position)).normalized;
 
-        // Interpolamos entre la dirección actual y la deseada
+        // Interpolamos entre la direcciï¿½n actual y la deseada
         Vector2 newDirection = Vector2.Lerp(currentDirection, directionToPlayer, turnSpeed * Time.fixedDeltaTime).normalized;
 
-        rb.velocity = newDirection * speed;
+        rb.linearVelocity = newDirection * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

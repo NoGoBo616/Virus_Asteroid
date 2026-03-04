@@ -29,15 +29,15 @@ public class Asteroid : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (rb.velocity.magnitude > 10)
+        if (rb.linearVelocity.magnitude > 10)
         {
-            rb.velocity = rb.velocity.normalized * 10;
+            rb.linearVelocity = rb.linearVelocity.normalized * 10;
         }
     }
 
     void MoveBlood()
     {
-        GetComponent<Rigidbody2D>().velocity = Random.insideUnitCircle.normalized * speed;
+        GetComponent<Rigidbody2D>().linearVelocity = Random.insideUnitCircle.normalized * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
