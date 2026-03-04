@@ -17,16 +17,13 @@ public class Show_Animation : MonoBehaviour
     {
         if (showed)
         {
-            StartCoroutine(Animar());
+            showed = false;
             animator.SetTrigger("Show");
         }
-    }
-
-    private IEnumerator Animar()
-    {
-        showed = false;
-        yield return new WaitForSeconds(10.20f);
-        showed = true;
-        yield return null;
+        else
+        {
+            showed = true;
+            animator.SetTrigger("Hide");
+        }
     }
 }

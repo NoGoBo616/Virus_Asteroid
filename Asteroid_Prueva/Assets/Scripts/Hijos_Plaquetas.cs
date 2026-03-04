@@ -10,8 +10,11 @@ public class Hijos_Plaquetas : MonoBehaviour
 
     private void OnEnable()
     {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+
         Instantiate(vfxApear, transform.position, Quaternion.identity);
         flip = Random.Range(0, 2) == 0;
+        spriteRenderer.sortingOrder = Random.Range(-3, -1);
 
         if (flip)
         {
