@@ -8,6 +8,7 @@ using System;
 public class Live_System : MonoBehaviour
 {
     public float vida;
+    public bool dañado;
     [SerializeField] Image player_Live;
     public Scene_Manager scene_Manager;
     
@@ -17,6 +18,7 @@ public class Live_System : MonoBehaviour
     private void Start()
     {
         vida = 1;
+        dañado = true;
     }
 
     private void OnEnable()
@@ -49,5 +51,25 @@ public class Live_System : MonoBehaviour
         }
     }
 
-   
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Police") && dañado)
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX(damageSfxIndex);
+            }
+
+            vida = vida - 0.05f;
+            StartCoroutine(CoolDown());
+        }
+    }
+
+    IEnumerator CoolDown()
+    {
+        dañado = false;
+        yield return new WaitForSeconds(1);
+        dañado = true;
+        yield return null;
+    }
 }

@@ -84,7 +84,6 @@ public class Player_ : MonoBehaviour
             }
         }
     }
-
     private void FixedUpdate()
     {
         if (rb.linearVelocity.magnitude > 5)

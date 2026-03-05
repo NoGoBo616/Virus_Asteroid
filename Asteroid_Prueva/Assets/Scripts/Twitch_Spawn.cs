@@ -20,8 +20,10 @@ public class Twitch_Spawn : MonoBehaviour
     private StreamWriter writer;
     private Thread twitchThread;
     private bool running;
+    private bool waittime;
 
     private string messageFromChat = null;
+    private string userNikcName = null;
 
     public void Iniciar()
     {
@@ -30,6 +32,7 @@ public class Twitch_Spawn : MonoBehaviour
         twitchThread = new Thread(ConnectToTwitch);
         twitchThread.IsBackground = true;
         twitchThread.Start();
+        waittime = true;
     }
 
     void Update()
@@ -86,6 +89,7 @@ public class Twitch_Spawn : MonoBehaviour
 
                                 Debug.Log(user + ": " + message);
                                 messageFromChat = message;
+                                userNikcName = user;
                             }
                         }
                     }
@@ -112,7 +116,19 @@ public class Twitch_Spawn : MonoBehaviour
 
     public void SpawnNPC()
     {
-        this.gameObject.transform.position = new Vector3(UnityEngine.Random.Range(-16, 17), UnityEngine.Random.Range(-3.5f, 10), 0);
-        Instantiate(prefabNPC, gameObject.transform.position, Quaternion.identity);
+        if (waittime)
+        {
+            this.gameObject.transform.position = new Vector3(UnityEngine.Random.Range(-16, 17), UnityEngine.Random.Range(-3.5f, 10), 0);
+            GameObject nuevoNPC = Instantiate(prefabNPC, this.gameObject.transform.position, Quaternion.identity);
+            nuevoNPC.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = userNikcName;
+        }
+    }
+
+    IEnumerator CoolDown()
+    {
+        waittime = false;
+        yield return new WaitForSeconds(1);
+        waittime = true;
+        yield return null;
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Glob_Blanco : MonoBehaviour
 {
-    public float speed = 2.5f;
-    public float turnSpeed = 1.5f; // Qu� tan r�pido gira hacia el jugador
+    public float speed;
+    public float turnSpeed; // Qu� tan r�pido gira hacia el jugador
 
     private Rigidbody2D rb;
     private Transform player;
@@ -52,9 +52,9 @@ public class Glob_Blanco : MonoBehaviour
 
     private IEnumerator Agrandar()
     {
-        gameObject.transform.localScale = new Vector3(3.2f, 3.2f, 3);
+        gameObject.transform.localScale = new Vector3(1.2f, 1.2f, 1);
         yield return new WaitForSeconds(0.5f);
-        gameObject.transform.localScale = new Vector3(3, 3, 3);
+        gameObject.transform.localScale = new Vector3(1, 1, 1);
         yield return null;
     }
 }
