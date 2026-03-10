@@ -7,24 +7,6 @@ public class ArcadeManager : MonoBehaviour
     public string nombreJugador;
     public int puntuacion;
 
-    private void Awake()
-    {
-        // Singleton para que haya solo un objeto ArcadeManager
-        if (instancia == null)
-        {
-            instancia = this;
-            DontDestroyOnLoad(gameObject);
-
-            // Cargar datos guardados previamente (opcional)
-            nombreJugador = PlayerPrefs.GetString("NombreJugador", "AAA");
-            puntuacion = PlayerPrefs.GetInt("Puntuacion", 0);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     // Guardar nombre y puntuación actual
     public void GuardarDatos(string nombre, int puntos)
     {

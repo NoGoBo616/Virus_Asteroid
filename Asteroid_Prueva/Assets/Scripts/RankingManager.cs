@@ -28,20 +28,6 @@ public class RankingManager : MonoBehaviour
     private Historial historial = new Historial();
     private string key = "RankingJSON";
 
-    private void Awake()
-    {
-        if (instancia == null)
-        {
-            instancia = this;
-            DontDestroyOnLoad(gameObject);
-            CargarRanking();
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     // Guardar nombre y puntos de una partida
     public void GuardarPartida(string nombre, int puntos)
     {
