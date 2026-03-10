@@ -1185,6 +1185,7 @@ GameObject:
   - component: {fileID: 585525352}
   - component: {fileID: 585525351}
   - component: {fileID: 585525353}
+  - component: {fileID: 585525354}
   m_Layer: 0
   m_Name: Twitch_Spawn
   m_TagString: Untagged
@@ -1234,6 +1235,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f648c91a0046994aaf58c43ac85bf52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NO_Destroy
+--- !u!114 &585525354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585525350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0701635a30ebbcf449469e2442d4bd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SingletonManager
+  identificador: 0
 --- !u!1 &595908325
 GameObject:
   m_ObjectHideFlags: 0
@@ -3822,6 +3836,7 @@ GameObject:
   - component: {fileID: 2039982075}
   - component: {fileID: 2039982074}
   - component: {fileID: 2039982073}
+  - component: {fileID: 2039982076}
   m_Layer: 0
   m_Name: 'GlobalAudioManager '
   m_TagString: Untagged
@@ -3875,6 +3890,19 @@ Transform:
   - {fileID: 768259722}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2039982076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039982072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0701635a30ebbcf449469e2442d4bd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SingletonManager
+  identificador: 2
 --- !u!1 &2075320406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4908,6 +4936,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4808843986883806380, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7409926407287255026}
+    - targetCorrespondingSourceObject: {fileID: 4808843986883806380, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7409926407287255028}
   m_SourcePrefab: {fileID: 100100000, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
 --- !u!1 &7409926407287255025 stripped
 GameObject:
@@ -4931,6 +4962,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9089575787107762718, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
   m_PrefabInstance: {fileID: 7409926407287255024}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7409926407287255028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409926407287255025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0701635a30ebbcf449469e2442d4bd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SingletonManager
+  identificador: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

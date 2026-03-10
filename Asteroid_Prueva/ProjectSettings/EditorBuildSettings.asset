@@ -26,4 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Good_Ending.unity
     guid: 02efb48e25ba0934bbfd88abce2f4575
+  - enabled: 1
+    path: Assets/Scenes/Selector.unity
+    guid: fc1086c829c27af40af2ad5344aacfcd
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
