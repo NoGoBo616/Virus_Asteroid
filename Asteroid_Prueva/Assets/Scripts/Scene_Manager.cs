@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class Scene_Manager : MonoBehaviour
 {
     public GameObject crono;
     public int map;
-    public GameObject map1;
-    public GameObject map2;
-    public GameObject map3;
+    public GameObject[] maps;
+    public bool inGame;
 
     public void ChangeMap_Game()
     {
@@ -29,9 +29,9 @@ public class Scene_Manager : MonoBehaviour
         {
             GlobalAudioManager.Instance.PlaySFX(0);
         }
-        map = Random.Range(1, 4);
         crono.gameObject.SetActive(false);
         SceneManager.LoadScene(2);
+        inGame = true;
        
     }
 
@@ -39,7 +39,7 @@ public class Scene_Manager : MonoBehaviour
     {
         crono.gameObject.SetActive(false);
         SceneManager.LoadScene(3);
-        Destroy(gameObject);
+        inGame = false;
     }
 
     public void ChangeMap_Menu()
@@ -50,7 +50,7 @@ public class Scene_Manager : MonoBehaviour
         }
         crono.gameObject.SetActive(false);
         SceneManager.LoadScene(1);
-        Destroy(gameObject);
+        inGame = false;
     }
 
     public void ChangeMap_Options()
@@ -74,25 +74,6 @@ public class Scene_Manager : MonoBehaviour
 
     private void Update()
     {
-        if (map <= 1)
-        {
-            map1.gameObject.SetActive(true);
-            map2.gameObject.SetActive(false);
-            map3.gameObject.SetActive(false);
-        }
-
-        if (map == 2)
-        {
-            map1.gameObject.SetActive(false);
-            map2.gameObject.SetActive(true);
-            map3.gameObject.SetActive(false);
-        }
-
-        if (map >= 3)
-        {
-            map1.gameObject.SetActive(false);
-            map2.gameObject.SetActive(false);
-            map3.gameObject.SetActive(true);
-        }
+        System.Linq.Enumerable.Range(0, maps.Length).ToList().ForEach(i => maps[i].SetActive(i == map));
     }
 }

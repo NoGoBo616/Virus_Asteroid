@@ -11,7 +11,12 @@ public class GameManager : MonoBehaviour
     public int points;
     [SerializeField]
     private TMP_Text title;
+    public ArcadeManager managDePuntos;
 
+    private void OnEnable()
+    {
+        managDePuntos = FindAnyObjectByType<ArcadeManager>();
+    }
 
     private void Awake()
     {
@@ -30,6 +35,11 @@ public class GameManager : MonoBehaviour
         points = 0;
     }
 
+    private void Update()
+    {
+        managDePuntos.puntuacion = points;
+    }
+
     public void Reiniciar()
     {
         points = 0;
@@ -40,6 +50,11 @@ public class GameManager : MonoBehaviour
         points = points + pointsToSum;
         title.text = points.ToString();
         StaticPoints.points= points;
+    }
+
+    private void OnDisable()
+    {
+        //managDePuntos.GuardarDatos(managDePuntos.nombreJugador, managDePuntos.puntuacion);
     }
 }
 

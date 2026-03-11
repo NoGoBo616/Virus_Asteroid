@@ -2,18 +2,34 @@ using UnityEngine;
 
 public class Boton3D : MonoBehaviour
 {
+    [Header("Mapa")]
+    public Scene_Manager manager;
+    public int mapSelected;
+
+    [Header("Vectores de tamaño")]
+    public Vector3 normalScale;
+    public Vector3 selectlScale;
+
+    private void OnEnable()
+    {
+        manager = FindAnyObjectByType<Scene_Manager>();
+    }
+
+    //Boton
     private void OnMouseEnter()
     {
-        this.gameObject.transform.localScale = new Vector3(2, 2, 2);
+        this.gameObject.transform.localScale = selectlScale;
     }
 
     private void OnMouseExit()
     {
-        this.gameObject.transform.localScale = new Vector3(1, 1, 1);
+        this.gameObject.transform.localScale = normalScale;
     }
 
+    //Clicado
     void OnMouseDown()
     {
-        Debug.Log("Clic detectado por OnMouseDown");
+        manager.map = mapSelected;
+        manager.ChangeMap_GameInfiniteMode();
     }
 }

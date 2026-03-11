@@ -3,7 +3,6 @@ using UnityEngine;
 public class ArcadeManager : MonoBehaviour
 {
     public static ArcadeManager instancia;
-
     public string nombreJugador;
     public int puntuacion;
 

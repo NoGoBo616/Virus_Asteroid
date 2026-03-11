@@ -9,10 +9,16 @@ public class SelectName : MonoBehaviour
     public TMP_Text textoNombre;
     public Image luz;
     public GameObject botonAceptar;
+    public ArcadeManager manager;
 
     private void Awake()
     {
         luz.color = Color.red;
+    }
+
+    private void OnEnable()
+    {
+        manager = FindAnyObjectByType<ArcadeManager>();
     }
 
     private void Update()
@@ -35,7 +41,7 @@ public class SelectName : MonoBehaviour
         string nombre = inputText.text;
 
         // Guardamos el nombre en ArcadeManager
-        ArcadeManager.instancia.nombreJugador = nombre;
+        manager.nombreJugador = nombre;
 
         // Cambiamos a la escena principal
        
