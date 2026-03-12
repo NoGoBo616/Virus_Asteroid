@@ -43,6 +43,18 @@ public class GameManager : MonoBehaviour
     public void Reiniciar()
     {
         points = 0;
+        
+
+        // Reinicia la puntuación en ArcadeManager
+        if (ArcadeManager.instancia != null)
+            ArcadeManager.instancia.puntuacion = 0;
+
+        // Aquí puedes actualizar la UI si tienes un UIManager
+        // if (UIManager.Instance != null)
+        //     UIManager.Instance.ActualizarPuntos(puntos);
+
+        // Reactivar el panel o reiniciar la escena si es necesario
+        Time.timeScale = 1; // Asegúrate de despausar el juego
     }
 
     public void Puntuar(int pointsToSum)

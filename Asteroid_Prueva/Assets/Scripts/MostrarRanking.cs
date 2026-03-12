@@ -11,11 +11,7 @@ public class MostrarRanking : MonoBehaviour
         ActualizarRanking();
     }
 
-    public void VolverAlMenu()
-    {
-        SceneManager.LoadScene("MenuPrincipal");
-    }
-
+ 
     public void ActualizarRanking()
     {
         if (RankingManager.instancia == null) return;
