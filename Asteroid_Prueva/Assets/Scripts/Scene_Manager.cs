@@ -18,9 +18,7 @@ public class Scene_Manager : MonoBehaviour
         {
             GlobalAudioManager.Instance.PlaySFX(0);
         }
-        map = Random.Range(1, 4);
-        SceneManager.LoadScene(2);
-        crono.gameObject.SetActive(true);
+        SceneManager.LoadScene(7);
     }
 
     public void ChangeMap_GameInfiniteMode()
