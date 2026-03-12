@@ -11,6 +11,12 @@ public class Scene_Manager : MonoBehaviour
     public int map;
     public GameObject[] maps;
     public bool inGame;
+    public ArcadeManager arcadeManager;
+
+    private void OnEnable()
+    {
+        arcadeManager=FindAnyObjectByType<ArcadeManager>();
+    }
 
     public void ChangeMap_Game()
     {
@@ -38,6 +44,7 @@ public class Scene_Manager : MonoBehaviour
         crono.gameObject.SetActive(false);
         SceneManager.LoadScene(3);
         inGame = false;
+        arcadeManager.FinalizarPartida();
     }
 
     public void ChangeMap_Menu()

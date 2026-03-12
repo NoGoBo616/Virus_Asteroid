@@ -1,29 +1,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Partida
-{
-    public string nombre;
-    public int puntos;
-    public string fecha;
 
-    public Partida(string n, int p)
-    {
-        nombre = n;
-        puntos = p;
-        fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
-    }
-}
-
-[System.Serializable]
-public class Historial
-{
-    public List<Partida> partidas = new List<Partida>();
-}
 
 public class RankingManager : MonoBehaviour
 {
+    [System.Serializable]
+    public class Partida
+    {
+        public string nombre;
+        public int puntos;
+        public string fecha;
+
+        public Partida(string n, int p)
+        {
+            nombre = n;
+            puntos = p;
+            fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+        }
+    }
+
+    [System.Serializable]
+    public class Historial
+    {
+        public List<Partida> partidas = new List<Partida>();
+    }
+
     public static RankingManager instancia;
     private Historial historial = new Historial();
     private string key = "RankingJSON";

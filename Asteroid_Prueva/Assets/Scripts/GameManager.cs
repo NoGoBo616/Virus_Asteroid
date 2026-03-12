@@ -62,11 +62,7 @@ public class GameManager : MonoBehaviour
         points = points + pointsToSum;
         title.text = points.ToString();
         StaticPoints.points= points;
-    }
-
-    private void OnDisable()
-    {
-        //managDePuntos.GuardarDatos(managDePuntos.nombreJugador, managDePuntos.puntuacion);
+        managDePuntos.GuardarDatos(managDePuntos.nombreJugador, managDePuntos.puntuacion);
     }
 }
 

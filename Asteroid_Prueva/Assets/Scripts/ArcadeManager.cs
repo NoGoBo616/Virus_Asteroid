@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ArcadeManager : MonoBehaviour
@@ -5,6 +7,8 @@ public class ArcadeManager : MonoBehaviour
     public static ArcadeManager instancia;
     public string nombreJugador;
     public int puntuacion;
+    public List<string> listaNombres = new List<string>();
+    public List<int> listaPuntos = new List<int>();
 
     // Guardar nombre y puntuación actual
     public void GuardarDatos(string nombre, int puntos)
@@ -29,6 +33,9 @@ public class ArcadeManager : MonoBehaviour
         PlayerPrefs.SetString("NombreJugador", nombreJugador);
         PlayerPrefs.SetInt("Puntuacion", puntuacion);
         PlayerPrefs.Save();
+
+        listaNombres.Add(nombreJugador);
+        listaPuntos.Add(puntuacion);
 
         if (RankingManager.instancia != null)
             RankingManager.instancia.GuardarPartida(nombreJugador, puntuacion);

@@ -1,30 +1,55 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using System.Linq;
 
 public class MostrarRanking : MonoBehaviour
 {
     public TMP_Text textoRanking;
+    ArcadeManager arcadeManager;
 
-    void Start()
+    private void OnEnable()
     {
+        arcadeManager = FindAnyObjectByType<ArcadeManager>();
         ActualizarRanking();
     }
 
- 
     public void ActualizarRanking()
     {
-        if (RankingManager.instancia == null) return;
+        if (arcadeManager == null || textoRanking == null) return;
 
-        textoRanking.text = "";
-        var ranking = RankingManager.instancia.ObtenerRanking();
+        // 1. Unimos las dos listas en una sola estructura para no perder la relación
+        // Usamos Select para crear un objeto anónimo con Nombre y Puntos
+        var listaCombinada = new List<EntradaRanking>();
 
-        for (int i = 0; i < ranking.Count; i++)
+        int cantidad = Mathf.Min(arcadeManager.listaNombres.Count, arcadeManager.listaPuntos.Count);
+        for (int i = 0; i < cantidad; i++)
         {
-            textoRanking.text += (i + 1) + ". " +
-                                 ranking[i].nombre + " - " +
-                                 ranking[i].puntos.ToString("D5") +
-                                 " pts (" + ranking[i].fecha + ")\n";
+            listaCombinada.Add(new EntradaRanking
+            {
+                nombre = arcadeManager.listaNombres[i],
+                puntos = arcadeManager.listaPuntos[i]
+            });
+        }
+
+        // 2. Ordenamos la lista de mayor a menor usando LINQ
+        var listaOrdenada = listaCombinada.OrderByDescending(x => x.puntos).ToList();
+
+        // 3. Construimos el texto final
+        textoRanking.text = "RANKING: \n\n";
+
+        for (int i = 0; i < listaOrdenada.Count; i++)
+        {
+            // Añadimos un formato visual (ej: 1º PEPE - 500)
+            textoRanking.text += $"{i + 1}º {listaOrdenada[i].nombre} <color=#00FF00>{listaOrdenada[i].puntos} pts</color>\n";
         }
     }
+}
+
+[System.Serializable]
+public class EntradaRanking
+{
+    public string nombre;
+    public int puntos;
 }
