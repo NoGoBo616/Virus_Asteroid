@@ -28,6 +28,11 @@ public class Virus_ : MonoBehaviour
             playerAnim.SetTrigger("attack");
         }
 
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            playerAnim.SetTrigger("attack");
+        }
+
         if (Input.GetKeyDown(KeyCode.X))
         {
             if (cooldownS)

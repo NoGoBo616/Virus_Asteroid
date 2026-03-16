@@ -8,11 +8,11 @@ public class Player_ : MonoBehaviour
 {
     public float thrust = 1;
     public float rotationSpeed = 200;
-    public float bulletSpeed = 100;
 
     private Rigidbody2D rb;
     private bool cooldownS;
     private bool cooldownI;
+    private bool cooldownB;
     private bool cooldown;
     private bool special;
 
@@ -23,17 +23,20 @@ public class Player_ : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject shield;
     public GameObject body;
+    public GameObject bulletHellObject;
     public GameObject disparador;
 
     [Header("UI")]
     public Image escudoUI;
     public Image pinchoUI;
+    public Image bulletUI;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         cooldownS = true;
         cooldownI = true;
+        cooldownB = true;
         cooldown = true;
         special = true;
         live = 1;
@@ -60,9 +63,7 @@ public class Player_ : MonoBehaviour
                     AudioManager.Instance.PlaySFX(11);
                 }
 
-                GameObject bullet = Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
-                Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-                bulletRb.linearVelocity = transform.up * bulletSpeed;
+                Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
 
                 StartCoroutine(BalaCD());
             }
@@ -81,6 +82,14 @@ public class Player_ : MonoBehaviour
             if (cooldownI && special)
             {
                 StartCoroutine(Invisible());
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (cooldownB && special)
+            {
+                StartCoroutine(BulletHell());
             }
         }
     }
@@ -125,6 +134,24 @@ public class Player_ : MonoBehaviour
         body.gameObject.SetActive(true);
         special = true;
         StartCoroutine(CooldownInvisible());
+        yield return null;
+    }
+
+    private IEnumerator BulletHell()
+    {
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            AudioManager.Instance.PlaySFX(11);
+        }
+
+        bulletHellObject.SetActive(true);
+        special = false;
+        yield return new WaitForSeconds(0.25f);
+        bulletHellObject.SetActive(false);
+        special = true;
+        StartCoroutine(CooldownBullet());
         yield return null;
     }
 
@@ -182,6 +209,30 @@ public class Player_ : MonoBehaviour
         }
 
         cooldownI = true;
+    }
+
+    private IEnumerator CooldownBullet()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            AudioManager.Instance.PlaySFX(4);
+        }
+        cooldownB = false;
+        bulletUI.gameObject.SetActive(true);
+        bulletUI.fillAmount = 0;
+
+        float duration = 4;
+        float elapsed = 0;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            bulletUI.fillAmount = Mathf.Clamp01(elapsed / duration);
+            yield return null;
+        }
+
+        cooldownB = true;
     }
 
     private IEnumerator BalaCD()
