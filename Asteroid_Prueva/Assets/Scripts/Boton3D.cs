@@ -3,17 +3,12 @@ using UnityEngine;
 public class Boton3D : MonoBehaviour
 {
     [Header("Mapa")]
-    public Scene_Manager manager;
+    public Scene_Cambio scene;
     public int mapSelected;
 
     [Header("Vectores de tamaño")]
     public Vector3 normalScale;
     public Vector3 selectlScale;
-
-    private void OnEnable()
-    {
-        manager = FindAnyObjectByType<Scene_Manager>();
-    }
 
     //Boton
     private void OnMouseEnter()
@@ -29,7 +24,6 @@ public class Boton3D : MonoBehaviour
     //Clicado
     void OnMouseDown()
     {
-        manager.map = mapSelected;
-        manager.ChangeMap_GameInfiniteMode();
+        scene.Cargar(mapSelected);
     }
 }

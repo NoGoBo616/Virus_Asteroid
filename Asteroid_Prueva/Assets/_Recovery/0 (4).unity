@@ -1410,7 +1410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92aeae14286b32b48a08de5a0df6cdd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scene_Cambio
-  anim: {fileID: 1272296557}
 --- !u!1 &495914577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,11 +3249,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1272296557 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7053167844000339654, guid: 68c4b9a8baa662148ad1368e1f9f360d, type: 3}
-  m_PrefabInstance: {fileID: 4181544729523432605}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1325676718
 GameObject:
   m_ObjectHideFlags: 0
