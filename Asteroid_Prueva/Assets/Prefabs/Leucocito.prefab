@@ -724,7 +724,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8989413218159954631}
   - component: {fileID: 5233297740602204852}
-  - component: {fileID: 8675289640176583114}
   - component: {fileID: 5389901412685610935}
   - component: {fileID: 680261119566411923}
   - component: {fileID: 7104116825697858386}
@@ -773,19 +772,6 @@ MonoBehaviour:
   bulletSfxIndex: 0
   vfxApear: {fileID: 5374981251632339549, guid: e96c88bd1f14c874c9563b4603cf36f4, type: 3}
   vfxDispear: {fileID: 370854684469117506, guid: 00b7f70f8f97ba042ac9055e30fd9583, type: 3}
---- !u!114 &8675289640176583114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8490236584152910836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0701635a30ebbcf449469e2442d4bd3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SingletonManager
-  identificador: 11
 --- !u!114 &5389901412685610935
 MonoBehaviour:
   m_ObjectHideFlags: 0

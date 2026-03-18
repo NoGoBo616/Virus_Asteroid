@@ -718,6 +718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 185254317}
+  - component: {fileID: 185254321}
   - component: {fileID: 185254320}
   - component: {fileID: 185254319}
   - component: {fileID: 185254318}
@@ -888,6 +889,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185254316}
   m_CullTransparentMesh: 1
+--- !u!114 &185254321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185254316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abed89322fe39b74cb14f4ce0cc72592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Identificador_twitch
+  twitch: {fileID: 585525351}
 --- !u!1 &205223601
 GameObject:
   m_ObjectHideFlags: 0
@@ -3883,9 +3897,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 585525351}
-        m_TargetAssemblyTypeName: Twitch_Spawn, Assembly-CSharp
-        m_MethodName: Iniciar
+      - m_Target: {fileID: 185254321}
+        m_TargetAssemblyTypeName: Identificador_twitch, Assembly-CSharp
+        m_MethodName: Boton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4599,7 +4613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1710970104
 RectTransform:
   m_ObjectHideFlags: 0
