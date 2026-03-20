@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 5
+  VFX_puntos: {fileID: 4626269087186814861, guid: 5c9fae32e5dc3dd429bf01567eebae39, type: 3}

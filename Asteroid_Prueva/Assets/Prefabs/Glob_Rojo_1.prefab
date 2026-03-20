@@ -120,6 +120,7 @@ MonoBehaviour:
   bulletSfxIndex: 7
   vfxApear: {fileID: 8655563992015001106, guid: 4c7546b0c99b23d4fbfc6f3ad52a87ba, type: 3}
   vfxDispear: {fileID: 370854684469117506, guid: 00b7f70f8f97ba042ac9055e30fd9583, type: 3}
+  pointsEn: 10
 --- !u!114 &5181593754635920520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
+  VFX_puntos: {fileID: 4626269087186814861, guid: 5c9fae32e5dc3dd429bf01567eebae39, type: 3}
 --- !u!1 &4089065698284866726
 GameObject:
   m_ObjectHideFlags: 0

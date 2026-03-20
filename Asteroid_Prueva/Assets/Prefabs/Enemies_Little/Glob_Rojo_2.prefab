@@ -97,6 +97,10 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7182663647453364840, guid: aad6fd3104b460840934872219486ea3, type: 3}
+      propertyPath: pointsEn
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182663647453364840, guid: aad6fd3104b460840934872219486ea3, type: 3}
       propertyPath: bulletSfxIndex
       value: 12
       objectReference: {fileID: 0}

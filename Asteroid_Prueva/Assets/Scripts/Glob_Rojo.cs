@@ -15,6 +15,7 @@ public class Asteroid : MonoBehaviour
     public GameObject vfxDispear;
 
     private Rigidbody2D rb;
+    public int pointsEn;
 
     private void OnEnable()
     {
@@ -67,7 +68,7 @@ public class Asteroid : MonoBehaviour
             }
         }
         if (!this.gameObject.scene.isLoaded) return;
-        //manager.Puntuar();
+        manager.Puntuar(pointsEn);
         Instantiate(vfxDispear, transform.position, Quaternion.identity);
     }
 }

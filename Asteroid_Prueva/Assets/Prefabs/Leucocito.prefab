@@ -772,6 +772,7 @@ MonoBehaviour:
   bulletSfxIndex: 0
   vfxApear: {fileID: 5374981251632339549, guid: e96c88bd1f14c874c9563b4603cf36f4, type: 3}
   vfxDispear: {fileID: 370854684469117506, guid: 00b7f70f8f97ba042ac9055e30fd9583, type: 3}
+  pointsEn: 80
 --- !u!114 &5389901412685610935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -798,6 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PointSystem
   points: 80
+  VFX_puntos: {fileID: 4626269087186814861, guid: 5c9fae32e5dc3dd429bf01567eebae39, type: 3}
 --- !u!50 &7104116825697858386
 Rigidbody2D:
   serializedVersion: 5
