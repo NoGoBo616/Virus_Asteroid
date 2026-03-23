@@ -30,12 +30,12 @@ public class ArcadeManager : MonoBehaviour
     }
     public void FinalizarPartida()
     {
+        listaNombres.Add(nombreJugador);
+        listaPuntos.Add(puntuacion);
+
         PlayerPrefs.SetString("NombreJugador", nombreJugador);
         PlayerPrefs.SetInt("Puntuacion", puntuacion);
         PlayerPrefs.Save();
-
-        listaNombres.Add(nombreJugador);
-        listaPuntos.Add(puntuacion);
 
         if (RankingManager.instancia != null)
             RankingManager.instancia.GuardarPartida(nombreJugador, puntuacion);

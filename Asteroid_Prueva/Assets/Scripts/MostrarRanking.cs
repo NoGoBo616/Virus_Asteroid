@@ -15,6 +15,15 @@ public class MostrarRanking : MonoBehaviour
         ActualizarRanking();
     }
 
+    private void Update()
+    {
+        if (arcadeManager != null)
+        {
+            arcadeManager = FindAnyObjectByType<ArcadeManager>();
+            ActualizarRanking();
+        }
+    }
+
     public void ActualizarRanking()
     {
         if (arcadeManager == null || textoRanking == null) return;

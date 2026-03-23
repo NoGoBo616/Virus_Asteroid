@@ -6976,6 +6976,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 625987474}
     - target: {fileID: 3170706751367426869, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      propertyPath: inGame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170706751367426869, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      propertyPath: arcadeManager
+      value: 
+      objectReference: {fileID: 1673045256}
+    - target: {fileID: 3170706751367426869, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: maps.Array.size
       value: 3
       objectReference: {fileID: 0}
