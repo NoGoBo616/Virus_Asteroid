@@ -29,7 +29,7 @@ public class Live_System : MonoBehaviour
     private void Update()
     {
         player_Live.fillAmount = vida;
-
+        if (vida >= 1) vida = 1;
         if (vida <= 0)
         {
             vida = 0;
