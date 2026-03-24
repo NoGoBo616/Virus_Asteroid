@@ -7,7 +7,7 @@ using System.Linq;
 public class MostrarRanking : MonoBehaviour
 {
     public TMP_Text textoRanking;
-    ArcadeManager arcadeManager;
+    public ArcadeManager arcadeManager;
 
     private void OnEnable()
     {
