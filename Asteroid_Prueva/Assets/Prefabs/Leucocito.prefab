@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PointSystem
   points: 80
-  VFX_puntos: {fileID: 4626269087186814861, guid: 5c9fae32e5dc3dd429bf01567eebae39, type: 3}
+  VFX_puntos: {fileID: 1662299301705729500, guid: 7ad9fb1a4d08aa5478138b0f6931ce77, type: 3}
 --- !u!50 &7104116825697858386
 Rigidbody2D:
   serializedVersion: 5

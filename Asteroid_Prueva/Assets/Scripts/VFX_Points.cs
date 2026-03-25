@@ -15,7 +15,7 @@ public class VFX_Points : MonoBehaviour
 
     private IEnumerator MoverHaciaObjetivo()
     {
-        //yield return new WaitForSeconds(1)
+        yield return new WaitForSeconds(0.6f);
         while (Vector3.Distance(transform.position, camara.gameObject.transform.position) > margenLlegada)
         {
             transform.position = Vector3.MoveTowards(transform.position, camara.gameObject.transform.position, velocidad * Time.deltaTime);

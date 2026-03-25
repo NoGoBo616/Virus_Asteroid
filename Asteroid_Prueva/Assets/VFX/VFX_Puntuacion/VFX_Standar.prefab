@@ -152,6 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6219262939210933493}
   - component: {fileID: 7998163992957568507}
+  - component: {fileID: 4981549507083974708}
   m_Layer: 0
   m_Name: VFX_Standar
   m_TagString: Untagged
@@ -190,3 +191,16 @@ MonoBehaviour:
   camara: {fileID: 0}
   velocidad: 20
   margenLlegada: 0.001
+--- !u!114 &4981549507083974708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4626269087186814861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c48ff1e5cc829e4cb898a078b45e2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destruct_Instance
+  instancia: {fileID: 0}

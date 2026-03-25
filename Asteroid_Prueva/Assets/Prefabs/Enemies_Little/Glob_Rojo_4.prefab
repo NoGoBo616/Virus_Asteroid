@@ -104,6 +104,10 @@ PrefabInstance:
       propertyPath: points
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 7745785256254215435, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}
+      propertyPath: VFX_puntos
+      value: 
+      objectReference: {fileID: 1662299301705729500, guid: 87737a4769281a34fbf508cfaee51807, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2962077408015173426, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}

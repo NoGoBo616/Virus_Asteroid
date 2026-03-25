@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: points
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 5181593754635920520, guid: aad6fd3104b460840934872219486ea3, type: 3}
+      propertyPath: VFX_puntos
+      value: 
+      objectReference: {fileID: 1662299301705729500, guid: 72797d1fc46f073428dbfddc65259d26, type: 3}
     - target: {fileID: 7182663647453364840, guid: aad6fd3104b460840934872219486ea3, type: 3}
       propertyPath: points
       value: 25

@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 30
-  VFX_puntos: {fileID: 4626269087186814861, guid: 5c9fae32e5dc3dd429bf01567eebae39, type: 3}
+  VFX_puntos: {fileID: 1662299301705729500, guid: 9d9c755b59205a64eb00815459f36b82, type: 3}
 --- !u!1001 &1433353453076871199
 PrefabInstance:
   m_ObjectHideFlags: 0

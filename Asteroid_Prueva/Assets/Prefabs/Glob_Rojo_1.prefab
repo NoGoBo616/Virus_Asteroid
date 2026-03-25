@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
-  VFX_puntos: {fileID: 4626269087186814861, guid: 5c9fae32e5dc3dd429bf01567eebae39, type: 3}
+  VFX_puntos: {fileID: 3865927618131028342, guid: eaa036cacfdc64e4eabe7192a607e33f, type: 3}
 --- !u!1 &4089065698284866726
 GameObject:
   m_ObjectHideFlags: 0

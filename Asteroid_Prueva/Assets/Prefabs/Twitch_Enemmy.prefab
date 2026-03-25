@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PointSystem
   points: 100
-  VFX_puntos: {fileID: 4626269087186814861, guid: 5c9fae32e5dc3dd429bf01567eebae39, type: 3}
+  VFX_puntos: {fileID: 1662299301705729500, guid: 4377bd5fc82e9b241857e800cd717097, type: 3}
 --- !u!1 &2307992166541000364
 GameObject:
   m_ObjectHideFlags: 0
