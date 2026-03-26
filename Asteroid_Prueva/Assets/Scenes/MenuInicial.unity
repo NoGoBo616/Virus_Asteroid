@@ -287,7 +287,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
-  m_sharedMaterial: {fileID: 3228166008063365095, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
+  m_sharedMaterial: {fileID: 6280291190288364031, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1770,7 +1770,7 @@ MonoBehaviour:
   m_text: options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
-  m_sharedMaterial: {fileID: 3228166008063365095, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
+  m_sharedMaterial: {fileID: 6280291190288364031, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2320,8 +2320,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Type "!NPC" on the chat to spawn a enemy
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb62236282c982d4f82cbb1dc674478e, type: 2}
-  m_sharedMaterial: {fileID: 8840276861078628860, guid: cb62236282c982d4f82cbb1dc674478e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
+  m_sharedMaterial: {fileID: 6280291190288364031, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2494,7 +2494,7 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
-  m_sharedMaterial: {fileID: 3228166008063365095, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
+  m_sharedMaterial: {fileID: 6280291190288364031, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2639,7 +2639,7 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
-  m_sharedMaterial: {fileID: 3228166008063365095, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
+  m_sharedMaterial: {fileID: 6280291190288364031, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3663,7 +3663,7 @@ MonoBehaviour:
   m_text: Name...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
-  m_sharedMaterial: {fileID: 3228166008063365095, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
+  m_sharedMaterial: {fileID: 6280291190288364031, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4066,7 +4066,7 @@ MonoBehaviour:
   m_text: play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
-  m_sharedMaterial: {fileID: 3228166008063365095, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
+  m_sharedMaterial: {fileID: 6280291190288364031, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5927,7 +5927,7 @@ MonoBehaviour:
   m_text: Twitch Chanel...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
-  m_sharedMaterial: {fileID: 3228166008063365095, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
+  m_sharedMaterial: {fileID: 6280291190288364031, guid: 54fc9b521fe068041819a92af8364b1a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
