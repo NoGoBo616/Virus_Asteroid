@@ -23,6 +23,10 @@ public class SelectName : MonoBehaviour
 
     private void Update()
     {
+        if(manager == null)
+        {
+            manager = FindAnyObjectByType<ArcadeManager>();
+        }
         textoNombre.text = inputText.text;
         if (textoNombre.text.Length < 2)
         {

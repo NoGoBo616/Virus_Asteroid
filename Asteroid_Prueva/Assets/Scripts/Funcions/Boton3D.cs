@@ -18,14 +18,15 @@ public class Boton3D : MonoBehaviour
 
     private void OnEnable()
     {
-        FindManagers();
+        manager = FindAnyObjectByType<Levels_Manager>();
+        puntos = FindAnyObjectByType<ArcadeManager>();
     }
 
     private void Update()
     {
         FindManagers();
 
-        if (puntos.listaPuntos.Max() > minPoints)
+        if (puntos.listaPuntos.Max() >= minPoints || puntos.puntuacion >= minPoints)
         {
             desbloqueado = true;
         }
@@ -33,11 +34,11 @@ public class Boton3D : MonoBehaviour
 
     void FindManagers()
     {
-        if (manager != null)
+        if (manager == null)
         {
             manager = FindAnyObjectByType<Levels_Manager>();
         }
-        if (puntos != null)
+        if (puntos == null)
         {
             puntos = FindAnyObjectByType<ArcadeManager>();
         }
@@ -57,11 +58,10 @@ public class Boton3D : MonoBehaviour
     //Clicado
     void OnMouseDown()
     {
-        scene.Cargar(mapSelected);
         if (desbloqueado)
         {
-            //scene.Cargar(mapSelected);
-            //manager.Cambiar(levelSelected);
+            scene.Cargar(mapSelected);
+            manager.Cambiar(levelSelected);
         }
     }
 }

@@ -14,7 +14,7 @@ public class Identificador_twitch : MonoBehaviour
 
     private void Update()
     {
-        if (twitch != null)
+        if (twitch == null)
         {
             twitch = FindAnyObjectByType<Twitch_Spawn>();
             twitch.channelInput = GetComponent<TMP_InputField>();
