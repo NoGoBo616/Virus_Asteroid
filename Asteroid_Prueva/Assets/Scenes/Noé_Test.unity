@@ -456,6 +456,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183533057}
   m_CullTransparentMesh: 1
+--- !u!1 &223580170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223580172}
+  - component: {fileID: 223580171}
+  m_Layer: 0
+  m_Name: SceneMusicStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &223580171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223580170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a29bd504bf7f0e4a9418f4eec2e7043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneMusicStart
+  songIndex: 2
+--- !u!4 &223580172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223580170}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.82382, y: 3.17543, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &293117967
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &418173558
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3192,8 +3237,8 @@ MonoBehaviour:
   musicSource: {fileID: 8657413}
   sfxSource: {fileID: 716559225}
   musicList:
-  - {fileID: 8300000, guid: 4be46bd4aaf21294b88b8398d0ea5944, type: 3}
-  - {fileID: 8300000, guid: 92919a2c0104d6144986c41b2b6e7ef7, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   sfxList:
   - {fileID: 8300000, guid: 2967e8e1065e83849b224f89e8156c1b, type: 3}
   - {fileID: 8300000, guid: 887b7b89f3361a54a8a67ba3e08a2ec3, type: 3}
@@ -3851,3 +3896,4 @@ SceneRoots:
   - {fileID: 647035786}
   - {fileID: 1784751046}
   - {fileID: 4058117920467636061}
+  - {fileID: 223580172}
