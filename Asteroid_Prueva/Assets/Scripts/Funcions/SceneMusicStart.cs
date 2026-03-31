@@ -4,7 +4,7 @@ public class SceneMusicStart : MonoBehaviour
 {
     public int songIndex;
 
-    void Start()
+    private void OnEnable()
     {
         MusicManager.instance.SetSong(songIndex);
     }

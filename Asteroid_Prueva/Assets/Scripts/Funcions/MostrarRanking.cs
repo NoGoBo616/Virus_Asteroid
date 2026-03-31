@@ -17,7 +17,7 @@ public class MostrarRanking : MonoBehaviour
 
     private void Update()
     {
-        if (arcadeManager = null)
+        if (arcadeManager == null)
         {
             arcadeManager = FindAnyObjectByType<ArcadeManager>();
             ActualizarRanking();

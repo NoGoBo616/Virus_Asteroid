@@ -13,13 +13,9 @@ public class Scene_Cambio : MonoBehaviour
 
     IEnumerator Cambio(int map)
     {
-        //  Lanzar animación
         anim.SetTrigger("On");
-
-        // Esperar un poco a que empiece la animación
         yield return new WaitForSeconds(0.5f);
 
-        //  Fade de música
         yield return StartCoroutine(
             MusicManager.instance.FadeOutAndThen(() =>
             {

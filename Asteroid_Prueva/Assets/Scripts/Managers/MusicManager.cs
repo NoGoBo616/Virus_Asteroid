@@ -18,7 +18,6 @@ public class MusicManager : MonoBehaviour
         {
             instance = this;
         }
-        //  No destruimos duplicados como pediste
     }
 
     void Start()
@@ -33,35 +32,12 @@ public class MusicManager : MonoBehaviour
         PlaySong(currentSong);
     }
 
-    void Update()
-    {
-        if (instance != this) return;
-
-        //  Playlist automática
-        if (!audioSource.isPlaying && !isFading)
-        {
-            NextSong();
-        }
-    }
-
     public void SetSong(int index)
     {
         if (instance != this) return;
         if (index < 0 || index >= playlist.Length) return;
 
         currentSong = index;
-        PlaySong(currentSong);
-    }
-
-    void NextSong()
-    {
-        currentSong++;
-
-        if (currentSong >= playlist.Length)
-        {
-            currentSong = 0;
-        }
-
         PlaySong(currentSong);
     }
 
@@ -74,8 +50,7 @@ public class MusicManager : MonoBehaviour
         audioSource.Play();
     }
 
-    //  Fade out + acción (cambio de escena)
-    public IEnumerator FadeOutAndThen(Action onComplete, float duration = 3f)
+    public IEnumerator FadeOutAndThen(Action onComplete, float duration = 1)
     {
         if (instance != this) yield break;
 
