@@ -70,10 +70,6 @@ public class Scene_Manager : MonoBehaviour
 
     public void ExitGame()
     {
-        if (GlobalAudioManager.Instance != null)
-        {
-            GlobalAudioManager.Instance.PlaySFX(0);
-        }
         Application.Quit();
     }
 

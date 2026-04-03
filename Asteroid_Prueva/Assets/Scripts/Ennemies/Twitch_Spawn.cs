@@ -119,7 +119,7 @@ public class Twitch_Spawn : MonoBehaviour
     {
         if (waittime)
         {
-            this.gameObject.transform.position = new Vector3(UnityEngine.Random.Range(-16, 17), UnityEngine.Random.Range(-3.5f, 10), 0);
+            this.gameObject.transform.position = new Vector3(UnityEngine.Random.Range(-10, 11), UnityEngine.Random.Range(-8, 9), 0);
             GameObject nuevoNPC = Instantiate(prefabNPC, this.gameObject.transform.position, Quaternion.identity);
             nuevoNPC.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = userNikcName;
         }
