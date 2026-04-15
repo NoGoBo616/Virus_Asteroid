@@ -16,6 +16,7 @@ public class AmebaControl : MonoBehaviour
     {
         lifeAmeba = 1f;
         timeAmeba =times[Random.Range(0,7)];
+        ChangeDestiny();
     }
 
     void Update()
@@ -28,6 +29,7 @@ public class AmebaControl : MonoBehaviour
         if (timeAmeba <= 0)
         {
             timeAmeba = 0;
+            this.gameObject.SetActive(false);
         }
     }
     
@@ -42,12 +44,21 @@ public class AmebaControl : MonoBehaviour
 
         if (Vector2.Distance(transform.position, destino) <= 0.1f)
         {
-            
+            ChangeDestiny();
         }
     }
 
     void ChangeDestiny()
     {
+        destino = new Vector3(UnityEngine.Random.Range(-10, 11), UnityEngine.Random.Range(-8, 9), 0);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Asteroid"))
+        {
+            
 
+            lifeAmeba = lifeAmeba - 0.05f;
+        }
     }
 }
