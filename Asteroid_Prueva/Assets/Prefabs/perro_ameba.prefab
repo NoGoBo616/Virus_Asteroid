@@ -48,10 +48,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AmebaControl
   lifeAmeba: 0
   timeAmeba: 0
-  rbAmeba: {fileID: 1441604226846466389}
+  rb: {fileID: 1441604226846466389}
   flying: 0
   speed: 0
-  destino: {x: 0, y: 0, z: 0}
+  destino: {x: 10, y: 0, z: 0}
   times:
   - 10
   - 7
@@ -75,7 +75,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
