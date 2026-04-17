@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        title.text = points.ToString();
         managDePuntos.puntuacion = points;
     }
 
@@ -60,7 +61,6 @@ public class GameManager : MonoBehaviour
     public void Puntuar(int pointsToSum)
     {
         points = points + pointsToSum;
-        title.text = points.ToString();
         StaticPoints.points= points;
         managDePuntos.GuardarDatos(managDePuntos.nombreJugador, managDePuntos.puntuacion);
     }
