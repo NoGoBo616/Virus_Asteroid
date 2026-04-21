@@ -14,7 +14,7 @@ public class Hijos_Plaquetas : MonoBehaviour
 
         Instantiate(vfxApear, transform.position, Quaternion.identity);
         flip = Random.Range(0, 2) == 0;
-        spriteRenderer.sortingOrder = Random.Range(-3, -1);
+        spriteRenderer.sortingOrder = Random.Range(1, 5);
 
         if (flip)
         {
