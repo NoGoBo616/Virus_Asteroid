@@ -5,7 +5,10 @@ using UnityEngine;
 public class Spawn : MonoBehaviour
 {
     public GameObject[] spawned;
+    public GameObject[] exclusibe;
     public float timeToSpawn;
+    public int max;
+    public Levels_Manager nivel;
     bool isSpawning;
 
     public float posY;
@@ -18,6 +21,11 @@ public class Spawn : MonoBehaviour
         Recuento();
     }
 
+    private void OnEnable()
+    {
+        nivel = FindAnyObjectByType<Levels_Manager>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -25,8 +33,15 @@ public class Spawn : MonoBehaviour
 
         if (isSpawning == false)
         {
-            int randomSpawner = Random.Range(0, spawned.Length);
-            Instantiate(spawned[randomSpawner], transform.position, Quaternion.identity);
+            int randomSpawner = Random.Range(0, max);
+            if (randomSpawner <= spawned.Length)
+            {
+                Instantiate(spawned[randomSpawner], transform.position, Quaternion.identity);
+            } 
+            if (randomSpawner > spawned.Length)
+            {
+                Instantiate(exclusibe[nivel.nivelSeleccionado], transform.position, Quaternion.identity);
+            }
             StartCoroutine(Spawning());
         }
     }
