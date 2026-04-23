@@ -9,7 +9,7 @@ public class CelLightController : MonoBehaviour
     {
         if (material != null && lightTransform != null)
         {
-            Vector3 dir = lightTransform.forward * -1f;
+            Vector3 dir = lightTransform.forward ;
             material.SetVector("_LightDir", dir);
         }
     }
