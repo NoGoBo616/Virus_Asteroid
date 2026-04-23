@@ -327,10 +327,10 @@ GameObject:
   m_Component:
   - component: {fileID: 174582767698005927}
   - component: {fileID: 1120544710374944481}
+  - component: {fileID: 5612644898628055360}
   - component: {fileID: 5415606105162682810}
   - component: {fileID: 6163167692434191467}
   - component: {fileID: 4147533113716031233}
-  - component: {fileID: 5575365988477816963}
   m_Layer: 0
   m_Name: Cancer
   m_TagString: AsteroidClone
@@ -392,6 +392,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.002496481, y: -0.010768294}
   m_Radius: 0.51166606
+--- !u!114 &5612644898628055360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167928677819542144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c48ff1e5cc829e4cb898a078b45e2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destruct_Instance
+  instancia: {fileID: 7468792058255031455, guid: 7ea5063240f150a4fb1b2c4164ddaeaa, type: 3}
 --- !u!50 &5415606105162682810
 Rigidbody2D:
   serializedVersion: 5
@@ -431,7 +444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe5b3c50f291614d896633732b14664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 3
   smallerAsteroidPrefab: {fileID: 4188304512751657157, guid: f9ff8f20ec460804d9a8754a0df3f315, type: 3}
   size: 1
   manager: {fileID: 6210024920145482995, guid: 912f5637ef3b2264aa324a3357480a62, type: 3}
@@ -451,19 +464,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b0e57f7c5997a4984dffded331b210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Glob_Blanco
-  speed: 4
+  speed: 5
   turnSpeed: 1.5
---- !u!114 &5575365988477816963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8167928677819542144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8caa389bbd568d945b6a1380bb2de4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: 10
-  VFX_puntos: {fileID: 3865927618131028342, guid: eaa036cacfdc64e4eabe7192a607e33f, type: 3}
