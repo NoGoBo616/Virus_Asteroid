@@ -63,5 +63,9 @@ public class Boton3D : MonoBehaviour
             scene.Cargar(mapSelected);
             manager.Cambiar(levelSelected);
         }
+        else
+        {
+            Debug.Log("nop");
+        }
     }
 }
