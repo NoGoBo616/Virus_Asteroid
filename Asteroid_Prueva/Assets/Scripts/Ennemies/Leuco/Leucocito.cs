@@ -1,10 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class Leucocito : MonoBehaviour
 {
     public GameObject granitos;
 
-    bool catched;
+    public bool catched;
     GameObject player;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -14,8 +15,7 @@ public class Leucocito : MonoBehaviour
             catched = true;
             collision.transform.SetParent(transform);
             player = collision.gameObject;
-            collision.attachedRigidbody.linearVelocity = new Vector3(0,0,0);
-            //animacion
+            collision.attachedRigidbody.linearVelocity = Vector2.zero;
             granitos.SetActive(true);
         }
     }

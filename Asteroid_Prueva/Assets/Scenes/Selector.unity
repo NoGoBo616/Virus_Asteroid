@@ -186,7 +186,7 @@ PrefabInstance:
     - target: {fileID: -3644681013895975404, guid: 662dec4296ef08342a09aa417bc6a290, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b82e93408bfcd0749960a3b002898371, type: 2}
+      objectReference: {fileID: 2100000, guid: 35cc8c6077f509046a009196372b55e6, type: 2}
     - target: {fileID: 919132149155446097, guid: 662dec4296ef08342a09aa417bc6a290, type: 3}
       propertyPath: m_Name
       value: Corazon_3D
@@ -316,7 +316,7 @@ PrefabInstance:
     - target: {fileID: 1815874484707735372, guid: 662dec4296ef08342a09aa417bc6a290, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b82e93408bfcd0749960a3b002898371, type: 2}
+      objectReference: {fileID: 2100000, guid: 35cc8c6077f509046a009196372b55e6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4784402941795422272, guid: 662dec4296ef08342a09aa417bc6a290, type: 3}
@@ -1012,6 +1012,7 @@ MonoBehaviour:
   - {fileID: 913893925}
   - {fileID: 29144926}
   - {fileID: 1045635848}
+  nivelSeleccionado: 0
 --- !u!4 &421426514
 Transform:
   m_ObjectHideFlags: 0
@@ -1022,7 +1023,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 16907928}
@@ -1732,7 +1733,7 @@ PrefabInstance:
     - target: {fileID: 1081992280539835136, guid: 662dec4296ef08342a09aa417bc6a290, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b82e93408bfcd0749960a3b002898371, type: 2}
+      objectReference: {fileID: 2100000, guid: 35cc8c6077f509046a009196372b55e6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5381191777052938842, guid: 662dec4296ef08342a09aa417bc6a290, type: 3}
@@ -2155,7 +2156,7 @@ PrefabInstance:
     - target: {fileID: 1117918409908973793, guid: 662dec4296ef08342a09aa417bc6a290, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b82e93408bfcd0749960a3b002898371, type: 2}
+      objectReference: {fileID: 2100000, guid: 35cc8c6077f509046a009196372b55e6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -1892146679926640019, guid: 662dec4296ef08342a09aa417bc6a290, type: 3}

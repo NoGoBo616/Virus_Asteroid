@@ -1,82 +1,128 @@
-﻿Shader "Custom/PixelCelShader"
+﻿Shader "Custom/URP_PixelCelShader_V2"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
-        _BumpMap ("Normal Map", 2D) = "bump" {}
-        _LightDir ("Light Direction", Vector) = (0,1,0,0)
-        _Levels ("Levels", Float) = 3
-        _BumpStrength ("Normal Strength", Float) = 1
-        _PixelStep ("Pixel Step", Float) = 1
-        _Color ("Color", Color) = (1,1,1,1)
+        _MainTex ("Texture (Base Color)", 2D) = "white" {}
+        [Normal] _BumpMap ("Normal Map", 2D) = "bump" {}
+        _Levels ("Cel Levels", Float) = 3
+        _BumpStrength ("Normal Strength", Range(0, 3)) = 1
+        _PixelStep ("Pixel Density", Float) = 80
+        _BaseColor ("Tint Color", Color) = (1,1,1,1)
+        _Ambient ("Ambient Light", Range(0, 1)) = 0.2
     }
 
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags 
+        { 
+            "RenderType" = "Opaque" 
+            "RenderPipeline" = "UniversalPipeline"
+            "Queue" = "Geometry"
+        }
 
         Pass
         {
-            CGPROGRAM
+            Name "ForwardLit"
+            Tags { "LightMode" = "UniversalForward" }
+
+            HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
 
-            #include "UnityCG.cginc"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 
-            struct appdata
+            struct Attributes
             {
-                float4 vertex : POSITION;
-                float2 uv : TEXCOORD0;
-                float3 normal : NORMAL;
+                float4 positionOS   : POSITION;
+                float2 uv           : TEXCOORD0;
+                float3 normalOS     : NORMAL;
+                float4 tangentOS    : TANGENT;
             };
 
-            struct v2f
+            struct Varyings
             {
-                float4 vertex : SV_POSITION;
-                float2 uv : TEXCOORD0;
-                float3 normal : TEXCOORD1;
+                float4 positionCS   : SV_POSITION;
+                float2 uv           : TEXCOORD0;
+                float3 normalWS     : TEXCOORD1;
+                float4 tangentWS    : TEXCOORD2; 
             };
 
-            sampler2D _MainTex;
-            sampler2D _BumpMap;
-            float4 _Color;
-            float3 _LightDir;
-            float _Levels;
-            float _BumpStrength;
-            float _PixelStep;
+            // Definición correcta de texturas en URP
+            TEXTURE2D(_MainTex);
+            SAMPLER(sampler_MainTex);
+            TEXTURE2D(_BumpMap);
+            SAMPLER(sampler_BumpMap);
 
-            v2f vert (appdata v)
+            CBUFFER_START(UnityPerMaterial)
+                float4 _MainTex_ST;
+                float4 _BaseColor;
+                float _Levels;
+                float _BumpStrength;
+                float _PixelStep;
+                float _Ambient;
+            CBUFFER_END
+
+            Varyings vert(Attributes input)
             {
-                v2f o;
-                o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = v.uv;
-                o.normal = UnityObjectToWorldNormal(v.normal);
-                return o;
+                Varyings output;
+                
+                // Transformaciones de posición
+                VertexPositionInputs vertexInput = GetVertexPositionInputs(input.positionOS.xyz);
+                output.positionCS = vertexInput.positionCS;
+                
+                // Aplicar Tiling y Offset de la textura principal
+                output.uv = TRANSFORM_TEX(input.uv, _MainTex);
+
+                // Normales y Tangentes
+                VertexNormalInputs normalInput = GetVertexNormalInputs(input.normalOS, input.tangentOS);
+                output.normalWS = normalInput.normalWS;
+                output.tangentWS = float4(normalInput.tangentWS, input.tangentOS.w);
+
+                return output;
             }
 
-            fixed4 frag (v2f i) : SV_Target
+            half4 frag(Varyings input) : SV_Target
             {
-                float3 normalTex = UnpackNormal(tex2D(_BumpMap, i.uv));
-                normalTex *= _BumpStrength;
+                // 1. Pixelado de UVs
+                float2 uvPix = floor(input.uv * _PixelStep) / _PixelStep;
 
-                float3 normal = normalize(i.normal + normalTex);
-                float3 lightDir = normalize(_LightDir);
+                // 2. Normal Mapping
+                // Desempaquetamos la normal del mapa
+                half4 bumpSample = SAMPLE_TEXTURE2D(_BumpMap, sampler_BumpMap, uvPix);
+                half3 normalTS = UnpackNormalScale(bumpSample, _BumpStrength);
+                
+                // Construcción de la matriz TBN
+                half3 bitangentWS = cross(input.normalWS, input.tangentWS.xyz) * input.tangentWS.w;
+                half3x3 tangentToWorld = half3x3(input.tangentWS.xyz, bitangentWS, input.normalWS);
+                
+                // Normal final en espacio de mundo
+                half3 normalWS = normalize(mul(normalTS, tangentToWorld));
 
-                float intensity = dot(normal, lightDir);
+                // 3. Iluminación
+                Light mainLight = GetMainLight();
+                half3 lightDir = normalize(mainLight.direction);
+                
+                // Dot product para luz difusa
+                half ndotl = dot(normalWS, lightDir);
+                
+                // Cel Shading (Half-Lambertizado)
+                half diff = saturate(ndotl * 0.5 + 0.5);
+                half cel = floor(diff * _Levels) / _Levels;
+                
+                // Mezcla de luz ambiental y color de la luz principal
+                half3 lightColor = mainLight.color * max(cel, _Ambient);
 
-                float cel = floor(intensity * _Levels) / _Levels;
-                cel = saturate(cel);
+                // 4. Muestreo de textura de color
+                half4 texColor = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, uvPix);
+                
+                // Combinación final
+                half3 finalColor = texColor.rgb * _BaseColor.rgb * lightColor;
 
-                float2 uv = floor(i.uv * _PixelStep) / _PixelStep;
-
-                fixed4 tex = tex2D(_MainTex, uv);
-
-                float3 col = tex.rgb * _Color.rgb * cel;
-
-                return fixed4(col, tex.a);
+                return half4(finalColor, texColor.a);
             }
-
-            ENDCG
+            ENDHLSL
         }
     }
+    Fallback "Universal Render Pipeline/Lit"
 }

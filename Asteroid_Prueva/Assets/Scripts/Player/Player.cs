@@ -9,7 +9,7 @@ public class Player_ : MonoBehaviour
     public float thrust = 1;
     public float rotationSpeed = 200;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private bool cooldownS;
     private bool cooldownI;
     private bool cooldownB;
