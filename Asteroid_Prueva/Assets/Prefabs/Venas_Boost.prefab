@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 117e565ad2da83d4eb09c1e14cec01dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boost
-  speed: 25
+  speed: 100
 --- !u!1 &7669008594836671545
 GameObject:
   m_ObjectHideFlags: 0

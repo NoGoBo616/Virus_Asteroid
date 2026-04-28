@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 4118064679733923858}
   - component: {fileID: 2409241367470466669}
   - component: {fileID: 4471100466736629624}
+  - component: {fileID: 6915249654495569734}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Player
@@ -393,6 +394,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 3
   rotationSpeed: 200
+  rotationInput: 0
+  rb: {fileID: 0}
   live: 0
   bulletPrefab: {fileID: 7688516131324827704, guid: 5f04603920d57144cb8b6003004fe15b, type: 3}
   shield: {fileID: 8478005913413974316}
@@ -438,6 +441,180 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.0006661892, y: 0}
   m_Radius: 0.1605881
+--- !u!114 &6915249654495569734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2793215869234513664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: fa6f6475e277fdd45ada735f9e842f6c, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2409241367470466669}
+        m_TargetAssemblyTypeName: Player_, Assembly-CSharp
+        m_MethodName: HandleShoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3745963333298107498}
+        m_TargetAssemblyTypeName: Virus_, Assembly-CSharp
+        m_MethodName: HandleAttack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e24e5b3a-17ec-4b3f-995a-6de2c7f1f1bb
+    m_ActionName: 'Character/Attack[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2409241367470466669}
+        m_TargetAssemblyTypeName: Player_, Assembly-CSharp
+        m_MethodName: HandlePinchos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3745963333298107498}
+        m_TargetAssemblyTypeName: Virus_, Assembly-CSharp
+        m_MethodName: HandlePinchos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4fc5fe0f-3fbf-4b48-b255-2b3ddc73aee9
+    m_ActionName: 'Character/Pinchos[/Keyboard/x]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2409241367470466669}
+        m_TargetAssemblyTypeName: Player_, Assembly-CSharp
+        m_MethodName: HandleBullet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3745963333298107498}
+        m_TargetAssemblyTypeName: Virus_, Assembly-CSharp
+        m_MethodName: HandleAttack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e5826e53-e4de-4b64-8289-aa3075ba6342
+    m_ActionName: 'Character/Bullet[/Keyboard/z]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2409241367470466669}
+        m_TargetAssemblyTypeName: Player_, Assembly-CSharp
+        m_MethodName: HandleInvisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3745963333298107498}
+        m_TargetAssemblyTypeName: Virus_, Assembly-CSharp
+        m_MethodName: HandleInvisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 22e17045-1bca-40bc-99cb-33e92fad5110
+    m_ActionName: 'Character/Invisible[/Keyboard/c]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2409241367470466669}
+        m_TargetAssemblyTypeName: Player_, Assembly-CSharp
+        m_MethodName: HandleAdvance
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bae12961-14ee-49fe-aa8e-54dc370c7b27
+    m_ActionName: 'Character/Avanzar[/Keyboard/upArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2409241367470466669}
+        m_TargetAssemblyTypeName: Player_, Assembly-CSharp
+        m_MethodName: HandleRotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6f446602-0826-4365-bf3c-a6916639ad5e
+    m_ActionName: 'Character/Rotate[/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Character
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &3132511044911438209
 GameObject:
   m_ObjectHideFlags: 0

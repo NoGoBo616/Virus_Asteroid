@@ -2475,7 +2475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0701635a30ebbcf449469e2442d4bd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SingletonManager
-  identificador: 8
+  identificador: 4
 --- !u!114 &1420591650
 MonoBehaviour:
   m_ObjectHideFlags: 0

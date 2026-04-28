@@ -101,6 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3657114503450337782}
   - component: {fileID: 2973420696558217117}
+  - component: {fileID: 8059691521401946013}
   - component: {fileID: 822785806176352137}
   m_Layer: 0
   m_Name: Monedero_Flagelado
@@ -161,6 +162,26 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &8059691521401946013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3405032056384118281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb44fa0af7229f42a57d028c80d6c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monedero
+  rb: {fileID: 0}
+  speed: 2
+  live: 3
+  indice: 0
+  premio:
+  - {fileID: 1662299301705729500, guid: 3008882f55f2a7b4eb51c572758d1b4b, type: 3}
+  - {fileID: 7468792058255031455, guid: 7ea5063240f150a4fb1b2c4164ddaeaa, type: 3}
+  - {fileID: 489104488984605095, guid: f2f1ad2e4e0d0644381e5005f1667676, type: 3}
 --- !u!50 &822785806176352137
 Rigidbody2D:
   serializedVersion: 5

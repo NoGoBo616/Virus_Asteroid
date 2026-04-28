@@ -4,20 +4,33 @@ using UnityEngine;
 public class Boost : MonoBehaviour
 {
     public float speed;
+    public Player_ player;
+
+    private void OnEnable()
+    {
+        player = FindAnyObjectByType<Player_>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Player_ miScript))
+        if (collision.CompareTag("Player"))
         {
-            miScript.thrust = speed;
+            player.thrust = speed;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Player_ miScript))
+        if (collision.CompareTag("Player"))
         {
-            miScript.thrust = 1;
+            StartCoroutine(DetenerBoost());
         }
+    }
+
+    IEnumerator DetenerBoost()
+    {
+        yield return new WaitForSeconds(2);
+        player.thrust = 1;
+        yield return null;
     }
 }

@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class Player_ : MonoBehaviour
 {
     public float thrust = 1;
     public float rotationSpeed = 200;
+    public float rotationInput;
+    bool advance;
 
     public Rigidbody2D rb;
     private bool cooldownS;
@@ -44,55 +47,70 @@ public class Player_ : MonoBehaviour
 
     //Controles
 
-    void Update()
+    public void HandleRotate(InputAction.CallbackContext context)
     {
-        float rotation = -Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
-        transform.Rotate(0, 0, rotation);
+        rotationInput = context.ReadValue<float>();
+    }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+    public void HandleAdvance(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
-            rb.AddForce(transform.up * thrust);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
+            advance = true;
+        } 
+        if (context.canceled)
         {
-            if (cooldown)
-            {
-                if (AudioManager.Instance != null)
-                {
-                    AudioManager.Instance.PlaySFX(11);
-                }
-
-                Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
-
-                StartCoroutine(BalaCD());
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            if (cooldownS && special)
-            {
-                StartCoroutine(Shield());
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            if (cooldownI && special)
-            {
-                StartCoroutine(Invisible());
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            if (cooldownB && special)
-            {
-                StartCoroutine(BulletHell());
-            }
+            advance = false;
         }
     }
+
+    public void HandleShoot()
+    {
+        if (cooldown)
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX(11);
+            }
+
+            Instantiate(bulletPrefab, disparador.transform.position, transform.rotation);
+
+            StartCoroutine(BalaCD());
+        }
+    }
+
+    public void HandlePinchos()
+    {
+        if (cooldownS && special)
+        {
+            StartCoroutine(Shield());
+        }
+    }
+
+    public void HandleBullet()
+    {
+        if (cooldownB && special)
+        {
+            StartCoroutine(BulletHell());
+        }
+    }
+
+    public void HandleInvisible()
+    {
+        if (cooldownI && special)
+        {
+            StartCoroutine(Invisible());
+        }
+    }
+
+    void Update()
+    {
+        float rotation = rotationInput * rotationSpeed * Time.deltaTime;
+        transform.Rotate(0, 0, rotation);
+
+        if (advance) rb.AddForce(transform.up * thrust);
+    }
+
     private void FixedUpdate()
     {
         if (rb.linearVelocity.magnitude > 5)

@@ -20,38 +20,28 @@ public class Virus_ : MonoBehaviour
         cooldownS = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void HandleAttack()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            playerAnim.SetTrigger("attack");
-        }
+        playerAnim.SetTrigger("attack");
+    }
 
-        if (Input.GetKeyDown(KeyCode.Z))
+    public void HandlePinchos()
+    {
+        if (cooldownS)
         {
-            playerAnim.SetTrigger("attack");
+            playerAnim.SetTrigger("special");
+            StartCoroutine(CooldownShield());
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.X))
+    public void HandleInvisible()
+    {
+        if (cooldownI)
         {
-            if (cooldownS)
-            {
-                playerAnim.SetTrigger("special");
-                StartCoroutine(CooldownShield());
-            }
+            playerAnim.SetTrigger("Invisible");
+            StartCoroutine(CooldownI());
         }
-
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            if (cooldownI)
-            {
-                playerAnim.SetTrigger("Invisible");
-                StartCoroutine(CooldownI());
-            }
-            
-        }
-    } 
+    }
 
     private IEnumerator CooldownShield()
     {

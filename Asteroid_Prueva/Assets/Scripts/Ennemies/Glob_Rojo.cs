@@ -27,7 +27,6 @@ public class Asteroid : MonoBehaviour
         MoveBlood();
         rb = GetComponent<Rigidbody2D>();
     }
-
     private void FixedUpdate()
     {
         if (rb.linearVelocity.magnitude > 10)
@@ -35,7 +34,6 @@ public class Asteroid : MonoBehaviour
             rb.linearVelocity = rb.linearVelocity.normalized * 10;
         }
     }
-
     void MoveBlood()
     {
         GetComponent<Rigidbody2D>().linearVelocity = Random.insideUnitCircle.normalized * speed;
