@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Monedero : MonoBehaviour
 {
@@ -6,12 +7,24 @@ public class Monedero : MonoBehaviour
     public float speed;
     public float live;
     public int indice;
+    public Image liveImg;
     public GameObject[] premio;
+
     private void OnEnable()
     {
         MoveBlood();
         rb = GetComponent<Rigidbody2D>();
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Bullet"))
+        {
+            live --;
+            Destroy(collision.gameObject);
+        }
+    }
+
     private void FixedUpdate()
     {
         if (rb.linearVelocity.magnitude > 10)
@@ -19,6 +32,7 @@ public class Monedero : MonoBehaviour
             rb.linearVelocity = rb.linearVelocity.normalized * 10;
         }
     }
+
     void MoveBlood()
     {
         GetComponent<Rigidbody2D>().linearVelocity = Random.insideUnitCircle.normalized * speed;
@@ -26,6 +40,7 @@ public class Monedero : MonoBehaviour
 
     public void Update()
     {
+        liveImg.fillAmount = live / 3;
         if (live <= 0)
         {
             indice = Random.Range(0, 3);
