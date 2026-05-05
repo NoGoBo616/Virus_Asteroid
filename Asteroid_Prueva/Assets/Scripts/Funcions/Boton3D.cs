@@ -9,27 +9,28 @@ public class Boton3D : MonoBehaviour
     public Levels_Manager manager;
     public int levelSelected;
     public bool desbloqueado;
+    public bool pasado;
     public int minPoints;
+    public int maxPoints;
     public ArcadeManager puntos;
 
-    [Header("Vectores de tamaño")]
-    public Vector3 normalScale;
-    public Vector3 selectlScale;
+    [Header("Materiales")]
+    public Material podrio;
+    public Material normal;
+    public Material bloqueado;
+    public Material seleccionado;
+    public Material actual;
 
     private void OnEnable()
     {
         manager = FindAnyObjectByType<Levels_Manager>();
         puntos = FindAnyObjectByType<ArcadeManager>();
+        FijarTextura();
     }
 
     private void Update()
     {
-        FindManagers();
-
-        if (puntos.listaPuntos.Max() >= minPoints || puntos.puntuacion >= minPoints)
-        {
-            desbloqueado = true;
-        }
+        if (manager == null || puntos == null) FindManagers();
     }
 
     void FindManagers()
@@ -42,17 +43,51 @@ public class Boton3D : MonoBehaviour
         {
             puntos = FindAnyObjectByType<ArcadeManager>();
         }
+        if (manager != null || puntos != null)FijarTextura();
     }
+
+    void FijarTextura()
+    {
+        if (puntos.listaPuntos.Max() >= minPoints || puntos.puntuacion >= minPoints)
+        {
+            pasado = false;
+            desbloqueado = true;
+        }
+        if (puntos.listaPuntos.Max() >= maxPoints || puntos.puntuacion >= maxPoints)
+        {
+            desbloqueado = false;
+            pasado = true;
+        }
+
+        if (pasado)
+        {
+            GetComponent<Renderer>().material = podrio;
+            actual = podrio;
+        }
+        else
+        {
+            if (desbloqueado)
+            {
+                GetComponent<Renderer>().material = normal;
+                actual = normal;
+            }
+            else
+            {
+                GetComponent<Renderer>().material = bloqueado;
+                actual = bloqueado;
+            }
+        }
+    } 
 
     //Detectado
     private void OnMouseEnter()
     {
-        this.gameObject.transform.localScale = selectlScale;
+       if (desbloqueado || pasado) GetComponent<Renderer>().material = seleccionado;
     }
 
     private void OnMouseExit()
     {
-        this.gameObject.transform.localScale = normalScale;
+        GetComponent<Renderer>().material = actual;
     }
 
     //Clicado
