@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Scene_Cambio : MonoBehaviour
 {
     public Animator anim;
+    public Scene_Manager first;
 
     public void Cargar(int mapa)
     {
@@ -19,7 +20,23 @@ public class Scene_Cambio : MonoBehaviour
         yield return StartCoroutine(
             MusicManager.instance.FadeOutAndThen(() =>
             {
-                SceneManager.LoadScene(map);
+                if (first == null)
+                {
+                    SceneManager.LoadScene(map);
+                }
+                else
+                {
+                    if (first.tutorial)
+                    {
+                        SceneManager.LoadScene(2);
+                        first.tutorial = false;
+                        first.inGame = true;
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(map);
+                    }
+                }
             })
         );
     }

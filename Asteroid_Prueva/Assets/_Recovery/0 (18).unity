@@ -998,7 +998,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scene_Cambio
   anim: {fileID: 1272296557}
-  first: {fileID: 1097367571}
 --- !u!1 &495914577
 GameObject:
   m_ObjectHideFlags: 0
@@ -5108,10 +5107,6 @@ PrefabInstance:
     - target: {fileID: 3170706751367426869, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: inGame
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3170706751367426869, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
-      propertyPath: tutorial
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3170706751367426869, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: arcadeManager

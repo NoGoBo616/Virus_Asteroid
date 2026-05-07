@@ -11,6 +11,7 @@ public class Scene_Manager : MonoBehaviour
     public int map;
     public GameObject[] maps;
     public bool inGame;
+    public bool tutorial;
     public ArcadeManager arcadeManager;
 
     private void OnEnable()

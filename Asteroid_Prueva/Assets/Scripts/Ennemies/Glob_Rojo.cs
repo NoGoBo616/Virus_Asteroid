@@ -43,13 +43,13 @@ public class Asteroid : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-
             if (size > 1)
             {
                 for (int i = 0; i < 2; i++)
                 {
                     GameObject newAsteroid = Instantiate(smallerAsteroidPrefab, transform.position, Quaternion.identity);
                     newAsteroid.GetComponent<Asteroid>().size = size - 1;
+                    Destroy(this.gameObject);
                 }
             }
         }
