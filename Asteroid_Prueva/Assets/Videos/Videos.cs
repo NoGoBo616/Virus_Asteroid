@@ -8,6 +8,7 @@ public class Videos : MonoBehaviour
 {
     public float time;
     public int scene;
+    public Animator anim;
 
     private void OnEnable()
     {
@@ -17,6 +18,7 @@ public class Videos : MonoBehaviour
     private IEnumerator Pasar()
     {
         yield return new WaitForSeconds(time);
+        anim.SetTrigger("On");
         SceneManager.LoadScene(scene);
         yield return null;
     }
