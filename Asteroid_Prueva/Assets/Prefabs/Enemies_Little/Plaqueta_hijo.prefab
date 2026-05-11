@@ -86,15 +86,15 @@ PrefabInstance:
       objectReference: {fileID: 8908493592961605226}
     - target: {fileID: 8993773449769491017, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
       propertyPath: m_Color.b
-      value: 0.72955966
+      value: 0.82641506
       objectReference: {fileID: 0}
     - target: {fileID: 8993773449769491017, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
       propertyPath: m_Color.g
-      value: 0.72955966
+      value: 0.82641506
       objectReference: {fileID: 0}
     - target: {fileID: 8993773449769491017, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
       propertyPath: m_Color.r
-      value: 0.72955966
+      value: 0.82641506
       objectReference: {fileID: 0}
     - target: {fileID: 8993773449769491017, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
       propertyPath: m_SortingOrder
@@ -147,4 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 5
+  originalPoints: 0
   VFX_puntos: {fileID: 1662299301705729500, guid: 30e078a3edfa37c428316367012433e0, type: 3}
+  duplicado: {fileID: 0}

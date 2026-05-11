@@ -27,11 +27,20 @@ public class Fago_Anim : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (target != null && collision.gameObject.CompareTag("Player") && capturable)
+        {
+            target.transform.SetParent(transform);
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && capturable)
         {
             anim.SetBool("Aspirando", false);
+            target.transform.SetParent(null);
             aspirar.SetActive(false);
             target = null;
         }

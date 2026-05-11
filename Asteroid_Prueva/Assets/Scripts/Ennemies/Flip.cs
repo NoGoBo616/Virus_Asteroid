@@ -13,12 +13,12 @@ public class Flip : MonoBehaviour
         if (rb.linearVelocity.x > 0 && !flip)
         {
             flip = true;
-            gameObject.transform.localScale = new Vector2(3, 3);
+            gameObject.transform.localScale = new Vector2(-3, 3);
         }
         if (rb.linearVelocity.x < 0 && flip)
         {
             flip = false;
-            gameObject.transform.localScale = new Vector2(-3, 3);
+            gameObject.transform.localScale = new Vector2(3, 3);
         }
     }
 }

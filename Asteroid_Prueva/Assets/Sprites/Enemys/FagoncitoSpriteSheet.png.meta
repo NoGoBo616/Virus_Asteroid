@@ -1,0 +1,634 @@
+fileFormatVersion: 2
+guid: 2c1698f94278f434abf9145c9301929e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4482489123649588855
+    second: FagoncitoSpriteSheet_0
+  - first:
+      213: -1474099645578684736
+    second: FagoncitoSpriteSheet_1
+  - first:
+      213: 8492234679021816334
+    second: FagoncitoSpriteSheet_2
+  - first:
+      213: 1601891638827969000
+    second: FagoncitoSpriteSheet_3
+  - first:
+      213: 4804882781229759217
+    second: FagoncitoSpriteSheet_4
+  - first:
+      213: -6883334111153860521
+    second: FagoncitoSpriteSheet_5
+  - first:
+      213: -1920815324242899756
+    second: FagoncitoSpriteSheet_6
+  - first:
+      213: 3047695343736974700
+    second: FagoncitoSpriteSheet_7
+  - first:
+      213: -4065787060889944279
+    second: FagoncitoSpriteSheet_8
+  - first:
+      213: -1712841551634849218
+    second: FagoncitoSpriteSheet_9
+  - first:
+      213: -4386056394795098631
+    second: FagoncitoSpriteSheet_10
+  - first:
+      213: 8831745810953343579
+    second: FagoncitoSpriteSheet_11
+  - first:
+      213: -6833000372309005844
+    second: FagoncitoSpriteSheet_12
+  - first:
+      213: 6173883194121631019
+    second: FagoncitoSpriteSheet_13
+  - first:
+      213: 3766769248715876636
+    second: FagoncitoSpriteSheet_14
+  - first:
+      213: -6478061521169383
+    second: FagoncitoSpriteSheet_15
+  - first:
+      213: 5292908409199905077
+    second: FagoncitoSpriteSheet_16
+  - first:
+      213: 4481021676560118708
+    second: FagoncitoSpriteSheet_17
+  - first:
+      213: 7974783356330372822
+    second: FagoncitoSpriteSheet_18
+  - first:
+      213: -7773816986320231550
+    second: FagoncitoSpriteSheet_19
+  - first:
+      213: 4584829768657179360
+    second: FagoncitoSpriteSheet_20
+  - first:
+      213: 6314214789068791259
+    second: FagoncitoSpriteSheet_21
+  - first:
+      213: -5776895649348906111
+    second: FagoncitoSpriteSheet_22
+  - first:
+      213: 3670693074230230702
+    second: FagoncitoSpriteSheet_23
+  - first:
+      213: 2329338014513035526
+    second: FagoncitoSpriteSheet_24
+  - first:
+      213: 206662248590011734
+    second: FagoncitoSpriteSheet_25
+  - first:
+      213: -5707613629150586362
+    second: FagoncitoSpriteSheet_26
+  - first:
+      213: 5550797210640379788
+    second: FagoncitoSpriteSheet_27
+  - first:
+      213: -4186135416402023071
+    second: FagoncitoSpriteSheet_28
+  - first:
+      213: -8416645576087171027
+    second: FagoncitoSpriteSheet_29
+  - first:
+      213: 7399687757433107946
+    second: FagoncitoSpriteSheet_30
+  - first:
+      213: -4185496142264082289
+    second: FagoncitoSpriteSheet_31
+  - first:
+      213: 123163779917785799
+    second: FagoncitoSpriteSheet_32
+  - first:
+      213: 8229958747993623912
+    second: FagoncitoSpriteSheet_33
+  - first:
+      213: 2745764119361396241
+    second: FagoncitoSpriteSheet_34
+  - first:
+      213: 37811254371604354
+    second: FagoncitoSpriteSheet_35
+  - first:
+      213: 3530949805471137289
+    second: FagoncitoSpriteSheet_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981705b24effac1c0800000000000000
+      internalID: -4482489123649588855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6d0c5be22fa8be0800000000000000
+      internalID: -1474099645578684736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a4950627a7ad570800000000000000
+      internalID: 8492234679021816334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9620555ff0b3610800000000000000
+      internalID: 1601891638827969000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa3792ae6f5ea240800000000000000
+      internalID: 4804882781229759217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750585a681c7970a0800000000000000
+      internalID: -6883334111153860521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc0067b3a4e755e0800000000000000
+      internalID: -1920815324242899756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ded0b84c69b4a20800000000000000
+      internalID: 3047695343736974700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f7647a53c6397c0800000000000000
+      internalID: -4065787060889944279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32a64e0fa3ca38e0800000000000000
+      internalID: -1712841551634849218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd586f72f89123c0800000000000000
+      internalID: -4386056394795098631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b521b60c50aa09a70800000000000000
+      internalID: 8831745810953343579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9e86a3d5e4c21a0800000000000000
+      internalID: -6833000372309005844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25bf5eed0a0ea550800000000000000
+      internalID: 6173883194121631019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19239caca0464430800000000000000
+      internalID: 3766769248715876636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9149234cc3cf8eff0800000000000000
+      internalID: -6478061521169383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FagoncitoSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539c907b720347940800000000000000
+      internalID: 5292908409199905077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b9d4023bff7fee242a43c0e84f3582f3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      FagoncitoSpriteSheet_0: -4482489123649588855
+      FagoncitoSpriteSheet_1: -1474099645578684736
+      FagoncitoSpriteSheet_10: -4386056394795098631
+      FagoncitoSpriteSheet_11: 8831745810953343579
+      FagoncitoSpriteSheet_12: -6833000372309005844
+      FagoncitoSpriteSheet_13: 6173883194121631019
+      FagoncitoSpriteSheet_14: 3766769248715876636
+      FagoncitoSpriteSheet_15: -6478061521169383
+      FagoncitoSpriteSheet_16: 5292908409199905077
+      FagoncitoSpriteSheet_2: 8492234679021816334
+      FagoncitoSpriteSheet_3: 1601891638827969000
+      FagoncitoSpriteSheet_4: 4804882781229759217
+      FagoncitoSpriteSheet_5: -6883334111153860521
+      FagoncitoSpriteSheet_6: -1920815324242899756
+      FagoncitoSpriteSheet_7: 3047695343736974700
+      FagoncitoSpriteSheet_8: -4065787060889944279
+      FagoncitoSpriteSheet_9: -1712841551634849218
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

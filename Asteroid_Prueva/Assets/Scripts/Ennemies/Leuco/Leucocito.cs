@@ -4,6 +4,8 @@ using UnityEngine;
 public class Leucocito : MonoBehaviour
 {
     public GameObject granitos;
+    public Collider2D leuco;
+    public Animator anim;
 
     public bool catched;
     GameObject player;
@@ -12,12 +14,16 @@ public class Leucocito : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            catched = true;
-            collision.transform.SetParent(transform);
-            player = collision.gameObject;
-            collision.attachedRigidbody.linearVelocity = Vector2.zero;
-            granitos.SetActive(true);
+            if (leuco.IsTouching(collision))
+            {
+                catched = true;
+                collision.transform.SetParent(transform);
+                player = collision.gameObject;
+                collision.attachedRigidbody.linearVelocity = Vector2.zero;
+                granitos.SetActive(true);
+            }
         }
+        
     }
 
     private void Update()
@@ -31,6 +37,7 @@ public class Leucocito : MonoBehaviour
     public void KillLeuco()
     {
         player.transform.SetParent(null);
-        Destroy(this.gameObject);
+        anim.SetTrigger("Die");
+        Destroy(this.gameObject, 0.2f);
     }
 }

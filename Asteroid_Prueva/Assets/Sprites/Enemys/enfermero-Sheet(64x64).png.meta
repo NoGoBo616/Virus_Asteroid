@@ -1,0 +1,640 @@
+fileFormatVersion: 2
+guid: 59a5596cd441f8149a561e08e64890e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 61223509156718907
+    second: enfermero-Sheet(64x64)_0
+  - first:
+      213: -1273019093801512679
+    second: enfermero-Sheet(64x64)_1
+  - first:
+      213: 1868439529064471762
+    second: enfermero-Sheet(64x64)_2
+  - first:
+      213: -7241423009874906367
+    second: enfermero-Sheet(64x64)_3
+  - first:
+      213: -5006988514956394609
+    second: enfermero-Sheet(64x64)_4
+  - first:
+      213: 3452126005766316785
+    second: enfermero-Sheet(64x64)_5
+  - first:
+      213: -6877928784176072583
+    second: enfermero-Sheet(64x64)_6
+  - first:
+      213: 389593049286283672
+    second: enfermero-Sheet(64x64)_7
+  - first:
+      213: -919262778127882221
+    second: enfermero-Sheet(64x64)_8
+  - first:
+      213: -1964155073456162705
+    second: enfermero-Sheet(64x64)_9
+  - first:
+      213: 1742007857950328971
+    second: enfermero-Sheet(64x64)_10
+  - first:
+      213: 7671265452707181726
+    second: enfermero-Sheet(64x64)_11
+  - first:
+      213: 8591228259198630824
+    second: enfermero-Sheet(64x64)_12
+  - first:
+      213: -1348494124599018564
+    second: enfermero-Sheet(64x64)_13
+  - first:
+      213: -2606944801376035430
+    second: enfermero-Sheet(64x64)_14
+  - first:
+      213: 5503494251330239606
+    second: enfermero-Sheet(64x64)_15
+  - first:
+      213: 4837295741420500442
+    second: enfermero-Sheet(64x64)_16
+  - first:
+      213: 2714894694475386499
+    second: enfermero-Sheet(64x64)_17
+  - first:
+      213: -2372386840154049756
+    second: enfermero-Sheet(64x64)_18
+  - first:
+      213: -4393128683291115103
+    second: enfermero-Sheet(64x64)_19
+  - first:
+      213: -4661654048437803445
+    second: enfermero-Sheet(64x64)_20
+  - first:
+      213: -2592913971912868772
+    second: enfermero-Sheet(64x64)_21
+  - first:
+      213: 615237918896580675
+    second: enfermero-Sheet(64x64)_22
+  - first:
+      213: -4250605941137107409
+    second: enfermero-Sheet(64x64)_23
+  - first:
+      213: 9008774466601530006
+    second: enfermero-Sheet(64x64)_24
+  - first:
+      213: -8843171577971859092
+    second: enfermero-Sheet(64x64)_25
+  - first:
+      213: 5963941194773887122
+    second: enfermero-Sheet(64x64)_26
+  - first:
+      213: -7748689509880359431
+    second: enfermero-Sheet(64x64)_27
+  - first:
+      213: 2906051464796297903
+    second: enfermero-Sheet(64x64)_28
+  - first:
+      213: -7829382446565403239
+    second: enfermero-Sheet(64x64)_29
+  - first:
+      213: -5913939576249574924
+    second: enfermero-Sheet(64x64)_30
+  - first:
+      213: 5944596330082871702
+    second: enfermero-Sheet(64x64)_31
+  - first:
+      213: -7543416001726184527
+    second: enfermero-Sheet(64x64)_32
+  - first:
+      213: 6863308976729236800
+    second: enfermero-Sheet(64x64)_33
+  - first:
+      213: -4438034009729852119
+    second: enfermero-Sheet(64x64)_34
+  - first:
+      213: -110524775512973068
+    second: enfermero-Sheet(64x64)_35
+  - first:
+      213: 2516218840929122541
+    second: enfermero-Sheet(64x64)_36
+  - first:
+      213: -8590782926216366430
+    second: enfermero-Sheet(64x64)_37
+  - first:
+      213: 296569018956961016
+    second: enfermero-Sheet(64x64)_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39603b057289d000800000000000000
+      internalID: 61223509156718907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911dba101e3555ee0800000000000000
+      internalID: -1273019093801512679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc9f2e2ad70ee910800000000000000
+      internalID: 1868439529064471762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103f014a32c418b90800000000000000
+      internalID: -7241423009874906367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f309b497a938ab0800000000000000
+      internalID: -5006988514956394609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2e695ef4a68ef20800000000000000
+      internalID: 3452126005766316785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97830cc2630bc80a0800000000000000
+      internalID: -6877928784176072583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8919bad60dc186500800000000000000
+      internalID: 389593049286283672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318e27eaf5f1e33f0800000000000000
+      internalID: -919262778127882221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f683dd20e5bedb4e0800000000000000
+      internalID: -1964155073456162705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b888111daeadc2810800000000000000
+      internalID: 1742007857950328971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94765ef84fc57a60800000000000000
+      internalID: 7671265452707181726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8abf4dd559c2a3770800000000000000
+      internalID: 8591228259198630824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbf2910dbf294de0800000000000000
+      internalID: -1348494124599018564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d1eece38542dbd0800000000000000
+      internalID: -2606944801376035430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c71f1ecd6506c40800000000000000
+      internalID: 5503494251330239606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfermero-Sheet(64x64)_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5f0e409d6812340800000000000000
+      internalID: 4837295741420500442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fb05ad9edb204824aab4879458dcb8ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      enfermero-Sheet(64x64)_0: 61223509156718907
+      enfermero-Sheet(64x64)_1: -1273019093801512679
+      enfermero-Sheet(64x64)_10: 1742007857950328971
+      enfermero-Sheet(64x64)_11: 7671265452707181726
+      enfermero-Sheet(64x64)_12: 8591228259198630824
+      enfermero-Sheet(64x64)_13: -1348494124599018564
+      enfermero-Sheet(64x64)_14: -2606944801376035430
+      enfermero-Sheet(64x64)_15: 5503494251330239606
+      enfermero-Sheet(64x64)_16: 4837295741420500442
+      enfermero-Sheet(64x64)_2: 1868439529064471762
+      enfermero-Sheet(64x64)_3: -7241423009874906367
+      enfermero-Sheet(64x64)_4: -5006988514956394609
+      enfermero-Sheet(64x64)_5: 3452126005766316785
+      enfermero-Sheet(64x64)_6: -6877928784176072583
+      enfermero-Sheet(64x64)_7: 389593049286283672
+      enfermero-Sheet(64x64)_8: -919262778127882221
+      enfermero-Sheet(64x64)_9: -1964155073456162705
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
