@@ -1852,7 +1852,7 @@ PrefabInstance:
     - target: {fileID: 8700914704337125749, guid: f692191fc9e8f504aa6ef99ab838b6db, type: 3}
       propertyPath: 'exclusibe.Array.data[2]'
       value: 
-      objectReference: {fileID: 6656032666066225377, guid: a82a561312b11be4a8f2423cb3ab009f, type: 3}
+      objectReference: {fileID: 3821936442346954509, guid: 4effa28d0aff9a84195b2832b0a34c71, type: 3}
     - target: {fileID: 8700914704337125749, guid: f692191fc9e8f504aa6ef99ab838b6db, type: 3}
       propertyPath: 'exclusibe.Array.data[3]'
       value: 
@@ -3073,6 +3073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scene_Cambio
   anim: {fileID: 1821485296}
+  first: {fileID: 0}
 --- !u!4 &1784751046
 Transform:
   m_ObjectHideFlags: 0

@@ -80,6 +80,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: AsteroidClone
       objectReference: {fileID: 0}
+    - target: {fileID: 8008484964052124491, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
+      propertyPath: indice
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8096594814206311853, guid: 249ddd1ea89c4124db66d2812699ad1e, type: 3}
       propertyPath: asteroidClonePrefab
       value: 

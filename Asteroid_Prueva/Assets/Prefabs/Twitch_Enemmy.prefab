@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 716816721330672141}
   - component: {fileID: 5396009474474067754}
   - component: {fileID: 4571907710879223611}
+  - component: {fileID: 6902062363765678782}
   m_Layer: 0
   m_Name: Twitch_Enemmy
   m_TagString: AsteroidClone
@@ -190,6 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Twitch_Anim
   anim: {fileID: 1743896053054461228}
   coll: {fileID: 2256571550301705255}
+  velocidad: {fileID: 0}
 --- !u!50 &716816721330672141
 Rigidbody2D:
   serializedVersion: 5
@@ -269,6 +271,20 @@ MonoBehaviour:
   originalPoints: 0
   VFX_puntos: {fileID: 1662299301705729500, guid: 4377bd5fc82e9b241857e800cd717097, type: 3}
   duplicado: {fileID: 0}
+--- !u!114 &6902062363765678782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883831280484865768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
+  indice: 12
+  manager: {fileID: 0}
 --- !u!1 &2307992166541000364
 GameObject:
   m_ObjectHideFlags: 0

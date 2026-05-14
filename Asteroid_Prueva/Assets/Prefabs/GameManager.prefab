@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e094339539ce24bb10857a6c898f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemigosDesbloqueados: 00000000000000000000000000
   points: 0
+  title: {fileID: 0}
+  managDePuntos: {fileID: 0}

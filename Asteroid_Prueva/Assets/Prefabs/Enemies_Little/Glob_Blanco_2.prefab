@@ -86,6 +86,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7778826346400581088, guid: 5e1b26c1ec32f7a409986f247f8bc917, type: 3}
+      propertyPath: indice
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 575950858407551651, guid: 5e1b26c1ec32f7a409986f247f8bc917, type: 3}
       propertyPath: pointsEn
       value: 60

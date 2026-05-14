@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8948892863653037344}
   - component: {fileID: 7182663647453364840}
   - component: {fileID: 5181593754635920520}
+  - component: {fileID: -2503889890057669811}
   m_Layer: 0
   m_Name: Glob_Rojo_1
   m_TagString: AsteroidClone
@@ -137,6 +138,20 @@ MonoBehaviour:
   originalPoints: 0
   VFX_puntos: {fileID: 3865927618131028342, guid: eaa036cacfdc64e4eabe7192a607e33f, type: 3}
   duplicado: {fileID: 0}
+--- !u!114 &-2503889890057669811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624091324232962374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
+  indice: 0
+  manager: {fileID: 0}
 --- !u!1 &4089065698284866726
 GameObject:
   m_ObjectHideFlags: 0

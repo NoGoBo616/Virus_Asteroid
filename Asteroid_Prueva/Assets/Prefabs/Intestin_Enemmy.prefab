@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 3986889748767856590}
   - component: {fileID: 1868784243241777278}
   - component: {fileID: 2430823926360013989}
+  - component: {fileID: 2190041743158011993}
   m_Layer: 0
   m_Name: Intestin_Enemmy
   m_TagString: AsteroidClone
@@ -240,6 +241,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   turnSpeed: 3
+--- !u!114 &2190041743158011993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3821936442346954509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
+  indice: 9
+  manager: {fileID: 0}
 --- !u!1 &4278764581650061915
 GameObject:
   m_ObjectHideFlags: 0

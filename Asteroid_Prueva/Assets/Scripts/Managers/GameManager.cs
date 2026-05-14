@@ -6,11 +6,12 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
+    
+    public bool[] enemigosDesbloqueados;
     public static GameManager Instance;
     public int points;
-    [SerializeField]
-    private TMP_Text title;
+    
+    public TMP_Text title;
     public ArcadeManager managDePuntos;
 
     private void OnEnable()
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
         Reiniciar();
         points = 0;
     }
+
+
 
     private void Update()
     {
@@ -64,5 +67,18 @@ public class GameManager : MonoBehaviour
         StaticPoints.points= points;
         managDePuntos.GuardarDatos(managDePuntos.nombreJugador, managDePuntos.puntuacion);
     }
+    public void DesbloquearEnemigo(int index)
+    {
+        if (index < 0 || index >= enemigosDesbloqueados.Length)
+            return;
+
+        enemigosDesbloqueados[index] = true;
+
+        //PlayerPrefs.SetInt("Enemigo_" + index, 1);
+        //PlayerPrefs.Save();
+
+        Debug.Log("Enemigo desbloqueado: " + index);
+    }
 }
+
 

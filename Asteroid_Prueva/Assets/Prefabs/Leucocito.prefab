@@ -1090,6 +1090,7 @@ GameObject:
   - component: {fileID: 5233297740602204852}
   - component: {fileID: 680261119566411923}
   - component: {fileID: 7104116825697858386}
+  - component: {fileID: -5665881448819266753}
   m_Layer: 0
   m_Name: Leucocito
   m_TagString: Police
@@ -1196,6 +1197,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-5665881448819266753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490236584152910836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
+  indice: 6
+  manager: {fileID: 0}
 --- !u!1 &8686255169028888171
 GameObject:
   m_ObjectHideFlags: 0
