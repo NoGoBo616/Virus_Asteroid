@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 5415606105162682810}
   - component: {fileID: 6163167692434191467}
   - component: {fileID: 4147533113716031233}
+  - component: {fileID: 7655497476128853814}
   m_Layer: 0
   m_Name: Cancer
   m_TagString: AsteroidClone
@@ -466,3 +467,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Glob_Blanco
   speed: 5
   turnSpeed: 1.5
+--- !u!114 &7655497476128853814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167928677819542144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
+  indice: 7
+  manager: {fileID: 0}

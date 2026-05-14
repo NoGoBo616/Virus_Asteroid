@@ -36,6 +36,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2190041743158011993, guid: 4effa28d0aff9a84195b2832b0a34c71, type: 3}
+      propertyPath: indice
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3668535217622756784, guid: 4effa28d0aff9a84195b2832b0a34c71, type: 3}
       propertyPath: m_Radius
       value: 0.3311561

@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 2560343126586735193}
   - component: {fileID: 2664033586595961473}
   - component: {fileID: -8633725403028749414}
+  - component: {fileID: 8008484964052124491}
   m_Layer: 0
   m_Name: Plaqueta
   m_TagString: AsteroidClone
@@ -276,7 +277,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 30
+  originalPoints: 0
   VFX_puntos: {fileID: 1662299301705729500, guid: 9d9c755b59205a64eb00815459f36b82, type: 3}
+  duplicado: {fileID: 0}
+--- !u!114 &8008484964052124491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5845364292275545251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
+  indice: 5
+  manager: {fileID: 0}
 --- !u!1001 &1433353453076871199
 PrefabInstance:
   m_ObjectHideFlags: 0

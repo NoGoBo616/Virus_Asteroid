@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8314754938893094497}
   - component: {fileID: 4802743081079628061}
   - component: {fileID: 2948192515874483256}
+  - component: {fileID: 8035066803375086641}
   m_Layer: 0
   m_Name: Colesterol
   m_TagString: Asteroid
@@ -138,6 +139,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8035066803375086641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316017013753386728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
+  indice: 8
+  manager: {fileID: 0}
 --- !u!1 &2232394707047382794
 GameObject:
   m_ObjectHideFlags: 0

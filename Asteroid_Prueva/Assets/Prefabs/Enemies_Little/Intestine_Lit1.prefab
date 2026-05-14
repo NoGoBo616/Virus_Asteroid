@@ -40,6 +40,10 @@ PrefabInstance:
       propertyPath: smallerAsteroidPrefab
       value: 
       objectReference: {fileID: 3816954477644901406, guid: 557c61af60d85e442919be995e60ea49, type: 3}
+    - target: {fileID: 2190041743158011993, guid: 4effa28d0aff9a84195b2832b0a34c71, type: 3}
+      propertyPath: indice
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3668535217622756784, guid: 4effa28d0aff9a84195b2832b0a34c71, type: 3}
       propertyPath: m_Radius
       value: 0.6785328
