@@ -6,6 +6,7 @@ public class Cancer_Script : MonoBehaviour
     public Glob_Blanco perseguir;
     public Asteroid patrullar;
     public GameObject nubes;
+    public Animator anim;
 
     private void OnEnable()
     {
@@ -17,6 +18,7 @@ public class Cancer_Script : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            anim.SetBool("Follow", true);
             patrullar.speed *= 2;
             perseguir.enabled = true;
         }

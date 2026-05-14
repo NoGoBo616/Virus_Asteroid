@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 251282ce45d54454899a8623685681d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6662651746263902931
+    second: ameba perro-Sheet_0
+  - first:
+      213: 2147141079917720041
+    second: ameba perro-Sheet_1
+  - first:
+      213: 3965519278875297558
+    second: ameba perro-Sheet_2
+  - first:
+      213: 650043070547345263
+    second: ameba perro-Sheet_3
+  - first:
+      213: 7972585835085018757
+    second: ameba perro-Sheet_4
+  - first:
+      213: 7985276930423776680
+    second: ameba perro-Sheet_5
+  - first:
+      213: -6296562864671660183
+    second: ameba perro-Sheet_6
+  - first:
+      213: -4284289606836489991
+    second: ameba perro-Sheet_7
+  - first:
+      213: -5209644240218284708
+    second: ameba perro-Sheet_8
+  - first:
+      213: -2504832136952332397
+    second: ameba perro-Sheet_9
+  - first:
+      213: -4083224640005409708
+    second: ameba perro-Sheet_10
+  - first:
+      213: -1576649490183124641
+    second: ameba perro-Sheet_11
+  - first:
+      213: -4209920391690274368
+    second: ameba perro-Sheet_12
+  - first:
+      213: -684462961083652121
+    second: ameba perro-Sheet_13
+  - first:
+      213: 42701597891467105
+    second: ameba perro-Sheet_14
+  - first:
+      213: 3556539404355653358
+    second: ameba perro-Sheet_15
+  - first:
+      213: -4152155671948535241
+    second: ameba perro-Sheet_16
+  - first:
+      213: -2090331933970138541
+    second: ameba perro-Sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ameba perro-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 198
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25ddc979818983a0800000000000000
+      internalID: -6662651746263902931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 196
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1f427af6d2ccd10800000000000000
+      internalID: 2147141079917720041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 242
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617435f16ca580730800000000000000
+      internalID: 3965519278875297558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 210
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fbda48aba650900800000000000000
+      internalID: 650043070547345263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 206
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586bd81939054ae60800000000000000
+      internalID: 7972585835085018757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 196
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5e7077f0761de60800000000000000
+      internalID: 7985276930423776680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 134
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96764596f6d1e98a0800000000000000
+      internalID: -6296562864671660183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 134
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0fc9d3d452b84c0800000000000000
+      internalID: -4284289606836489991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 135
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d11a75a20a3b7b0800000000000000
+      internalID: -5209644240218284708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 135
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f39fe417c0d3dd0800000000000000
+      internalID: -2504832136952332397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 70
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454fa52e2d87557c0800000000000000
+      internalID: -4083224640005409708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 70
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59855264ad9e1ae0800000000000000
+      internalID: -1576649490183124641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 70
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9b0a875bb5395c0800000000000000
+      internalID: -4209920391690274368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 68
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e762b6309c4086f0800000000000000
+      internalID: -684462961083652121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 6
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16799a580e4b79000800000000000000
+      internalID: 42701597891467105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 5
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee4c42bebd5b5130800000000000000
+      internalID: 3556539404355653358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 4
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a52695a649066c0800000000000000
+      internalID: -4152155671948535241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ameba perro-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 4
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35afd0d5e26adf2e0800000000000000
+      internalID: -2090331933970138541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ameba perro-Sheet_0: -6662651746263902931
+      ameba perro-Sheet_1: 2147141079917720041
+      ameba perro-Sheet_10: -4083224640005409708
+      ameba perro-Sheet_11: -1576649490183124641
+      ameba perro-Sheet_12: -4209920391690274368
+      ameba perro-Sheet_13: -684462961083652121
+      ameba perro-Sheet_14: 42701597891467105
+      ameba perro-Sheet_15: 3556539404355653358
+      ameba perro-Sheet_16: -4152155671948535241
+      ameba perro-Sheet_17: -2090331933970138541
+      ameba perro-Sheet_2: 3965519278875297558
+      ameba perro-Sheet_3: 650043070547345263
+      ameba perro-Sheet_4: 7972585835085018757
+      ameba perro-Sheet_5: 7985276930423776680
+      ameba perro-Sheet_6: -6296562864671660183
+      ameba perro-Sheet_7: -4284289606836489991
+      ameba perro-Sheet_8: -5209644240218284708
+      ameba perro-Sheet_9: -2504832136952332397
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

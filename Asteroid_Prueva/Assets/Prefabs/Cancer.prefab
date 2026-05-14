@@ -81,6 +81,7 @@ GameObject:
   - component: {fileID: 1935885256509649256}
   - component: {fileID: 2171872410339477486}
   - component: {fileID: 1043045864051484656}
+  - component: {fileID: 2390095301425040942}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -97,8 +98,8 @@ Transform:
   m_GameObject: {fileID: 4090627409145660477}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.018948078, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 174582767698005927}
@@ -118,6 +119,7 @@ MonoBehaviour:
   perseguir: {fileID: 4147533113716031233}
   patrullar: {fileID: 6163167692434191467}
   nubes: {fileID: 8518206839684825861, guid: e605b4444b9430840bc53e23a343332d, type: 3}
+  anim: {fileID: 2390095301425040942}
 --- !u!212 &1935885256509649256
 SpriteRenderer:
   serializedVersion: 2
@@ -167,8 +169,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.69339615, g: 0.78113204, b: 0.52321106, a: 1}
+  m_Sprite: {fileID: -5475847074433794972, guid: 9a83e1656100bd248a19f437ee17141d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -212,7 +214,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.018948078, y: 0}
-  m_Radius: 5.0074353
+  m_Radius: 3.0074353
 --- !u!58 &1043045864051484656
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247,8 +249,30 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: -0.00000032782555, y: -0.004383266}
+  m_Radius: 0.21508646
+--- !u!95 &2390095301425040942
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090627409145660477}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d8fbf7382cdef644962c4c3c1b05cfc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5311819960361413589
 GameObject:
   m_ObjectHideFlags: 0
