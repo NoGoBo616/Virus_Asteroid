@@ -5,12 +5,18 @@ public class Twitch_Anim : MonoBehaviour
 {
     public Animator anim;
     public Collider2D coll;
+    public Glob_Blanco velocidad;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (coll.IsTouching(other)) anim.SetBool("Go", true);
+            if (coll.IsTouching(other))
+            {
+                anim.SetBool("Go", true);
+                velocidad.turnSpeed = 4; 
+                velocidad.speed = 4;
+            }
         }
     }
 
@@ -19,6 +25,8 @@ public class Twitch_Anim : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             anim.SetBool("Go", false);
+            velocidad.turnSpeed = 2;
+            velocidad.speed = 3;
         }
     }
 
@@ -27,6 +35,7 @@ public class Twitch_Anim : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             anim.SetTrigger("Kabum");
+            Destroy(this.gameObject, 0.2f);
         }
     }
 }
