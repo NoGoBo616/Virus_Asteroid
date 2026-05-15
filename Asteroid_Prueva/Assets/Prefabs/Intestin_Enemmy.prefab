@@ -103,9 +103,11 @@ GameObject:
   - component: {fileID: 7739317686983124533}
   - component: {fileID: 3668535217622756784}
   - component: {fileID: 3986889748767856590}
+  - component: {fileID: 8559722064274563921}
   - component: {fileID: 1868784243241777278}
   - component: {fileID: 2430823926360013989}
   - component: {fileID: 2190041743158011993}
+  - component: {fileID: 412661536086831161}
   m_Layer: 0
   m_Name: Intestin_Enemmy
   m_TagString: AsteroidClone
@@ -207,6 +209,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8559722064274563921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3821936442346954509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eada23eaad093d4999a390b4f97600e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GolpeCinemachine
 --- !u!114 &1868784243241777278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +236,7 @@ MonoBehaviour:
   speed: 3
   smallerAsteroidPrefab: {fileID: 3816954477644901406, guid: 8ecdce65d4bb06949b0a1ff124500e99, type: 3}
   size: 3
+  shake: {fileID: 8559722064274563921}
   manager: {fileID: 6210024920145482995, guid: 912f5637ef3b2264aa324a3357480a62, type: 3}
   bulletSfxIndex: 14
   vfxApear: {fileID: 8655563992015001106, guid: 4c7546b0c99b23d4fbfc6f3ad52a87ba, type: 3}
@@ -255,6 +270,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
   indice: 9
   manager: {fileID: 0}
+--- !u!114 &412661536086831161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3821936442346954509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineImpulseSource
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 2
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.5
+    m_ImpulseType: 0
+    m_DissipationRate: 0.25
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  m_DefaultVelocity: {x: 1, y: 1, z: 0}
 --- !u!1 &4278764581650061915
 GameObject:
   m_ObjectHideFlags: 0

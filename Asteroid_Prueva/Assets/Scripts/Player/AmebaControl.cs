@@ -16,23 +16,25 @@ public class AmebaControl : MonoBehaviour
     public GameManager manager;
     public GameObject sprite;
     public GameObject pointsVFX;
+    public Animator anim;
+    public Player_ player;
 
     private void OnEnable()
     {
         manager = FindAnyObjectByType<GameManager>();
+        player = FindAnyObjectByType<Player_>();
         lifeAmeba = 1f;
         timeAmeba =times[Random.Range(0,7)];
-        ChangeDestiny();
     }
 
     void Update()
     {
         Flip();
         fill.fillAmount = lifeAmeba;
+        player = FindAnyObjectByType<Player_>();
         if (timeAmeba > 0)
         {
             timeAmeba -= Time.deltaTime;
-
         }
         if (timeAmeba <= 0)
         {
@@ -44,7 +46,9 @@ public class AmebaControl : MonoBehaviour
 
         if (lifeAmeba <= 0)
         {
-            Destroy(this.gameObject);
+            anim.SetTrigger("Die");
+            rb.gravityScale = 1;
+            Destroy(this.gameObject, 1);
         }
     }
     
@@ -59,20 +63,16 @@ public class AmebaControl : MonoBehaviour
 
         if (Vector2.Distance(transform.position, destino) <= 0.1f)
         {
-            ChangeDestiny();
+            
         }
     }
 
-    void ChangeDestiny()
-    {
-        destino = new Vector3(UnityEngine.Random.Range(-10, 11), UnityEngine.Random.Range(-8, 9), 0);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Asteroid") || collision.gameObject.CompareTag("Police"))
         {
             lifeAmeba = lifeAmeba - 0.1f;
+            anim.SetTrigger("Hurt");
         }
     }
 
@@ -89,11 +89,11 @@ public class AmebaControl : MonoBehaviour
 
         if (flip)
         {
-            sprite.gameObject.transform.localScale = new Vector3(1, 1, 1);
+            sprite.gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
         }
         else
         {
-            sprite.gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            sprite.gameObject.transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
 
         }
     }

@@ -10,12 +10,8 @@ public class GolpeCinemachine : MonoBehaviour
         miImpulso = GetComponent<CinemachineImpulseSource>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void Sehekear()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // Esta línea genera la sacudida usando la configuración del componente
-            miImpulso.GenerateImpulse();
-        }
+        miImpulso.GenerateImpulse();
     }
 }

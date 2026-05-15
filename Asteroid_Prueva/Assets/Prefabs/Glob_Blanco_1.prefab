@@ -150,7 +150,9 @@ GameObject:
   - component: {fileID: 575950858407551651}
   - component: {fileID: 5348763226470557153}
   - component: {fileID: 3413260435408878339}
+  - component: {fileID: 7502059516298339506}
   - component: {fileID: -7778826346400581088}
+  - component: {fileID: 2170637149505795807}
   m_Layer: 0
   m_Name: Glob_Blanco_1
   m_TagString: AsteroidClone
@@ -254,6 +256,7 @@ MonoBehaviour:
   speed: 1
   smallerAsteroidPrefab: {fileID: 7627931479434953752, guid: 71251f438949b5e4bb17730102f66aba, type: 3}
   size: 2
+  shake: {fileID: 7502059516298339506}
   manager: {fileID: 6210024920145482995, guid: 912f5637ef3b2264aa324a3357480a62, type: 3}
   bulletSfxIndex: 14
   vfxApear: {fileID: 8655563992015001106, guid: 4c7546b0c99b23d4fbfc6f3ad52a87ba, type: 3}
@@ -289,6 +292,18 @@ MonoBehaviour:
   originalPoints: 0
   VFX_puntos: {fileID: 1662299301705729500, guid: fc950cc656e3c0c4bbd6afdf1aff3ede, type: 3}
   duplicado: {fileID: 0}
+--- !u!114 &7502059516298339506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275976457173627277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eada23eaad093d4999a390b4f97600e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GolpeCinemachine
 --- !u!114 &-7778826346400581088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +318,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
   indice: 3
   manager: {fileID: 0}
+--- !u!114 &2170637149505795807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275976457173627277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineImpulseSource
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 2
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.5
+    m_ImpulseType: 0
+    m_DissipationRate: 0.25
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  m_DefaultVelocity: {x: 1, y: 1, z: 0}
 --- !u!1001 &5452563698418011194
 PrefabInstance:
   m_ObjectHideFlags: 0

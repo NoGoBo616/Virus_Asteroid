@@ -7,6 +7,7 @@ public class Asteroid : MonoBehaviour
     public float speed = 5;
     public GameObject smallerAsteroidPrefab;
     public int size = 3;
+    public GolpeCinemachine shake;
     
     public GameManager manager;
     [SerializeField] public int bulletSfxIndex;
@@ -57,6 +58,7 @@ public class Asteroid : MonoBehaviour
 
     private void OnDisable()
     {
+        shake.Sehekear();
         if (AudioManager.Instance != null)
         {
             if (AudioManager.Instance != null)

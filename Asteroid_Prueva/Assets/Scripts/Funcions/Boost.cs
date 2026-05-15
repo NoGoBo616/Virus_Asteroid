@@ -5,6 +5,7 @@ public class Boost : MonoBehaviour
 {
     public float speed;
     public Player_ player;
+    public GolpeCinemachine shake;
 
     private void OnEnable()
     {
@@ -16,6 +17,7 @@ public class Boost : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             player.thrust = speed;
+            shake.Sehekear();
         }
     }
 

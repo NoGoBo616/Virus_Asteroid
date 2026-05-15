@@ -11,7 +11,8 @@ public class Live_System : MonoBehaviour
     public bool dañado;
     [SerializeField] Image player_Live;
     public Scene_Cambio cambio;
-    
+    public GolpeCinemachine shake;
+
     public Live_System manager;
     [SerializeField] public int damageSfxIndex;
 
@@ -45,7 +46,7 @@ public class Live_System : MonoBehaviour
             {
                 AudioManager.Instance.PlaySFX(damageSfxIndex); 
             }
-
+            shake.Sehekear();
             vida = vida - 0.05f;
         }
     }
@@ -58,7 +59,7 @@ public class Live_System : MonoBehaviour
             {
                 AudioManager.Instance.PlaySFX(damageSfxIndex);
             }
-
+            shake.Sehekear();
             vida = vida - 0.05f;
             StartCoroutine(CoolDown());
         }

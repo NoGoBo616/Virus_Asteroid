@@ -1087,10 +1087,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8989413218159954631}
   - component: {fileID: 3054122012213963424}
+  - component: {fileID: 8044722624268688144}
   - component: {fileID: 5233297740602204852}
   - component: {fileID: 680261119566411923}
   - component: {fileID: 7104116825697858386}
   - component: {fileID: -5665881448819266753}
+  - component: {fileID: 3840487162943208135}
   m_Layer: 0
   m_Name: Leucocito
   m_TagString: Police
@@ -1134,6 +1136,18 @@ MonoBehaviour:
   leuco: {fileID: 1892253197819158450}
   anim: {fileID: 1858847356554331576}
   catched: 0
+--- !u!114 &8044722624268688144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490236584152910836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eada23eaad093d4999a390b4f97600e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GolpeCinemachine
 --- !u!114 &5233297740602204852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1149,6 +1163,7 @@ MonoBehaviour:
   speed: 1
   smallerAsteroidPrefab: {fileID: 0}
   size: 1
+  shake: {fileID: 8044722624268688144}
   manager: {fileID: 6210024920145482995, guid: 912f5637ef3b2264aa324a3357480a62, type: 3}
   bulletSfxIndex: 0
   vfxApear: {fileID: 5374981251632339549, guid: e96c88bd1f14c874c9563b4603cf36f4, type: 3}
@@ -1211,6 +1226,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
   indice: 6
   manager: {fileID: 0}
+--- !u!114 &3840487162943208135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490236584152910836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineImpulseSource
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 2
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.5
+    m_ImpulseType: 0
+    m_DissipationRate: 0.25
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  m_DefaultVelocity: {x: 1, y: 1, z: 0}
 --- !u!1 &8686255169028888171
 GameObject:
   m_ObjectHideFlags: 0
