@@ -9,11 +9,13 @@ public class Monedero : MonoBehaviour
     public int indice;
     public Image liveImg;
     public GameObject[] premio;
+    GameManager manager;
 
     private void OnEnable()
     {
         MoveBlood();
         rb = GetComponent<Rigidbody2D>();
+        manager = FindAnyObjectByType<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,6 +47,10 @@ public class Monedero : MonoBehaviour
         {
             indice = Random.Range(0, 3);
             Instantiate(premio[indice], this.gameObject.transform.position, Quaternion.identity);
+            if (indice == 1)
+            {
+                manager.points = manager.points + Random.Range(200, 500);
+            }
             Destroy(this.gameObject);
         }
     }

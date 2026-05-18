@@ -9,6 +9,7 @@ public class AmebaControl : MonoBehaviour
     public float timeAmeba;
     public Rigidbody2D rb;
     public bool flip;
+    public bool die;
     public float speed;
     public Vector3 destino;
     public float[] times;
@@ -44,11 +45,15 @@ public class AmebaControl : MonoBehaviour
             this.gameObject.SetActive(false);
         } 
 
-        if (lifeAmeba <= 0)
+        if (die == false)
         {
-            anim.SetTrigger("Die");
-            rb.gravityScale = 1;
-            Destroy(this.gameObject, 1);
+            if (lifeAmeba <= 0)
+            {
+                die = true;
+                anim.SetTrigger("Die");
+                rb.gravityScale = 1;
+                Destroy(this.gameObject, 0.8f * Time.deltaTime);
+            }
         }
     }
     
@@ -59,12 +64,13 @@ public class AmebaControl : MonoBehaviour
 
     void MoveAmeba()
     {
-        rb.linearVelocity = (Vector2)(destino - transform.position).normalized * speed;
+        Vector2 currentDirection = rb.linearVelocity.normalized;
 
-        if (Vector2.Distance(transform.position, destino) <= 0.1f)
-        {
-            
-        }
+        Vector2 directionToPlayer = ((Vector2)(player.transform.position - transform.position)).normalized;
+
+        Vector2 newDirection = Vector2.Lerp(currentDirection, directionToPlayer, 3 * Time.fixedDeltaTime).normalized;
+
+        rb.linearVelocity = newDirection * speed;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -89,11 +95,11 @@ public class AmebaControl : MonoBehaviour
 
         if (flip)
         {
-            sprite.gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            sprite.gameObject.transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
         }
         else
         {
-            sprite.gameObject.transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
+            sprite.gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
         }
     }

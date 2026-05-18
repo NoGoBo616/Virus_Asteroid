@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    public GameObject[] spawned;
-    public GameObject[] exclusibe;
+    public GameObject[] tutorial;
+    public GameObject[] pulmon;
+    public GameObject[] estomago;
+    public GameObject[] intestino;
+    public GameObject[] corazon;
     public float timeToSpawn;
     public int max;
     public Levels_Manager nivel;
@@ -33,14 +36,28 @@ public class Spawn : MonoBehaviour
 
         if (isSpawning == false)
         {
-            int randomSpawner = Random.Range(0, max);
-            if (randomSpawner <= spawned.Length)
+            int randomSpawner = Random.Range(0, 6);
+
+            if (nivel == null)
             {
-                Instantiate(spawned[randomSpawner], transform.position, Quaternion.identity);
-            } 
-            if (randomSpawner > spawned.Length)
+                Instantiate(tutorial[randomSpawner].gameObject, this.gameObject.transform.position, Quaternion.identity);
+                StartCoroutine(Spawning());
+            }
+            if (nivel.nivelSeleccionado >= 3)
             {
-                Instantiate(exclusibe[nivel.nivelSeleccionado], transform.position, Quaternion.identity);
+                Instantiate(pulmon[randomSpawner].gameObject, this.gameObject.transform.position, Quaternion.identity);
+            }
+            if (nivel.nivelSeleccionado == 2)
+            {
+                Instantiate(estomago[randomSpawner].gameObject, this.gameObject.transform.position, Quaternion.identity);
+            }
+            if (nivel.nivelSeleccionado == 1)
+            {
+                Instantiate(intestino[randomSpawner].gameObject, this.gameObject.transform.position, Quaternion.identity);
+            }
+            if (nivel.nivelSeleccionado == 0)
+            {
+                Instantiate(corazon[randomSpawner].gameObject, this.gameObject.transform.position, Quaternion.identity);
             }
             StartCoroutine(Spawning());
         }

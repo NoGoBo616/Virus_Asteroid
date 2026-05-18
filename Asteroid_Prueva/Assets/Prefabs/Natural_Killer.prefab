@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 2190041743158011993}
   - component: {fileID: 412661536086831161}
   m_Layer: 0
-  m_Name: Intestin_Enemmy
+  m_Name: Natural_Killer
   m_TagString: AsteroidClone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
