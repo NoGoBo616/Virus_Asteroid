@@ -33,6 +33,7 @@ public class Player_ : MonoBehaviour
     public Image escudoUI;
     public Image pinchoUI;
     public Image bulletUI;
+    public GameObject enrredadera;
 
     void Start()
     {

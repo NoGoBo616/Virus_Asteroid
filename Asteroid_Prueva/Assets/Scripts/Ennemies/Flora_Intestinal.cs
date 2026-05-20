@@ -6,6 +6,7 @@ public class Flora_Intestinal : MonoBehaviour
     public Player_ player;
     public float time;
     public Animator anim;
+    public GolpeCinemachine shake;
 
     private void OnEnable()
     {
@@ -16,6 +17,7 @@ public class Flora_Intestinal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            shake.Sehekear();
             anim.SetTrigger("Attack");
             time = Random.Range(20, 61);
             StartCoroutine(Ralentizar());
@@ -23,6 +25,9 @@ public class Flora_Intestinal : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Bullet"))
         {
+            shake.Sehekear();
+            player.thrust = 1;
+            player.enrredadera.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
@@ -31,8 +36,10 @@ public class Flora_Intestinal : MonoBehaviour
     IEnumerator Ralentizar()
     {
         player.thrust = 0.2f;
+        player.enrredadera.gameObject.SetActive(true);
         yield return new WaitForSeconds(time);
         player.thrust = 1;
+        player.enrredadera.gameObject.SetActive(false);
         yield return null;
     }
 }
