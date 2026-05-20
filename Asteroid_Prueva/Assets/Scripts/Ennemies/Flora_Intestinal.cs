@@ -5,6 +5,7 @@ public class Flora_Intestinal : MonoBehaviour
 {
     public Player_ player;
     public float time;
+    public Animator anim;
 
     private void OnEnable()
     {
@@ -15,6 +16,7 @@ public class Flora_Intestinal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            anim.SetTrigger("Attack");
             time = Random.Range(20, 61);
             StartCoroutine(Ralentizar());
         }
