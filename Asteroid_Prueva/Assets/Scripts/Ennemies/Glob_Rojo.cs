@@ -21,6 +21,7 @@ public class Asteroid : MonoBehaviour
     private void OnEnable()
     {
         Instantiate(vfxApear, transform.position, Quaternion.identity);
+        manager = FindAnyObjectByType<GameManager>();
     }
 
     void Start()

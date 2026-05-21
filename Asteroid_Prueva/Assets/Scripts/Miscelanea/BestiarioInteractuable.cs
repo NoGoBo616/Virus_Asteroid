@@ -70,11 +70,11 @@ public class BestiarioInteractuable : MonoBehaviour
 
             bool desbloqueado = false;
 
-            if (GameManager.Instance != null &&
-                GameManager.Instance.enemigosDesbloqueados != null &&
-                i < GameManager.Instance.enemigosDesbloqueados.Length)
+            if (Bestiario_Manager.Instance != null &&
+                Bestiario_Manager.Instance.enemigosDesbloqueados != null &&
+                i < Bestiario_Manager.Instance.enemigosDesbloqueados.Length)
             {
-                desbloqueado = GameManager.Instance.enemigosDesbloqueados[i];
+                desbloqueado = Bestiario_Manager.Instance.enemigosDesbloqueados[i];
             }
 
             if (desbloqueado)

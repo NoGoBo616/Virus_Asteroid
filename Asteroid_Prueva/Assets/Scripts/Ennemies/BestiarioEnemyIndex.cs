@@ -4,11 +4,11 @@ public class BestiarioEnemyIndex : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int indice;
-    public GameManager manager;
+    public Bestiario_Manager manager;
 
     private void OnEnable()
     {
-        manager=FindAnyObjectByType<GameManager>();
+        manager=FindAnyObjectByType<Bestiario_Manager>();
     }
     private void OnDestroy()
     {
