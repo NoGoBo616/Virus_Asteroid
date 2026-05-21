@@ -17,26 +17,34 @@ public class BestiarioInteractuable : MonoBehaviour
 
     private int paginaActual = 0;
 
-    private void OnEnable()
+    private void Start()
     {
-        MostrarPagina(paginaActual);
-    }
-
-    private void OnMouseDown()
-    {
-        Debug.Log("Bestiario interactuado. Abriendo menú...");
-        AbrirMenu();
-    }
-
-    public void AbrirMenu()
-    {
-        panelBestiario.SetActive(true);
-        MostrarPagina(paginaActual);
-    }
-
-    public void CerrarMenu()
-    {
+        // El bestiario inicia cerrado
         panelBestiario.SetActive(false);
+    }
+
+    public void AbrirCerrarBestiario()
+    {
+        bool abierto = !panelBestiario.activeSelf;
+
+        panelBestiario.SetActive(abierto);
+
+        if (abierto)
+        {
+            MostrarPagina(paginaActual);
+
+            // Opcional
+            Time.timeScale = 2f;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            // Opcional
+            Time.timeScale = 1f;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 
     public void PaginaSiguiente()
@@ -74,7 +82,8 @@ public class BestiarioInteractuable : MonoBehaviour
                 Bestiario_Manager.Instance.enemigosDesbloqueados != null &&
                 i < Bestiario_Manager.Instance.enemigosDesbloqueados.Length)
             {
-                desbloqueado = Bestiario_Manager.Instance.enemigosDesbloqueados[i];
+                desbloqueado =
+                    Bestiario_Manager.Instance.enemigosDesbloqueados[i];
             }
 
             if (desbloqueado)
@@ -99,4 +108,3 @@ public class BestiarioInteractuable : MonoBehaviour
         }
     }
 }
-
