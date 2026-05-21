@@ -8,6 +8,7 @@ TagManager:
   - AsteroidClone
   - Asteroid
   - Police
+  - Flora
   layers:
   - Default
   - TransparentFX

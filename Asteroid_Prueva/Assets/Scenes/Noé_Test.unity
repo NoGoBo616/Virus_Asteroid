@@ -4181,6 +4181,10 @@ PrefabInstance:
       propertyPath: points
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6210024920145482995, guid: 912f5637ef3b2264aa324a3357480a62, type: 3}
+      propertyPath: enemigosDesbloqueados.Array.size
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 6836414004738121787, guid: 912f5637ef3b2264aa324a3357480a62, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

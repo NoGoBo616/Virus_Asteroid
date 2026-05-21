@@ -124,12 +124,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2317848919709406747}
   - component: {fileID: 3145416832242969846}
+  - component: {fileID: 9097505968891367502}
   - component: {fileID: 4909529920600197017}
   - component: {fileID: 8285126245883148212}
+  - component: {fileID: 8673115738532045681}
   - component: {fileID: 5643860840120533291}
   m_Layer: 0
   m_Name: Flora
-  m_TagString: Untagged
+  m_TagString: Flora
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,6 +168,19 @@ MonoBehaviour:
   time: 0
   anim: {fileID: 5199659598812948124}
   shake: {fileID: 8285126245883148212}
+--- !u!114 &9097505968891367502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6286063562719039382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c48ff1e5cc829e4cb898a078b45e2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destruct_Instance
+  instancia: {fileID: 7468792058255031455, guid: 7ea5063240f150a4fb1b2c4164ddaeaa, type: 3}
 --- !u!58 &4909529920600197017
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -214,6 +229,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eada23eaad093d4999a390b4f97600e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GolpeCinemachine
+--- !u!114 &8673115738532045681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6286063562719039382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
+  indice: 12
+  manager: {fileID: 0}
 --- !u!114 &5643860840120533291
 MonoBehaviour:
   m_ObjectHideFlags: 0
