@@ -5189,6 +5189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2639057267686435352, guid: c4e56808f43953c4f9ea8c6b40165fed, type: 3}
+      propertyPath: 'listaPuntos.Array.data[0]'
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2703532463508817468, guid: c4e56808f43953c4f9ea8c6b40165fed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27354
@@ -10966,13 +10970,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381806356100434145, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.6
+      objectReference: {fileID: 0}
     - target: {fileID: 477454415754420266, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229140802233988349, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.6
       objectReference: {fileID: 0}
     - target: {fileID: 1360924457563708470, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717488636734618801, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.6
       objectReference: {fileID: 0}
     - target: {fileID: 3170706751367426869, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: crono
@@ -11006,6 +11022,10 @@ PrefabInstance:
       propertyPath: 'maps.Array.data[2]'
       value: 
       objectReference: {fileID: 177059826}
+    - target: {fileID: 3609915247673583718, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4808843986883806380, guid: 2924c1138d851e149a5ad0f053b4bffa, type: 3}
       propertyPath: m_Name
       value: SceneManager
