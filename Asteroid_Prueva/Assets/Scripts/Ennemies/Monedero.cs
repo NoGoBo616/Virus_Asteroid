@@ -47,7 +47,7 @@ public class Monedero : MonoBehaviour
         {
             indice = Random.Range(0, 3);
             Instantiate(premio[indice], this.gameObject.transform.position, Quaternion.identity);
-            if (indice == 1)
+            if (indice == 0)
             {
                 manager.points = manager.points + Random.Range(200, 500);
             }

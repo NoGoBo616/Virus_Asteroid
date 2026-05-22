@@ -46,6 +46,7 @@ public class Scene_Manager : MonoBehaviour
         SceneManager.LoadScene(3);
         inGame = false;
         arcadeManager.FinalizarPartida();
+        map = Random.Range(0, 3);
     }
 
     public void ChangeMap_Menu()

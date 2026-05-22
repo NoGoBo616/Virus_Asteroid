@@ -23,6 +23,11 @@ public class BestiarioInteractuable : MonoBehaviour
         panelBestiario.SetActive(false);
     }
 
+    private void OnMouseDown()
+    {
+        AbrirCerrarBestiario();
+    }
+
     public void AbrirCerrarBestiario()
     {
         bool abierto = !panelBestiario.activeSelf;

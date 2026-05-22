@@ -93,7 +93,7 @@ public class Boton3D : MonoBehaviour
     //Clicado
     void OnMouseDown()
     {
-        if (desbloqueado)
+        if (desbloqueado || pasado)
         {
             scene.Cargar(mapSelected);
             manager.Cambiar(levelSelected);
