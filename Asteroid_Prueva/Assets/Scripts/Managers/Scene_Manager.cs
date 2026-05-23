@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.Video;
 
 public class Scene_Manager : MonoBehaviour
 {
@@ -17,27 +18,6 @@ public class Scene_Manager : MonoBehaviour
     private void OnEnable()
     {
         arcadeManager=FindAnyObjectByType<ArcadeManager>();
-    }
-
-    public void ChangeMap_Game()
-    {
-        if (GlobalAudioManager.Instance != null)
-        {
-            GlobalAudioManager.Instance.PlaySFX(0);
-        }
-        SceneManager.LoadScene(7);
-    }
-
-    public void ChangeMap_GameInfiniteMode()
-    {
-        if (GlobalAudioManager.Instance != null)
-        {
-            GlobalAudioManager.Instance.PlaySFX(0);
-        }
-        crono.gameObject.SetActive(false);
-        SceneManager.LoadScene(2);
-        inGame = true;
-       
     }
 
     public void ChangeMap_GameOver()
@@ -60,16 +40,6 @@ public class Scene_Manager : MonoBehaviour
         inGame = false;
     }
 
-    public void ChangeMap_Options()
-    {
-        if (GlobalAudioManager.Instance != null)
-        {
-            GlobalAudioManager.Instance.PlaySFX(0);
-        }
-        crono.gameObject.SetActive(false);
-        SceneManager.LoadScene(4);
-    }
-
     public void ExitGame()
     {
         Application.Quit();
@@ -79,4 +49,6 @@ public class Scene_Manager : MonoBehaviour
     {
         System.Linq.Enumerable.Range(0, maps.Length).ToList().ForEach(i => maps[i].SetActive(i == map));
     }
+
+    
 }

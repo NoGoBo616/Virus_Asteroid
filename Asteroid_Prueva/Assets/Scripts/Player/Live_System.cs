@@ -10,7 +10,7 @@ public class Live_System : MonoBehaviour
     public float vida;
     public bool dañado;
     [SerializeField] Image player_Live;
-    public Scene_Cambio cambio;
+    public Scene_Manager cambio;
     public GolpeCinemachine shake;
 
     public Live_System manager;
@@ -20,10 +20,12 @@ public class Live_System : MonoBehaviour
     {
         vida = 1;
         dañado = true;
+
     }
 
     private void OnEnable()
     {
+        cambio = FindAnyObjectByType<Scene_Manager>();
         vida = 1;
     }
 
@@ -34,7 +36,7 @@ public class Live_System : MonoBehaviour
         if (vida <= 0)
         {
             vida = 0;
-            cambio.Cargar(3);
+            cambio.ChangeMap_GameOver();
         }
     }
 

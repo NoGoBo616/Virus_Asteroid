@@ -6,6 +6,7 @@ public class Colesterol : MonoBehaviour
 {
     public Player_ player;
     public GameManager puntos;
+    public Animator anim;
 
     [Header("Obgetos temporales")]
     public GameObject lento;
@@ -50,6 +51,9 @@ public class Colesterol : MonoBehaviour
 
     IEnumerator Lento()
     {
+        anim.SetBool("Punto", false);
+        anim.SetBool("Lento", true);
+        anim.SetTrigger("Dice");
         yield return new WaitForSeconds(2);
         player.thrust = 0.5f;
         yield return null;
@@ -57,6 +61,9 @@ public class Colesterol : MonoBehaviour
 
     IEnumerator Restar()
     {
+        anim.SetBool("Punto", true);
+        anim.SetBool("Lento", false);
+        anim.SetTrigger("Dice");
         yield return new WaitForSeconds(2);
         Instantiate(vfxInstance, this.gameObject.transform.position, Quaternion.identity);
         puntos.points = puntos.points/2;
