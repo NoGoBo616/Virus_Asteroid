@@ -11,6 +11,7 @@ public class Video_Ending : MonoBehaviour
     public VideoPlayer final_Bueno_Player;
     public VideoPlayer final_Malo_Player;
     public ArcadeManager manager;
+    public Animator anim;
 
     void OnEnable()
     {
@@ -32,8 +33,9 @@ public class Video_Ending : MonoBehaviour
     IEnumerator GoodEnding()
     {
         final_Bueno.SetActive(true);
-        //final_Bueno_Player.Play();
+        final_Bueno_Player.Play();
         yield return new WaitForSeconds(5);
+        anim.SetTrigger("Final");
         final_Bueno.SetActive(false);
         yield return null;
     }
@@ -43,6 +45,7 @@ public class Video_Ending : MonoBehaviour
         final_Malo.SetActive(true);
         final_Malo_Player.Play();
         yield return new WaitForSeconds(5);
+        anim.SetTrigger("Final");
         final_Malo.SetActive(false);
         yield return null;
     }

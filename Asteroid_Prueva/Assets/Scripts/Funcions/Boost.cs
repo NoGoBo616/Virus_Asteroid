@@ -6,7 +6,7 @@ public class Boost : MonoBehaviour
     public float speed;
     public Player_ player;
     public GolpeCinemachine shake;
-    public GameObject[] animaciones; 
+    public GameObject[] animaciones;
 
     private void OnEnable()
     {
