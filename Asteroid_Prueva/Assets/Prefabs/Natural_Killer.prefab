@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae23f0aed3f14a042ab9f7d2672240c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BestiarioEnemyIndex
-  indice: 9
+  indice: 8
   manager: {fileID: 0}
 --- !u!114 &412661536086831161
 MonoBehaviour:
