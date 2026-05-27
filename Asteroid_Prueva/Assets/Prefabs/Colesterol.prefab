@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7206588166738853006}
   - component: {fileID: 2678212918284793835}
+  - component: {fileID: 4324534035770216696}
   - component: {fileID: 8314754938893094497}
   - component: {fileID: 4802743081079628061}
   - component: {fileID: 2948192515874483256}
@@ -56,9 +57,20 @@ MonoBehaviour:
   player: {fileID: 0}
   puntos: {fileID: 0}
   anim: {fileID: 4925627458696591584}
-  lento: {fileID: 4499453240432178223}
-  resPoints: {fileID: 2232394707047382794}
   vfxInstance: {fileID: 1662299301705729500, guid: 8db060668a532264bbb0b41551c2cca3, type: 3}
+--- !u!114 &4324534035770216696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316017013753386728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c48ff1e5cc829e4cb898a078b45e2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destruct_Instance
+  instancia: {fileID: 7468792058255031455, guid: 7ea5063240f150a4fb1b2c4164ddaeaa, type: 3}
 --- !u!58 &8314754938893094497
 CircleCollider2D:
   m_ObjectHideFlags: 0

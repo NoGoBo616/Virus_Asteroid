@@ -66,6 +66,6 @@ public class Colesterol : MonoBehaviour
 
     private void OnDestroy()
     {
-        player.thrust = 3;
+        player.thrust = 5;
     }
 }

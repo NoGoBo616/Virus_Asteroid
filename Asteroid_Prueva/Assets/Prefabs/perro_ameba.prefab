@@ -143,7 +143,7 @@ MonoBehaviour:
   fill: {fileID: 4819588905026500799}
   manager: {fileID: 0}
   sprite: {fileID: 4929150511660597049}
-  pointsVFX: {fileID: 1662299301705729500, guid: 4377bd5fc82e9b241857e800cd717097, type: 3}
+  pointsVFX: {fileID: 1662299301705729500, guid: 5fc836da18cd90b41abcd4cad451995a, type: 3}
   anim: {fileID: 882361029625759290}
   player: {fileID: 0}
   distanciaParada: 3

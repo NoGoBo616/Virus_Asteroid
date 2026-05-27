@@ -100,7 +100,7 @@ public class AmebaControl : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Asteroid") || collision.gameObject.CompareTag("Police"))
             {
-                lifeAmeba = lifeAmeba - 0.1f;
+                lifeAmeba = lifeAmeba - 0.01f;
                 anim.SetTrigger("Hurt");
             }
         }

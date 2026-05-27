@@ -17,16 +17,13 @@ public class Video_Ending : MonoBehaviour
     {
         manager = FindAnyObjectByType<ArcadeManager>();
 
-        if (manager != null)
+        if (manager.listaPuntos.Max() >= 7500)
         {
-            if (manager.listaPuntos.Max() >= 7500)
-            {
-                StartCoroutine(GoodEnding());
-            }
-            if (manager.listaPuntos.Max() <= 7500)
-            {
-                StartCoroutine(BadEnding());
-            }
+            StartCoroutine(GoodEnding());
+        }
+        if (manager.listaPuntos.Max() <= 7500)
+        {
+            StartCoroutine(BadEnding());
         }
     }
 

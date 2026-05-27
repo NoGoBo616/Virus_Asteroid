@@ -22,6 +22,7 @@ public class VFX_Points : MonoBehaviour
             yield return null;
         }
 
+        
         Debug.Log("Objetivo alcanzado. Destruyendo objeto.");
         Destroy(gameObject);
     }

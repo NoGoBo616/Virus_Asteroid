@@ -12,6 +12,11 @@ public class Scene_Cambio : MonoBehaviour
         StartCoroutine(Cambio(mapa));
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
     IEnumerator Cambio(int map)
     {
         anim.SetTrigger("On");
