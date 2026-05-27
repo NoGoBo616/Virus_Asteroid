@@ -5,15 +5,16 @@ public class Monedero : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float speed;
-    public float live;
     public int indice;
-    public Image liveImg;
+    public bool open;
     public GameObject[] premio;
     GameManager manager;
+    public Animator anim;
 
     private void OnEnable()
     {
         MoveBlood();
+        open = false;
         rb = GetComponent<Rigidbody2D>();
         manager = FindAnyObjectByType<GameManager>();
     }
@@ -22,36 +23,40 @@ public class Monedero : MonoBehaviour
     {
         if (collision.CompareTag("Bullet"))
         {
-            live --;
+            anim.SetBool("Open", true);
             Destroy(collision.gameObject);
+            open = true;
+            rb.linearVelocity = Vector3.zero;
+        }
+
+        if (collision.CompareTag("Player"))
+        {
+            if (open)
+            {
+                indice = Random.Range(0, 3);
+                Instantiate(premio[indice], this.gameObject.transform.position, Quaternion.identity);
+                if (indice == 0)
+                {
+                    manager.points = manager.points + Random.Range(200, 500);
+                }
+                Destroy(this.gameObject);
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        if (rb.linearVelocity.magnitude > 10)
+        if  (open == false)
         {
-            rb.linearVelocity = rb.linearVelocity.normalized * 10;
+            if (rb.linearVelocity.magnitude > 10)
+            {
+                rb.linearVelocity = rb.linearVelocity.normalized * 10;
+            }
         }
     }
 
     void MoveBlood()
     {
         GetComponent<Rigidbody2D>().linearVelocity = Random.insideUnitCircle.normalized * speed;
-    }
-
-    public void Update()
-    {
-        liveImg.fillAmount = live / 3;
-        if (live <= 0)
-        {
-            indice = Random.Range(0, 3);
-            Instantiate(premio[indice], this.gameObject.transform.position, Quaternion.identity);
-            if (indice == 0)
-            {
-                manager.points = manager.points + Random.Range(200, 500);
-            }
-            Destroy(this.gameObject);
-        }
     }
 }

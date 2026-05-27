@@ -8,11 +8,17 @@ public class Boost : MonoBehaviour
     public GolpeCinemachine shake;
     public GameObject[] animaciones;
 
+    [Header("Posiciones")]
+    public float minY;
+    public float maxY;
+    public float minX;
+    public float maxX;
+
     private void OnEnable()
     {
         player = FindAnyObjectByType<Player_>();
-        this.gameObject.transform.position = new Vector2(Random.Range(-20, 21), Random.Range(-10, 11));
-        this.gameObject.transform.rotation = Quaternion.Euler(0, 0, Random.Range(0f, 90f));
+        this.gameObject.transform.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        this.gameObject.transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 270));
         animaciones[Random.Range(0,3)].gameObject.SetActive(true);
     }
 

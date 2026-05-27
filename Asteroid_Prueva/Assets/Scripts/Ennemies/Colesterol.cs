@@ -9,8 +9,6 @@ public class Colesterol : MonoBehaviour
     public Animator anim;
 
     [Header("Obgetos temporales")]
-    public GameObject lento;
-    public GameObject resPoints;
     public GameObject vfxInstance;
 
     private void OnEnable()
@@ -28,14 +26,10 @@ public class Colesterol : MonoBehaviour
 
             if (dados == 0)
             {
-                lento.SetActive(false);
-                resPoints.SetActive(true);
                 StartCoroutine(Restar());
             }
             if (dados == 1)
             {
-                lento.SetActive(true);
-                resPoints.SetActive(false);
                 StartCoroutine(Lento());
             }
         }

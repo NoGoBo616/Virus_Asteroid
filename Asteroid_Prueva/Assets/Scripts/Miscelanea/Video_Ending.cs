@@ -36,6 +36,7 @@ public class Video_Ending : MonoBehaviour
         final_Bueno_Player.Play();
         yield return new WaitForSeconds(5);
         anim.SetTrigger("Final");
+        yield return new WaitForSeconds(2);
         final_Bueno.SetActive(false);
         yield return null;
     }
@@ -46,6 +47,7 @@ public class Video_Ending : MonoBehaviour
         final_Malo_Player.Play();
         yield return new WaitForSeconds(5);
         anim.SetTrigger("Final");
+        yield return new WaitForSeconds(2);
         final_Malo.SetActive(false);
         yield return null;
     }

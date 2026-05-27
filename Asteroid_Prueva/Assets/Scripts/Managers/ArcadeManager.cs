@@ -10,6 +10,29 @@ public class ArcadeManager : MonoBehaviour
     public List<string> listaNombres = new List<string>();
     public List<int> listaPuntos = new List<int>();
 
+    [Header("Comprovar")]
+    public bool[] llaves;
+
+    private void Update()
+    {
+        if (listaPuntos.Max() >= 0)
+        {
+            llaves[0] = true;
+        }
+        if (listaPuntos.Max() >= 4000)
+        {
+            llaves[1] = true;
+        }
+        if (listaPuntos.Max() >= 6000)
+        {
+            llaves[2] = true;
+        }
+        if (listaPuntos.Max() >= 7000)
+        {
+            llaves[3] = true;
+        }
+    }
+
     // Guardar nombre y puntuación actual
     public void GuardarDatos(string nombre, int puntos)
     {
@@ -28,6 +51,7 @@ public class ArcadeManager : MonoBehaviour
         nombreJugador = PlayerPrefs.GetString("NombreJugador", "AAA");
         puntuacion = PlayerPrefs.GetInt("Puntuacion", 0);
     }
+
     public void FinalizarPartida()
     {
         listaNombres.Add(nombreJugador);

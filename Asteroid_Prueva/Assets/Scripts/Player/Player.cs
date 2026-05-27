@@ -26,6 +26,7 @@ public class Player_ : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject shield;
     public GameObject body;
+    public Collider2D detect;
     public GameObject bulletHellObject;
     public GameObject disparador;
 
@@ -148,9 +149,11 @@ public class Player_ : MonoBehaviour
             AudioManager.Instance.PlaySFX(4);
         }
         body.gameObject.SetActive(false);
+        detect.enabled = false;
         special = false;
         yield return new WaitForSeconds(2);
         body.gameObject.SetActive(true);
+        detect.enabled = true;
         special = true;
         StartCoroutine(CooldownInvisible());
         yield return null;

@@ -40,7 +40,7 @@ public class Flora_Intestinal : MonoBehaviour
         yield return new WaitForSeconds(1);
         this.gameObject.transform.position = new Vector3(Random.Range(-12, 13), Random.Range(-8, 9), 0);
         yield return new WaitForSeconds(time);
-        player.thrust = 1;
+        player.thrust = 5;
         player.enrredadera.gameObject.SetActive(false);
         yield return null;
     }

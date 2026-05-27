@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class AmebaControl : MonoBehaviour
 {
+    public bool ready;
     public float lifeAmeba;
     public float timeAmeba;
     public Rigidbody2D rb;
@@ -19,47 +20,67 @@ public class AmebaControl : MonoBehaviour
     public GameObject pointsVFX;
     public Animator anim;
     public Player_ player;
+    public float distanciaParada = 3f;
 
     private void OnEnable()
     {
+        ready = false;
         manager = FindAnyObjectByType<GameManager>();
         player = FindAnyObjectByType<Player_>();
         lifeAmeba = 1f;
-        timeAmeba =times[Random.Range(0,7)];
+        timeAmeba = times[Random.Range(0, 7)];
+        StartCoroutine(Aparecer());
     }
 
     void Update()
     {
-        Flip();
-        fill.fillAmount = lifeAmeba;
-        player = FindAnyObjectByType<Player_>();
-        if (timeAmeba > 0)
+        if (ready)
         {
-            timeAmeba -= Time.deltaTime;
-        }
-        if (timeAmeba <= 0)
-        {
-            timeAmeba = 0;
-            Instantiate(pointsVFX, this.gameObject.transform.position, Quaternion.identity);
-            manager.points = manager.points + 800;
-            this.gameObject.SetActive(false);
-        } 
-
-        if (die == false)
-        {
-            if (lifeAmeba <= 0)
+            Flip();
+            fill.fillAmount = lifeAmeba;
+            if (timeAmeba > 0)
             {
-                die = true;
-                anim.SetTrigger("Die");
-                rb.gravityScale = 1;
-                Destroy(this.gameObject, 0.8f * Time.deltaTime);
+                timeAmeba -= Time.deltaTime;
+            }
+            if (timeAmeba <= 0)
+            {
+                timeAmeba = 0;
+                Instantiate(pointsVFX, this.gameObject.transform.position, Quaternion.identity);
+                manager.points = manager.points + 800;
+                this.gameObject.SetActive(false);
+            }
+
+            if (die == false)
+            {
+                if (lifeAmeba <= 0)
+                {
+                    die = true;
+                    anim.SetTrigger("Die");
+                    rb.gravityScale = 1;
+                    Destroy(this.gameObject, 0.8f * Time.deltaTime);
+                }
             }
         }
     }
-    
+
     private void FixedUpdate()
     {
-       MoveAmeba();
+        if (ready && player != null)
+        {
+            // Calculamos la distancia exacta entre la ameba y el jugador
+            float distanciaAlPlayer = Vector2.Distance(transform.position, player.transform.position);
+
+            // Si está más lejos que la distancia de parada, se mueve hacia él
+            if (distanciaAlPlayer > distanciaParada)
+            {
+                MoveAmeba();
+            }
+            else
+            {
+                // Si está cerca, frenamos su velocidad por completo para que se quede quieta
+                rb.linearVelocity = Vector2.zero;
+            }
+        }
     }
 
     void MoveAmeba()
@@ -75,10 +96,13 @@ public class AmebaControl : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Asteroid") || collision.gameObject.CompareTag("Police"))
+        if (ready)
         {
-            lifeAmeba = lifeAmeba - 0.1f;
-            anim.SetTrigger("Hurt");
+            if (collision.gameObject.CompareTag("Asteroid") || collision.gameObject.CompareTag("Police"))
+            {
+                lifeAmeba = lifeAmeba - 0.1f;
+                anim.SetTrigger("Hurt");
+            }
         }
     }
 
@@ -100,7 +124,14 @@ public class AmebaControl : MonoBehaviour
         else
         {
             sprite.gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-
         }
+    }
+
+    IEnumerator Aparecer()
+    {
+        anim.SetBool("Ready", true);
+        yield return new WaitForSeconds(2);
+        ready = true;
+        yield return null;
     }
 }
